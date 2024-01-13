@@ -1,0 +1,175 @@
+// *FONT FAMILY START 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+// *FONT FAMILY END 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul li {
+    list-style: none;
+}
+body{
+    font-family: $primaryFont;
+}
+// *COMMON BTN 
+.commonBtn{
+        display: inline-block;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 13px 37px;
+        background-color: $secondaryColor;
+        margin: 29px 0;
+        transition: 0.35s;
+            &:hover{
+               opacity: 0.8;
+            }
+            span{
+                height: 18px;
+                width: 18px;
+            }
+   }
+// *COMMON BTN END 
+// *HEADING 
+.heading h1{
+    color: $primaryColor ;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+    margin-bottom: 36px; 
+      @media (min-width:320px) and (max-width:768px) {
+        font-size: 22px;
+      }
+}
+
+// *HEADING END
+
+// *PRODUCT COSTOMIZE START
+.productSlide{
+    border: 1px solid #F1F3F4;
+    background-color: #fff;
+    margin: 0px 0px 24px 0px;
+
+        .productCnt{
+
+            p{
+                color: #444;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+                text-align: center;
+                margin-top: 24px;
+                margin-bottom: 0px;                
+            }
+            h6{
+                margin-bottom: 0px;
+                a{
+                    color: $primaryColor;
+                    text-align: center;       
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 28px;
+                    margin-top: 5px;
+                    display: block;
+                    margin-bottom: 0px;
+                    @media (min-width:320px) and (max-width: 991px){
+                        font-size: 14px;
+                    }
+                    
+                }
+            }
+            span{
+                color: $secondaryColor;
+                font-size: 12px;
+                text-align: center;
+                margin-top: 11px;
+                margin-bottom: 26px;
+                display: inline-block;
+                width: 100%;
+            }
+
+        } 
+    .productImage {
+        position: relative;
+        
+        .label{
+            position: absolute;
+            top: 13px;
+            left: 24px;
+
+               p{
+                color: #fff ;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+                border-radius: 13px 0px 0px 13px;
+                background-color: $secondaryColor;
+                transform: rotate(-90deg);
+                width: 52px;
+                text-align: center;
+               }
+            
+        }
+        .overlay{
+            position: absolute;
+            top: 40%;
+            right: 17px;
+            transform: translateY(-40%);
+
+            }
+
+
+            ul li a{
+                background-color: #fff;
+                border-radius: 50%;
+                width: 36px;
+                height: 36px;
+                line-height: 40px;
+                text-align: center;
+                margin-bottom: 10px;   
+                color: $primaryColor;
+                font-size: 16px;
+                transform: translateX(-60px);
+                visibility: hidden;
+                opacity: 0;
+                transition: 350ms;
+                display: block;
+                    &:hover {
+                        background-color: $secondaryColor;
+                        color: #fff;
+                    }
+
+            }
+        }
+        
+    }
+.productImage {
+
+    &:hover .overlay a{
+         visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
+    // *img hover    
+    }
+    img{
+        transform: scale(0.8);
+        transition:0.35s ease-in-out;
+    }
+}
+.productSlide{
+
+    &:hover .productImage img {
+        transform: scale(1);
+           
+    }
+} 
+// **PRODUCT COSTOMIZE START

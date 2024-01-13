@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aytor</title>
+    <!-- *BOOTSTRAP CSS  -->
+    <link rel="stylesheet" href="./assets/vendor/css/bootstrap.min.css">
+    <!-- *SLICK CSS -->
+    <link rel="stylesheet" href="./assets/vendor/css/slick.css">
+    <!-- *BOOTSTRAP ICON CSS  -->
+    <link rel="stylesheet" href="./assets/icon/bootstrap-icons-1.11.2\font\bootstrap-icons.min.css">
+    <!-- *CUSTOM CSS  -->
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+    <!-- <style>.dropdown-toggle::after {display: none;}</style> -->
+</head>
+<body>
+        <!-- *NAVBAR START HERE  -->
+        <section id="navbar">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+    
+                    <!-- *LOGO START  -->
+    
+                  <a class="navbar-brand" href="#"><img src="./assets/image/home/Logo.png" alt="Home page logo"></a>
+                  
+                  <!-- *LOGO END HERE  -->
+
+                  <!-- *SEARCH ICON RESPONSIVE -->
+                  <div class="searchIcon">
+                      <ul>
+                          <li><a href="#">
+                            <span><iconify-icon icon="iconamoon:search-bold"></iconify-icon></span>
+                          </a></li>
+                      </ul>
+                  </div>
+                  <!-- *SEARCH ICON RESPONSIVE END -->
+    
+                  <button class="navbar-toggler menuToggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                    <iconify-icon icon="pepicons-pop:menu"></iconify-icon>
+                  </button>
+                  <div class="collapse navbar-collapse" id="myCustomNav">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+    
+                      <!-- *MENU START HERE  -->
+    
+                      <li class="nav-item myMenu">
+                        <a class="nav-link active" aria-current="page" href="#">Home
+                        </a>
+                      </li>
+                      <li class="nav-item dropdown myMenu">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Shop
+                          <span><i class="bi bi-chevron-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu customDrop">
+                          <li><a class="dropdown-item " href="#">Men</a></li>
+                          <li><a class="dropdown-item " href="#">Women</a></li>
+                          <li><a class="dropdown-item " href="#">Watches</a></li>
+                          <li><a class="dropdown-item " href="#">Sunglasses</a></li>
+                          <li><a class="dropdown-item " href="#">Jewellery</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item myMenu">
+                        <a class="nav-link active" aria-current="page" href="#">Pages
+                            <span><i class="bi bi-chevron-down"></i></span>
+                        </a>
+                      </li>
+                      <li class="nav-item myMenu">
+                        <a class="nav-link active" aria-current="page" href="#">Features
+                            <span><i class="bi bi-chevron-down"></i></span>
+                        </a>
+                      </li>
+                      <li class="nav-item myMenu">
+                        <a class="nav-link active" aria-current="page" href="#">Blogs
+                            <span><i class="bi bi-chevron-down"></i></span>
+                        </a>
+                      </li>
+                      <li class="nav-item myMenu">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                      </li>
+                    </ul>
+    
+                    <!-- *MENU END HERE  -->
+    
+                    <!-- *USER START HERE  -->
+    
+                    <div class="userOption">
+                      <ul>
+                        <li><a href="#">
+                          <span><i class="bi bi-search"></i></span>
+                        </a></li>
+                        <li><a href="#">
+                          <span><i class="bi bi-person"></i></span>
+                        </a></li>
+                        <li><a href="#">
+                          <span><i class="bi bi-heart"></i></span>
+                        </a></li>
+                        <li class="shoppingCart"><a href="#">
+                          <span><i class="bi bi-bag-heart-fill"></i></span>
+                          <h4>0</h4>
+                        </a></li>
+                      </ul>
+                    </div>
+    
+                    <!-- *USER END HERE  -->
+    
+                  </div>
+                </div>
+              </nav>
+
+              <!-- *RESPONSIVE NAVBAR  -->
+
+              <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title heading" id="offcanvasWithBothOptionsLabel">Welcome to Aytor</h5>
+                  <button class="crossBtn" type="button" data-bs-dismiss="offcanvas" aria-label="Close" ><i class="bi bi-x-circle-fill"></i></button>
+                </div>
+                <div class="offcanvas-body">
+
+                  <!-- *MANU START HERE  -->
+                  <div class="sidebar">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                      <li class="nav-item myMenu">
+                        <a class="nav-link active" aria-current="page" href="#">Home
+                        </a>
+                      </li>
+                      <li class="nav-item dropdown myMenu">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Shop
+                          <span><i class="bi bi-chevron-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu customDrop">
+                          <li><a class="dropdown-item " href="#">Men</a></li>
+                          <li><a class="dropdown-item " href="#">Women</a></li>
+                          <li><a class="dropdown-item " href="#">Watches</a></li>
+                          <li><a class="dropdown-item " href="#">Sunglasses</a></li>
+                          <li><a class="dropdown-item " href="#">Jewellery</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item myMenu">
+                        <a class="nav-link active" aria-current="page" href="#">Pages
+                            <span><i class="bi bi-chevron-down"></i></span>
+                        </a>
+                      </li>
+                      <li class="nav-item myMenu">
+                        <a class="nav-link active" aria-current="page" href="#">Features
+                            <span><i class="bi bi-chevron-down"></i></span>
+                        </a>
+                      </li>
+                      <li class="nav-item myMenu">
+                        <a class="nav-link active" aria-current="page" href="#">Blogs
+                            <span><i class="bi bi-chevron-down"></i></span>
+                        </a>
+                      </li>
+                      <li class="nav-item myMenu">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                      </li> 
+                    </ul>
+
+                    <div class="userOption">
+                      <ul>
+                        <li class="shoppingCart"><a href="#">
+                          <span><i class="bi bi-bag-heart-fill"></i></span>
+                          <h4>0</h4>
+                        </a></li>
+                        <li class="userProfile"><a href="#">
+                          <span><i class="bi bi-person-circle"></i></span>
+                        </a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                <!-- *MENU END HERE  -->
+                
+              </div>
+              <!-- *RESPONSIVE NAVBAR END  -->
+    
+        </section>
+        <!-- *NAVBAR END HERE  -->
+        <!-- *BANNER START HERE  -->
+        <section id="banner">
+          <div class="slide"  >
+
+            <!-- *SLIDER START HERE  -->
+            <div class="slider" style="background-image: url(./assets/image/home/banner\ 1.png);">
+              <div class="container h-100">
+                <div class="row align-items-center h-100">
+                  <div class="bannerCnt col-lg-5">
+                    <h4>Mega Sale</h4>
+                    <h2>Up To 35% Off</h2>
+                    <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+                    <a class="commonBtn" href="#">
+                      Shop Now 
+                      <span><i class="bi bi-arrow-right"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- *SLIDER END HERE  -->
+
+            <!-- *SLIDER START HERE  -->
+            <div class="slider" style="background-image: url(./assets/image/home/banner\ 2.jpg);">
+              <div class="container h-100">
+                <div class="row align-items-center h-100">
+                  <div class="bannerCnt col-lg-5">
+                    <h4>Mega Sale</h4>
+                    <h2>Up To 35% Off</h2>
+                    <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+                    <a class="commonBtn" href="#">
+                      Shop Now 
+                      <span><i class="bi bi-arrow-right"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- *SLIDER END HERE  -->
+
+            <!-- *SLIDER START HERE  -->
+            <div class="slider" style="background-image: url(./assets/image/home/banner\ 3.jpg);">
+              <div class="container h-100">
+                <div class="row align-items-center h-100">
+                  <div class="bannerCnt col-lg-5">
+                    <h4>Mega Sale</h4>
+                    <h2>Up To 35% Off</h2>
+                    <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+                    <a class="commonBtn" href="#">
+                      Shop Now 
+                      <span><i class="bi bi-arrow-right"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- *SLIDER END HERE  -->
+            
+
+          </div>
+          <!-- *SLIDER START HERE RESPONSIVE SM -->
+
+          <div class="slideSm">
+            <div class="sliderSm">
+              <a href="#">
+                <img src="./assets/image/home/banner 1 responsive.png" alt="">
+              </a>      
+            </div>
+            <div class="sliderSm">
+              <a href="#">
+                <img src="./assets/image/home/banner 2 responsive.png" alt="">
+              </a>      
+            </div>
+            <div class="sliderSm">
+              <a href="#">
+                <img src="./assets/image/home/banner 3 responsive.png" alt="">
+              </a>      
+            </div>
+          </div>
+            
+
+          <!-- *SLIDER END HERE  -->
+          
+          <!-- *SLIDER START HERE RESPONSIVE MD -->
+          <div class="slideMd">
+            <div class="sliderMd">
+              <a href="#">
+                <img src="./assets/image/home/banner md 1 responsive.png" alt="">
+              </a>      
+            </div>
+            <div class="sliderMd">
+              <a href="#">
+                <img src="./assets/image/home/banner md 2 responsive.png" alt="">
+              </a>      
+            </div>
+            <div class="sliderMd">
+              <a href="#">
+                <img src="./assets/image/home/banner md 3 responsive.png" alt="">
+              </a>      
+            </div>   
+          </div>      
+          <!-- *SLIDER END HERE RESPONSIVE MD -->
+
+          <!-- *SLIDER START HERE RESPONSIVE LG -->
+          <div class="slideLg">
+            <div class="sliderLg">
+              <a href="#">
+                <img src="./assets/image/home/banner 1 lg .png" alt="">
+              </a>      
+            </div>
+            <div class="sliderLg">
+              <a href="#">
+                <img src="./assets/image/home/banner 2 lg .png" alt="">
+              </a>      
+            </div>
+            <div class="sliderLg">
+              <a href="#">
+                <img src="./assets/image/home/banner 3 lg .png" alt="">
+              </a>      
+            </div>
+          </div>
+
+
+
+          <!-- *SLIDER END HERE RESPONSIVE LG -->
+
+
+        </section>
+
+        <!-- *PRODUCT BANNER START  -->
+        <section id="productBanner" >
+          <div class="container">
+            <div class="row col-lg-12">
+              <div class="col-lg-5">
+                <div class="wpb_wrapper">
+                  <div class="imgCnt_1 col-md-12">
+                    <a href="#">
+                      <img src="./assets/image/home/Image herebeauty cream 1.png" alt="">
+                      <div class="overlay">
+                        <div class="row align-content-center h-100">
+                          <h4>Beauty Cream</h4>
+                          <p>Shop Now
+                            <span><i class="bi bi-arrow-right"></i></span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="imgCnt_1 col-md-12">
+                    <a href="#">
+                      <img src="./assets/image/home/Image herebeauty cream 3.png" alt="">
+                      <div class="overlay">
+                        <div class="row align-content-center h-100">
+                          <h4>Beauty Cream</h4>
+                          <p>Shop Now
+                            <span><i class="bi bi-arrow-right"></i></span>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 d-lg-block d-none">
+                <div class="imgCnt_1 col-md-12">
+                  <a href="#">
+                    <img style="height: 608px;" src="./assets/image/home/Image herebeauty cream 2.png" alt="">
+                    <div class="overlay">
+                      <div class="row align-content-center h-100">
+                        <h4>Beauty Cream</h4>
+                        <p>Shop Now
+                          <span><i class="bi bi-arrow-right"></i></span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>  
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <!-- **PRODUCT BANNER END  -->
+
+        <!-- *PRODUCT LIST START  -->
+        <section id="latestProducts">
+            <div class="container proArrrow">
+              <div class="heading">
+                <h1>New Arrivals Products</h1>
+              </div>
+              <div class="productSlider">
+                <!-- *PRODUCT SLIDER START  -->
+                <div class="col-lg-3 col-md-6">                 
+                  <div class="productSlide">
+                    <div class="productImage">
+                      <a href="#"><img style="width: 100%;"  src="./assets/image/product img/item 1.png" alt=""></a>
+                      <div class="label">
+                        <p>-45%</p>
+                      </div>
+                      <div class="overlay">
+                        <ul>
+                          <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <i class="bi bi-cart-plus"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                            <i class="bi bi-eye-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                            <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="productCnt">
+                      <p>$150.65</p>
+                      <h6><a href="#">Lotion Shower gel</a></h6>
+                      <span>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- *PRODUCT SLIDER END  -->
+                <!-- *PRODUCT SLIDER START  -->
+                <div class="col-lg-3 col-sm-6">
+                  <div class="productSlide">
+                    <div class="productImage">
+                      <a href="#"><img style="width: 100%;"  src="./assets/image/product img/item 2.png" alt=""></a>
+                      <div class="label">
+                        <p>Sale</p>
+                      </div>
+                      <div class="overlay">
+                        <ul>
+                          <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <i class="bi bi-cart-plus"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                            <i class="bi bi-eye-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                            <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="productCnt">
+                      <p>$250.65</p>
+                      <h6><a href="#">Argan Cream Body</a></h6>
+                      <span>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>  
+                <!-- *PRODUCT SLIDER END  -->
+                <!-- *PRODUCT SLIDER START  -->
+                <div class="col-lg-3">
+                  <div class="productSlide">
+                    <div class="productImage">
+                      <a href="#"><img style="width: 100%;"  src="./assets/image/product img/item 3.png" alt=""></a>
+                      <!-- <div class="label">
+                        <p>Sale</p>
+                      </div> -->
+                      <div class="overlay">
+                        <ul>
+                          <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <i class="bi bi-cart-plus"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                            <i class="bi bi-eye-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                            <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="productCnt">
+                      <p>$175.65</p>
+                      <h6><a href="#">Compact Face Powder</a></h6>
+                      <span>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- *PRODUCT SLIDER END  -->
+                <!-- *PRODUCT SLIDER START  -->
+                <div class="col-lg-3">
+                  <div class="productSlide">
+                    <div class="productImage">
+                      <a href="#"><img style="width: 100%;"  src="./assets/image/product img/item 4.png" alt=""></a>
+                      <div class="label">
+                        <p>New</p>
+                      </div>
+                      <div class="overlay">
+                        <ul>
+                          <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <i class="bi bi-cart-plus"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                            <i class="bi bi-eye-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                            <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="productCnt">
+                      <p>$75.65</p>
+                      <h6><a href="#">Manicure Gel nails</a></h6>
+                      <span>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- *PRODUCT SLIDER END  -->
+                <!-- *PRODUCT SLIDER START  -->
+                <div class="col-lg-3">
+                  <div class="productSlide">
+                    <div class="productImage">
+                      <a href="#"><img style="width: 100%;"  src="./assets/image/product img/item 5.png" alt=""></a>
+                      <div class="label">
+                        <p>-20%</p>
+                      </div>
+                      <div class="overlay">
+                        <ul>
+                          <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <i class="bi bi-cart-plus"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                            <i class="bi bi-eye-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                            <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="productCnt">
+                      <p>$99.65</p>
+                      <h6><a href="#">Compact Face Powder</a></h6>
+                      <span>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- *PRODUCT SLIDER END  -->
+                <!-- *PRODUCT SLIDER START  -->
+                <div class="col-lg-3">
+                  <div class="productSlide">
+                    <div class="productImage">
+                      <a href="#"><img style="width: 100%;"  src="./assets/image/product img/item 6.png" alt=""></a>
+                      <div class="label">
+                        <p>-90%</p>
+                      </div>
+                      <div class="overlay">
+                        <ul>
+                          <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <i class="bi bi-cart-plus"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                            <i class="bi bi-eye-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                            <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="productCnt">
+                      <p>$130.65</p>
+                      <h6><a href="#">Manicure Gel nails</a></h6>
+                      <span>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>  
+                <!-- *PRODUCT SLIDER END  -->
+                <!-- *PRODUCT SLIDER START  -->
+                <div class="col-lg-3">
+                  <div class="productSlide">
+                    <div class="productImage">
+                      <a href="#"><img style="width: 100%;"  src="./assets/image/product img/item 7.png" alt=""></a>
+                      <div class="label">
+                        <p>-90%</p>
+                      </div>
+                      <div class="overlay">
+                        <ul>
+                          <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <i class="bi bi-cart-plus"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                            <i class="bi bi-eye-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                            <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="productCnt">
+                      <p>$500.36</p>
+                      <h6><a href="#">Argan Cream Body Butter</a></h6>
+                      <span>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>  
+                <!-- *PRODUCT SLIDER END  -->
+                <!-- *PRODUCT SLIDER START  -->
+                <div class="col-lg-3">
+                  <div class="productSlide">
+                    <div class="productImage">
+                      <a href="#"><img style="width: 100%;"  src="./assets/image/product img/item 8.png" alt=""></a>
+                      <div class="label">
+                        <p>New</p>
+                      </div>
+                      <div class="overlay">
+                        <ul>
+                          <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <i class="bi bi-cart-plus"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                            <i class="bi bi-eye-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                            <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="productCnt">
+                      <p>$375.65</p>
+                      <h6><a href="#">Lip balm Oriflame Cream</a></h6>
+                      <span>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- *PRODUCT SLIDER END  -->
+                
+
+              </div>
+              <!-- *ARROW START  -->
+              <div class="arrows">
+                <span class="leftArrow"><i class="bi bi-chevron-left"></i></span>
+                <span class="rightArrow"><i class="bi bi-chevron-right"></i></span>
+              </div>
+
+            </div>
+        </section>
+        <!-- *PRODUCT LIST END  -->
+        <!-- *SHORT BANNER START  -->
+        <section id="shortBanner">
+          <div class="banner_img d-lg-block d-none" style="background-image: url(./assets/image/home/shortBanner.png);">
+            <div class="container h-100">
+              <div class="row bannnerWidth">
+                <div class="col-lg-4">
+                  <div class="banner_content">
+                    <div class="row">
+                      <h3>Get Up To 35% Off all Best Spa Cosmetics Cream</h3>
+                      <p>Holisticly maximize interoperable action items for effective e-business. Globally impact enterprise-wide niche markets through dynamic.</p>
+                      <a class="commonBtn" href="#">
+                        Shop Now 
+                        <span><i class="bi bi-arrow-right"></i></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>            
+              </div>
+            </div>
+          </div>
+
+          <!-- *RESPONSIVE START HERE  -->
+          <div class="smShortBanner">
+            <a href="#">
+              <img src="./assets/image/home/s.smBanner.png" alt="">
+            </a>
+          </div>
+          <div class="mdShortBanner">
+            <a href="#">
+              <img src="./assets/image/home/m.sbanner.png" alt="">
+            </a>
+          </div>
+          <div class="lgShortBanner">
+            <a href="#">
+              <img src="./assets/image/home/s.lg.banner.png" alt="">
+            </a>
+          </div>
+          <!-- *RESPONSIVE END HERE  -->
+
+        </section>
+        <!-- *SHORT BANNER END -->
+
+        <!-- *BEST SELLER PRODUCT START -->
+        <section id="bestSellerProduct">
+          <div class="container">
+            <div class="heading">
+              <h1>Best Seller Products</h1>
+            </div>
+            <div class="products_wrapper">
+              <div class="productsList">
+                <div class="row">
+                  <!-- *BEST PRODUCT START HERE  -->
+                  <div class="col-lg-3 col-md-4 col-6">                 
+                  <div class="productSlide">
+                    <div class="productImage">
+                      <a href="#"><img style="width: 100%;"  src="./assets/image/product img/item 9.png" alt=""></a>
+                      <div class="label">
+                        <p>-45%</p>
+                      </div>
+                      <div class="overlay">
+                        <ul>
+                          <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <i class="bi bi-cart-plus"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                            <i class="bi bi-eye-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                            <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="productCnt">
+                      <p>$150.65</p>
+                      <h6><a href="#">Lotion Shower gel</a></h6>
+                      <span>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </span>
+                    </div>
+                  </div>
+                  </div>
+                   <!-- *BEST PRODUCT END  -->
+                   <!-- *BEST PRODUCT START HERE  -->
+                  <div class="col-lg-3 col-md-4 col-6">                 
+                    <div class="productSlide">
+                      <div class="productImage">
+                        <a href="#"><img style="width: 100%;"  src="./assets/image/product img/item 10.png" alt=""></a>
+                        <div class="label">
+                          <p>Sale</p>
+                        </div>
+                        <div class="overlay">
+                          <ul>
+                            <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                              <i class="bi bi-cart-plus"></i>
+                            </a></li>
+                            <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                              <i class="bi bi-heart-fill"></i>
+                            </a></li>
+                            <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                              <i class="bi bi-eye-fill"></i>
+                            </a></li>
+                            <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                              <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                            </a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="productCnt">
+                        <p>$250.65</p>
+                        <h6><a href="#">Argan Cream Body Butter</a></h6>
+                        <span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                   <!-- *BEST PRODUCT END  -->
+                  <!-- *BEST PRODUCT START HERE  -->
+                  <div class="col-lg-3 col-md-4 col-6">                 
+                    <div class="productSlide">
+                      <div class="productImage">
+                        <a href="#"><img style="width: 100%;"  src="./assets/image/product img/item 11.png" alt=""></a>
+                        <div class="label">
+                          <!-- <p>-45%</p> -->
+                        </div>
+                        <div class="overlay">
+                          <ul>
+                            <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                              <i class="bi bi-cart-plus"></i>
+                            </a></li>
+                            <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                              <i class="bi bi-heart-fill"></i>
+                            </a></li>
+                            <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                              <i class="bi bi-eye-fill"></i>
+                            </a></li>
+                            <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                              <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                            </a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="productCnt">
+                        <p>$175.65</p>
+                        <h6><a href="#">Compact Face Powder</a></h6>
+                        <span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- *BEST PRODUCT END  -->
+                  <!-- *BEST PRODUCT START HERE  -->
+                  <div class="col-lg-3 col-md-4 col-6">                 
+                    <div class="productSlide">
+                      <div class="productImage">
+                        <a href="#"><img style="width: 100%;"  src="./assets/image/product img/item 12.png" alt=""></a>
+                        <div class="label">
+                          <p>New</p>
+                        </div>
+                        <div class="overlay">
+                          <ul>
+                            <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                              <i class="bi bi-cart-plus"></i>
+                            </a></li>
+                            <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                              <i class="bi bi-heart-fill"></i>
+                            </a></li>
+                            <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                              <i class="bi bi-eye-fill"></i>
+                            </a></li>
+                            <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                              <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                            </a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="productCnt">
+                        <p>$75.65</p>
+                        <h6><a href="#">Manicure Gel nails</a></h6>
+                        <span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- *BEST PRODUCT END  -->
+                  <!-- *BEST PRODUCT START HERE  -->
+                  <div class="col-lg-3 col-md-4 col-6">                 
+                    <div class="productSlide">
+                       <div class="productImage">
+                         <a href="#"><img style="width: 100%;"  src="./assets/image/product img/item 13.png" alt=""></a>
+                         <div class="label">
+                           <p>Sale</p>
+                         </div>
+                         <div class="overlay">
+                           <ul>
+                             <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                               <i class="bi bi-cart-plus"></i>
+                             </a></li>
+                             <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                               <i class="bi bi-heart-fill"></i>
+                             </a></li>
+                             <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                               <i class="bi bi-eye-fill"></i>
+                             </a></li>
+                             <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                               <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                             </a></li>
+                           </ul>
+                         </div>
+                       </div>
+                       <div class="productCnt">
+                         <p>$350.65</p>
+                         <h6><a href="#">Perfumes,Orlane Paris</a></h6>
+                         <span>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                         </span>
+                       </div>
+                    </div>
+                  </div>
+                  <!-- *BEST PRODUCT END  -->
+                  <!-- *BEST PRODUCT START HERE  -->
+                  <div class="col-lg-3 col-md-4 col-6">                 
+                    <div class="productSlide">
+                       <div class="productImage">
+                         <a href="#"><img style="width: 100%;"  src="./assets/image/product img/item 14.png" alt=""></a>
+                         <div class="label">
+                           <p>-25%</p>
+                         </div>
+                         <div class="overlay">
+                           <ul>
+                             <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                               <i class="bi bi-cart-plus"></i>
+                             </a></li>
+                             <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                               <i class="bi bi-heart-fill"></i>
+                             </a></li>
+                             <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                               <i class="bi bi-eye-fill"></i>
+                             </a></li>
+                             <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                               <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                             </a></li>
+                           </ul>
+                         </div>
+                       </div>
+                       <div class="productCnt">
+                         <p>$460.65</p>
+                         <h6><a href="#">Natural skin care Cleaner</a></h6>
+                         <span>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                         </span>
+                       </div>
+                    </div>
+                  </div>
+                  <!-- *BEST PRODUCT END  -->
+                  <!-- *BEST PRODUCT START HERE  -->
+                  <div class="col-lg-3 col-md-4 col-6">                 
+                    <div class="productSlide">
+                       <div class="productImage">
+                         <a href="#"><img style="width: 100%;"  src="./assets/image/product img/item 15.png" alt=""></a>
+                         <div class="label">
+                           <p>-90%</p>
+                         </div>
+                         <div class="overlay">
+                           <ul>
+                             <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                               <i class="bi bi-cart-plus"></i>
+                             </a></li>
+                             <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                               <i class="bi bi-heart-fill"></i>
+                             </a></li>
+                             <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                               <i class="bi bi-eye-fill"></i>
+                             </a></li>
+                             <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                               <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                             </a></li>
+                           </ul>
+                         </div>
+                       </div>
+                       <div class="productCnt">
+                         <p>$320.65</p>
+                         <h6><a href="#">Argan oil Hair conditioner</a></h6>
+                         <span>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                         </span>
+                       </div>
+                    </div>
+                  </div>
+                  <!-- *BEST PRODUCT END  -->
+                  <!-- *BEST PRODUCT START HERE  -->
+                  <div class="col-lg-3 col-md-4 col-6">                 
+                    <div class="productSlide">
+                       <div class="productImage">
+                         <a href="#"><img style="width: 100%;"  src="./assets/image/product img/item 16.png" alt=""></a>
+                         <div class="label">
+                           <p>Free</p>
+                         </div>
+                         <div class="overlay">
+                           <ul>
+                             <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                               <i class="bi bi-cart-plus"></i>
+                             </a></li>
+                             <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                               <i class="bi bi-heart-fill"></i>
+                             </a></li>
+                             <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                               <i class="bi bi-eye-fill"></i>
+                             </a></li>
+                             <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                               <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                             </a></li>
+                           </ul>
+                         </div>
+                       </div>
+                       <div class="productCnt">
+                         <p>$460.75</p>
+                         <h6><a href="#">Lip balm Oriflame Cream</a></h6>
+                         <span>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                         </span>
+                       </div>
+                    </div>
+                  </div>
+                  <!-- *BEST PRODUCT END  -->
+                </div>
+              </div>          
+
+            </div>
+          <div class="ProductBtn" style="justify-content: center; align-items: center;display: flex;">
+            <a class="commonBtn" style="margin: 0px;" href="#">
+              See All Products
+              <span><i class="bi bi-arrow-right"></i></span>
+            </a>
+          </div>
+          </div>
+        </section>
+        <!-- *BEST SELLER PRODUCT END  -->
+        <!-- *DEALS START HERE  -->
+        <section id="dealsDay">
+          <div class="container">
+            <div class="heading">
+              <h1>Deals Of The Days</h1>
+            </div>
+            <!-- *COUNTDOWN START  -->
+            <div class="dealsWrapper h-100">
+              <div class="countDown">
+                <ul>
+                  <li>
+                    <h4 class="days">365</h4>
+                    <span>Days</span>
+                  </li>
+                  <li>
+                    <h4 class="hour">24</h4>
+                    <span>Hour</span>
+                  </li>
+                  <li>
+                    <h4 class="min">59</h4>
+                    <span>Minute</span>
+                  </li>
+                  <li>
+                    <h4 class="sec">59</h4>
+                    <span>Sec</span>    
+                  </li>
+                </ul>
+              </div>
+              <!-- *COUNTDOWN END  -->
+              <div class="dealsBanner h-100">
+                <!-- *SLIDER START -->
+                <div class="col-lg-6 d-lg-block d-md-block d-sm-block d-none">
+                  <div class="bannerImg1 " style="background-image: url(./assets/image/home/dealBanner.1.png);height: 485px;">
+                    <div class="dealBannerCnt col-lg-8">
+                      <h6>Fairness Cream</h6>
+                      <h3>Get Up To 35% Off</h3>
+                      <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+                      <div class="dealsPrice">
+                        <h5>$256.35</h5>
+                        <p>$356.35</p>
+                      </div>
+                      <a class="commonBtn" href="#">
+                        Shop Now 
+                        <span><i class="bi bi-arrow-right"></i></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- *SLIDER END -->
+                <!-- *SLIDER START -->
+                <div class="col-lg-6 d-lg-block d-md-block d-sm-block d-none">
+                  <div class="bannerImg1" style="background-image: url(./assets/image/home/dealBanner.2.png);height: 485px;">
+                    <div class="dealBannerCnt col-lg-8">
+                      <h6>Fairness Cream</h6>
+                      <h3>Get Up To 35% Off</h3>
+                      <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+                      <div class="dealsPrice">
+                        <h5>$256.35</h5>
+                        <p>$356.35</p>
+                      </div>
+                      <a class="commonBtn" href="#">
+                        Shop Now 
+                        <span><i class="bi bi-arrow-right"></i></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>                
+                <!-- *SLIDER END -->  
+                <!-- *SLIDER START -->
+                <div class="col-lg-6 d-lg-block d-md-block d-sm-block d-none">
+                  <div class="bannerImg1" style="background-image: url(./assets/image/home/dealBanner.3.png);height: 485px;">
+                    <div class="dealBannerCnt col-lg-8">
+                      <h6>Fairness Cream</h6>
+                      <h3>Get Up To 35% Off</h3>
+                      <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+                      <div class="dealsPrice">
+                        <h5>$256.35</h5>
+                        <p>$356.35</p>
+                      </div>
+                      <a class="commonBtn" href="#">
+                        Shop Now 
+                        <span><i class="bi bi-arrow-right"></i></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- *SLIDER END -->
+                <!-- *SLIDER START -->
+                <div class="col-lg-6 d-lg-block d-md-block d-sm-block d-none">
+                  <div class="bannerImg1" style="background-image: url(./assets/image/home/dealBanner.4.png);height: 485px;">
+                    <div class="dealBannerCnt col-lg-8">
+                      <h6>Fairness Cream</h6>
+                      <h3>Get Up To 35% Off</h3>
+                      <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+                      <div class="dealsPrice">
+                        <h5>$256.35</h5>
+                        <p>$356.35</p>
+                      </div>
+                      <a class="commonBtn" href="#">
+                        Shop Now 
+                        <span><i class="bi bi-arrow-right"></i></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- *SLIDER END -->
+                <!-- *SLIDER START -->
+                <div class="col-lg-6 d-lg-block d-md-block d-sm-block d-none">
+                  <div class="bannerImg1" style="background-image: url(./assets/image/home/dealBanner.2.png);height: 485px;">
+                    <div class="dealBannerCnt col-lg-8">
+                      <h6>Fairness Cream</h6>
+                      <h3>Get Up To 35% Off</h3>
+                      <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+                      <div class="dealsPrice">
+                        <h5>$256.35</h5>
+                        <p>$356.35</p>
+                      </div>
+                      <a class="commonBtn" href="#">
+                        Shop Now 
+                        <span><i class="bi bi-arrow-right"></i></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- *SLIDER END -->
+                <!-- *SLIDER START -->
+                <div class="col-lg-6 d-lg-block d-md-block d-sm-block d-none">
+                  <div class="bannerImg1" style="background-image: url(./assets/image/home/dealBanner.4.png);height: 485px;">
+                    <div class="dealBannerCnt col-lg-8">
+                      <h6>Fairness Cream</h6>
+                      <h3>Get Up To 35% Off</h3>
+                      <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+                      <div class="dealsPrice">
+                        <h5>$256.35</h5>
+                        <p>$356.35</p>
+                      </div>
+                      <a class="commonBtn" href="#">
+                        Shop Now 
+                        <span><i class="bi bi-arrow-right"></i></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- *SLIDER END -->
+              </div>
+              <!-- *RESPONSIVE DEAL SLIDER HERE -->
+              <div class="dealSm">
+                <div class="dealBannerSm d-lg-none d-md-none d-sm-none">
+                  <a href="#" >
+                    <img style="width: 100%;" src="./assets/image/home/dealBanner.1sm.png" alt="">
+                  </a>
+                </div>    
+                <div class="dealBannerSm d-lg-none d-md-none d-sm-none">
+                  <a href="#">
+                    <img  style="width: 100%;" src="./assets/image/home/dealBanner.2sm.png" alt="">
+                  </a>
+                </div>
+                <div class="dealBannerSm d-lg-none d-md-none d-sm-none">
+                  <a href="#">
+                    <img style="width: 100%;" src="./assets/image/home/dealBanner.3sm.png" alt="">
+                  </a>
+                </div>
+                <div class="dealBannerSm d-lg-none d-md-none d-sm-none">
+                  <a href="#">
+                    <img style="width: 100%;" src="./assets/image/home/dealBanner.4sm.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <!-- *RESPONSIVE DEAL SLIDER HERE END -->
+            </div>    
+          </div>
+
+        </section>
+         
+        <!-- *Beauty Inspired START  -->
+        <section id="videoCard">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="beautyCnt h-100">
+                <div class="row col-lg-6">
+                  <h6>SPECIAL OFFER</h6>
+                  <h3>Beauty Inspired by Real Shine In Life</h3>
+                  <p>Completely grow maintainable niches via tactical services. Progressively synthesize market positioning paradigms for functional architectures. Professionally aggregate.</p>
+                  <a style="width: 197px;" class="commonBtn" href="#">
+                    Explore More
+                    <span><i class="bi bi-arrow-right"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+              <div class="videoCnt">
+                <iframe width="900" height="500" src="https://www.youtube.com/embed/ZPGBnEmocYo?si=b13vOKCzUuvyuZUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+
+          </div>
+
+          
+        </section>
+        <!-- *Beauty Inspired END  -->
+
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- *JS LINK START  -->
+    <script src="./assets/vendor/js/jquery-3.7.1.min.js"></script>
+    <!-- *COUNTDOWN JS  -->
+    <script src="./assets/vendor/js/countdown.js"></script>
+    <!-- *POPER JS  -->
+    <script src="./assets/vendor/js/popper.min.js"></script>
+    <!-- *SLICK JS  -->
+    <script src="./assets/vendor/js/slick.min.js"></script>
+    <!-- *BOOTSTRAP JS  -->
+    <script src="./assets/vendor/js/bootstrap.bundle.min.js"></script>
+    <!-- *ICONIFY JS  -->
+    <script src="./assets/icon/iconify/iconify-icon.min.js"></script>
+    <!-- *MAIN JS -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
