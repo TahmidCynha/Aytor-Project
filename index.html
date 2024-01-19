@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./assets/vendor/css/slick.css">
     <!-- *BOOTSTRAP ICON CSS  -->
     <link rel="stylesheet" href="./assets/icon/bootstrap-icons-1.11.2\font\bootstrap-icons.min.css">
+    <!-- *FONT AWOSOME  -->
+    <link rel="stylesheet" href="./assets/vendor/css/all.min.css">
     <!-- *CUSTOM CSS  -->
     <link rel="stylesheet" href="./assets/css/style.min.css">
     <!-- <style>.dropdown-toggle::after {display: none;}</style> -->
@@ -30,7 +32,7 @@
                   <div class="searchIcon">
                       <ul>
                           <li><a href="#">
-                            <span><iconify-icon icon="iconamoon:search-bold"></iconify-icon></span>
+                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
                           </a></li>
                       </ul>
                   </div>
@@ -1244,9 +1246,9 @@
         </section>
          
         <!-- *Beauty Inspired START  -->
-        <!-- <section id="videoCard">
+        <section id="videoCard" style="overflow: hidden;">
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 d-none d-lg-block">
               <div class="beautyCnt h-100">
                 <div class="row col-lg-6">
                   <h6>SPECIAL OFFER</h6>
@@ -1259,17 +1261,722 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-              <div class="videoCnt">
+            <div class="col-lg-6 d-none d-lg-block">
+              <div class="videoCnt w-100" style="overflow: hidden;">
                 <iframe width="900" height="500" src="https://www.youtube.com/embed/ZPGBnEmocYo?si=b13vOKCzUuvyuZUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
+            </div>
+          </div>
+
+
+          <!-- *responsive sm -->
+          <div class="beautyCnt_sm d-lg-none d-md-none">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="beautyImg w-100" style="overflow: hidden; padding-top: 20px;">
+                  <a href="#"><img src="./assets/image/home/ex-xm.png" alt=""></a>
+                </div>
+              </div>
+              <div col-lg-10>
+                <div class="row">
+                  <div class="beautyVideo" style="display: flex; align-items: center; justify-content: center;margin: 20px 0px;">
+                    <iframe width="400" height="250" src="https://www.youtube.com/embed/ZPGBnEmocYo?si=b13vOKCzUuvyuZUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- *responsive sm END  -->
+
+          <!-- *responsive MD -->
+          <div class="beautyCnt_md d-none d-md-block d-lg-none">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="beautyImg" style="overflow: hidden;padding-top: 20px;">
+                  <a href="#"><img src="./assets/image/home/ex-md.png" alt=""></a>
+                </div>
+              </div>
+              <div col-md-12>
+                <div class="row">
+                  <div class="beautyVideo" style="display: flex; align-items: center; justify-content: center;margin: 20px 0px;">
+                    <iframe width="600" height="300" src="https://www.youtube.com/embed/ZPGBnEmocYo?si=b13vOKCzUuvyuZUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- *responsive MD END  -->
+
+        </section>
+        <!-- *Beauty Inspired END  -->
+
+        <!-- *NEWS BLOG START HERE  -->
+        <section id="latestNews">
+          <div class="container" style="padding: 0;">
+            <div class="heading">
+              <h1 style="margin: 0;">Latest News</h1>
+            </div>
+            <div class="newsPost">
+              <!-- *POST START  -->
+              <div class="col-lg-3">
+                <div class="blog">
+                  <img src="./assets/image/home/newsBlog.1.png" alt="">
+                  <div class="blogCnt">
+                    <h5>Best multi-step Beauty skin</h5>
+                    <p>Appropriately seize 24/365 markets without adaptive.</p>
+                    <div class="latestInfo" style="display: flex;justify-content: space-between">
+                      <div class="readCnt">
+                        <a href="#">Read More
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <div class="date">
+                        <h6>Jan 04, 2024</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- *POST END  -->
+              <!-- *POST START  -->
+              <div class="col-lg-3">
+                <div class="blog">
+                  <img src="./assets/image/home/newsBlog.2.png" alt="">
+                  <div class="blogCnt">
+                    <h5>Herbal treatment for dry</h5>
+                    <p>Appropriately seize 24/365 markets without adaptive.</p>
+                    <div class="latestInfo" style="display: flex;justify-content: space-between">
+                      <div class="readCnt">
+                        <a href="#">Read More
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <div class="date">
+                        <h6>Jan 14, 2024</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- *POST END  -->
+              <!-- *POST START  -->
+              <div class="col-lg-3">
+                <div class="blog">
+                  <img src="./assets/image/home/newsBlog.3.png" alt="">
+                  <div class="blogCnt">
+                    <h5>Traveling Solo Is Awesome</h5>
+                    <p>Appropriately seize 24/365 markets without adaptive.</p>
+                    <div class="latestInfo" style="display: flex;justify-content: space-between">
+                      <div class="readCnt">
+                        <a href="#">Read More
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <div class="date">
+                        <h6>Jan 20, 2024</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- *POST END  -->
+              <!-- *POST START  -->
+              <div class="col-lg-3">
+                <div class="blog">
+                  <img src="./assets/image/home/newsBlog.4.png" alt="">
+                  <div class="blogCnt">
+                    <h5>A Beautiful Sunday Morning</h5>
+                    <p>Appropriately seize 24/365 markets without adaptive.</p>
+                    <div class="latestInfo" style="display: flex;justify-content: space-between">
+                      <div class="readCnt">
+                        <a href="#">Read More
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <div class="date">
+                        <h6>Jan 25, 2024</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- *POST END  -->
+              <div class="col-lg-3">
+                <div class="blog">
+                  <img src="./assets/image/home/newsBlog.2.png" alt="">
+                  <div class="blogCnt">
+                    <h5>A Beautiful Sunday Morning</h5>
+                    <p>Appropriately seize 24/365 markets without adaptive.</p>
+                    <div class="latestInfo" style="display: flex;justify-content: space-between">
+                      <div class="readCnt">
+                        <a href="#">Read More
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <div class="date">
+                        <h6>Jan 25, 2024</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- *POST END  -->
+              <div class="col-lg-3">
+                <div class="blog">
+                  <img src="./assets/image/home/newsBlog.3.png" alt="">
+                  <div class="blogCnt">
+                    <h5>A Beautiful Sunday Morning</h5>
+                    <p>Appropriately seize 24/365 markets without adaptive.</p>
+                    <div class="latestInfo" style="display: flex;justify-content: space-between">
+                      <div class="readCnt">
+                        <a href="#">Read More
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+                      <div class="date">
+                        <h6>Jan 25, 2024</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- *POST END  -->
+
             </div>
 
           </div>
 
-          
-        </section> -->
-        <!-- *Beauty Inspired END  -->
+        </section>
+        <!-- *FOOTER START HERE  -->
+        <footer id="footerPart">
+            <div class="container" style="padding: 0;">
+
+              <div class="footerService d-lg-block d-none d-md-none">
+                <div class="row" style="height: 160px;">
+
+                  <!-- *FREE SHIPING START  -->
+                  <div class="col-lg-3">
+                    <div class="shopCnt"  >
+                      <div class="row" >
+                        <div class="shipping" style="display: flex;padding: 0;">
+                          <img style="padding: 5px;" src="./assets/image/home/shipping.png" alt="">
+                          <div class="shippingCnt" style="padding: 5px;">
+                            <h5>FREE SHIPING</h5>
+                            <p>all orders over<span style="padding-left: 3px;">150$</span></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- *FREE SHIPING END  -->
+
+                  <!-- *QUICK PAYMENT START  -->
+                  <div class="col-lg-3">
+                    <div class="shopCnt"  >
+                      <div class="row" >
+                        <div class="shipping" style="display: flex;padding: 0;">
+                          <img style="padding: 5px;" src="./assets/image/home/payment.png" alt="">
+                          <div class="shippingCnt" style="padding: 5px;">
+                            <h5>QUICK PAYMENT</h5>
+                            <p>100% secure payment</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- *QUICK PAYMENT END  --> 
+
+                  <!-- *FREE RETURNS START  -->
+                  <div class="col-lg-3">
+                    <div class="shopCnt"  >
+                      <div class="row" >
+                        <div class="shipping" style="display: flex;padding: 0;">
+                          <img style="padding: 5px;" src="./assets/image/home/returns.png" alt="">
+                          <div class="shippingCnt" style="padding: 5px;">
+                            <h5>FREE RETURNS</h5>
+                            <p>Return money within 30 days</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- *FREE RETURNS END  -->
+
+                  <!-- *24/7 SUPPORT START  -->
+                  <div class="col-lg-3">
+                    <div class="shopCnt"  >
+                      <div class="row" >
+                        <div class="shipping" style="display: flex;padding: 0;">
+                          <img style="padding: 5px;" src="./assets/image/home/support.png" alt="">
+                          <div class="shippingCnt" style="padding: 5px;">
+                            <h5>24/7 SUPPORT</h5>
+                            <p>Quick Support</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- *24/7 SUPPORT END  --> 
+                  
+                </div>
+              </div>
+
+              <!-- *responsive md start  -->
+              <div class="footerServiceMd d-md-block d-none d-lg-none">
+                <div class="row"  style="margin: 0;">
+                  <div class="col-md-6" style="padding: 0;">
+                    <div class="shipCntmd " >
+                      <img src="./assets/image/home/freeship.res.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-6" style="padding: 0;">
+                    <div class="shipCntmd" style="border-right: none;" >
+                      <img src="./assets/image/home/q.payment.res.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-6" style="padding: 0;">
+                    <div class="shipCntmd">
+                      <img src="./assets/image/home/freeRetrun.res.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-6" style="padding: 0;">
+                    <div class="shipCntmd" style="border-right: none;">
+                      <img src="./assets/image/home/support res.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- *responsive md END  -->
+
+              <!-- *responsive sm start  -->
+              <div class="footerServiceSm d-md-none d-lg-none d-block">
+                <div class="col-12" style="padding: 0;">
+                  <div class="shipCntSm " >
+                    <img src="./assets/image/home/support res.png" alt="">
+                  </div>
+                </div>
+                <div class="col-12" style="padding: 0;">
+                  <div class="shipCntSm" >
+                    <img src="./assets/image/home/freeship.res.png" alt="">
+                  </div>
+                </div>
+                <div class="col-12" style="padding: 0px;">
+                  <div class="shipCntSm" >
+                    <img src="./assets/image/home/q.payment.res.png" alt="">
+                  </div>
+                </div>
+                <div class="col-12" style="padding: 0;">
+                  <div class="shipCntSm">
+                    <img src="./assets/image/home/freeRetrun.res.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <!-- *responsive sm END  -->
+
+              <!-- *FOTTER SOCIAL ICON & LOGO START  -->
+              <div class="socialCnt col-lg-12 d-lg-block d-none d-md-none">
+                <div class="row">
+                  <div class="socialIcon col-lg-4">
+                    <a href="#">
+                      <span><i class="fa-brands fa-facebook-f"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-twitter"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-instagram"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-pinterest-p"></i></span>
+                    </a>
+                  </div>
+                  <div class="footerLogo col-lg-4" style="display:flex ; align-items: center;justify-content: center;">
+                    <img src="./assets/image/home/footer logo.png" alt="">
+                  </div>
+                  <div class="paymentCard col-lg-4" style="display: flex;align-items: center;justify-content: end;">
+                    <img src="./assets/image/home/bank card.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <!-- * FOOTER SOCIAL ICON & LOGO END  -->
+
+              <!-- *FOTTER SOCIAL ICON & LOGO MD START  -->
+              <div class="socialCntMd col-12 d-lg-none d-none d-md-block">
+                <div class="socialMd row">
+                  <div class="footerLogo col-6">
+                    <img src="./assets/image/home/footer logo.png" alt="">
+                  </div>
+                  <div class="socialIcon col-6">
+                    <a href="#">
+                      <span><i class="fa-brands fa-facebook-f"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-twitter"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-instagram"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-pinterest-p"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- *FOTTER SOCIAL ICON & LOGO MD END  -->
+              <!-- *FOTTER SOCIAL ICON & LOGO MD START  -->
+              <div class="socialCntSM col-12 d-lg-none d-block d-md-none">
+                <div class="socialSm row">
+                  <div class="footerLogo col-12" style="display: flex;justify-content: center;align-items: center;padding: 20px;">
+                    <img src="./assets/image/home/footer logo.png" alt="">
+                  </div>
+                  <div class="socialIcon col-12">
+                    <a href="#">
+                      <span><i class="fa-brands fa-facebook-f"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-twitter"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-instagram"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-pinterest-p"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- *FOTTER SOCIAL ICON & LOGO MD END  -->              
+              
+              <!-- *MAIN FOOTER START HERE  -->
+              <div class="mainFooter d-lg-block d-none d-md-none" style="display: flex;">
+                <div class="row">
+                <!-- *MY ACCOUNT START  -->
+                <div class="accountCnt col-2" style="padding: 0;">
+                  <h4>My Account</h4>
+                  <ul style="margin: 0;padding: 0;">
+                    <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>My Account</a></li>
+                    <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>View Cart</a></li>
+                    <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Wishlist</a></li>
+                    <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Compare</a></li>
+                    <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>New Products</a></li>
+                  </ul>
+                </div>
+                <!-- *MY ACCOUNT END  -->
+                <!-- *SUPPORT START HERE  -->
+                <div class="Support col-2" style="padding: 0;">
+                  <h4>Support</h4>
+                  <ul style="margin: 0;padding: 0;">
+                    <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Help</a></li>
+                    <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Contact Us</a></li>
+                    <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Feedback</a></li>
+                    <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Customer Service</a></li>
+                    <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Store Locations</a></li>
+                  </ul>
+                </div>
+                <!-- *SUPPORT END HERE  -->
+
+                <!-- *OPENING TIME START HERE -->
+                <div class="openingTime col-2" style="padding: 0;">
+                  <h4>Opening Time</h4>
+                  <div class="timeCnt">
+                    <div class="row">
+                      <div class="day col-5">Mon - Tue:</div>
+                      <div class="date col-7">8AM - 10PM</div>
+                    </div>
+                    <div class="row">
+                      <div class="day col-5">Wed:</div>
+                      <div class="date col-7">8AM - 7PM</div>
+                    </div>
+                    <div class="row">
+                      <div class="day col-5">Fri:</div>
+                      <div class="date col-7">7AM - 12PM</div>
+                    </div>
+                    <div class="row">
+                      <div class="day col-5">Sat:</div>
+                      <div class="date col-7">9AM - 8PM</div>
+                    </div>
+                    <div class="row">
+                      <div class="day col-5">Sun:</div>
+                      <div class="date col-7">Closed</div>
+                    </div>                    
+                  </div>
+                </div>
+                <!-- *OPENING TIME START END  -->
+
+                <!-- *CONTACT US START HERE  -->
+                <div class="contactUs col-3" style="padding: 0;">
+                  <h4>Contact Us</h4>
+                  <div class="contactInfo">
+                    <div class="row">
+                      <div class="icon col-1">
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                      </div>
+                      <div class="iconCnt col-11" style="width: 88.666667%;"> 
+                        <p>830 Broad way, New York,10003,<br>United States</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="icon col-1">
+                        <span><i class="fa-solid fa-phone"></i></span>
+                      </div>
+                      <div class="iconCnt col-11" style="width: 88.666667%;">
+                        <p>+18008660286 <br>
+                          +18008660286</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="icon col-1">
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                      </div>
+                      <div class="iconCnt col-11" style="width: 88.666667%;">
+                        <p>aetor.info@gmail.com<br>
+                          info@aetor.com
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- *CONTACT US END  HERE  -->
+
+                <!-- *NEWS LATTER START HERE  -->
+                <div class="newsLatter col-3" style="padding: 0;">
+                  <h4>News Letter</h4>
+                  <div class="newsCnt">
+                    <p>Authoritatively morph 24/7 potentialities with error-free partnerships.</p>
+                    <div class="boxCnt row">
+                      <input class="col-8" type="email" placeholder="Enter your email....">
+                      <button class="subscribeBtn col-4">Subscribe</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- *NEWS LATTER END  -->
+                </div>
+              </div>
+              <!-- *MAIN FOOTER END  -->
+
+              <!-- *MAIN FOOTER MD START  -->
+              <div class="mainFooterMd d-lg-none d-none d-md-block">
+                <div class="row">
+                  <div class="accountCntMd col-3">
+                    <h4>My Account</h4>
+                    <ul style="margin: 0;padding: 0;">
+                      <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>My Account</a></li>
+                      <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>View Cart</a></li>
+                      <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Wishlist</a></li>
+                      <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Compare</a></li>
+                      <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>New Products</a></li>
+                    </ul>
+                  </div>
+                  
+                  <!-- *CONTACT US MD START HERE  -->
+                  <div class="contactUsMd col-6">
+                    <h4>Contact Us</h4>
+                    <div class="contactInfo">
+                      <div class="row">
+                        <div class="icon col-1">
+                          <span><i class="fa-solid fa-location-dot"></i></span>
+                        </div>
+                        <div class="iconCnt col-11">
+                          <p>830 Broad way, New York, NY 10003,<br>United States</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="icon col-1">
+                          <span><i class="fa-solid fa-phone"></i></span>
+                        </div>
+                        <div class="iconCnt col-11">
+                          <p>+18008660286 <br>
+                            +18008660286</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="icon col-1">
+                          <span><i class="fa-solid fa-envelope"></i></span>
+                        </div>
+                        <div class="iconCnt col-11">
+                          <p>aetor.info@gmail.com<br>
+                            info@aetor.com
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- *CONTACT US MD END  HERE  -->
+
+                  <!-- *SUPPORT START HERE  -->
+                  <div class="SupportMd col-3" style="padding: 0;">
+                  <h4>Support</h4>
+                  <ul style="margin: 0;padding: 0;">
+                    <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Help</a></li>
+                    <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Contact Us</a></li>
+                    <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Feedback</a></li>
+                    <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Customer Service</a></li>
+                    <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Store Locations</a></li>
+                  </ul>
+                  </div>
+                  <!-- *SUPPORT END HERE  -->
+  
+                  <!-- *OPENING TIME MD START HERE -->
+                  <div class="openingTimeMd col-6">
+                    <h4>Opening Time</h4>
+                    <div class="timeCnt">
+                      <div class="row">
+                        <div class="day col-5">Mon - Tue:</div>
+                        <div class="date col-7">8AM - 10PM</div>
+                      </div>
+                      <div class="row">
+                        <div class="day col-5">Wed:</div>
+                        <div class="date col-7">8AM - 7PM</div>
+                      </div>
+                      <div class="row">
+                        <div class="day col-5">Fri:</div>
+                        <div class="date col-7">7AM - 12PM</div>
+                      </div>
+                      <div class="row">
+                        <div class="day col-5">Sat:</div>
+                        <div class="date col-7">9AM - 8PM</div>
+                      </div>
+                      <div class="row">
+                        <div class="day col-5">Sun:</div>
+                        <div class="date col-7">Closed</div>
+                      </div>                    
+                    </div>
+                  </div>
+                  <!-- *OPENING TIME MD START END  -->
+
+                  <!-- *NEWS LATTER START HERE  -->
+                  <div class="newsLatterMd col-6" style="padding: 0;">
+                    <h4>News Letter</h4>
+                    <div class="newsCnt">
+                      <p>Authoritatively morph 24/7 potentialities with error-free partnerships.</p>
+                      <div class="boxCnt row">
+                        <input class="col-8" type="email" placeholder="Enter your email....">
+                        <button class="subscribeBtn col-4">Subscribe</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- *NEWS LATTER END  -->
+                </div>                                        
+              </div>
+              <!-- *MAIN FOOTER MD END  -->
+
+              <!-- *MAIN FOOTER SM START  -->
+              <div class="mainFooterSM d-lg-none d-block d-md-none">
+                <div class="row">
+                  <!-- *MY ACCOUNT SM START  -->
+                  <div class="accountCntSm col-6" style="padding: 0;">
+                    <h4>My Account</h4>
+                    <ul style="margin: 0;padding: 0;">
+                      <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>My Account</a></li>
+                      <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>View Cart</a></li>
+                      <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Wishlist</a></li>
+                      <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Compare</a></li>
+                      <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>New Products</a></li>
+                    </ul>
+                  </div>
+                  <!-- *MY ACCOUNT SM END  -->
+                  <!-- *SUPPORT SM START HERE  -->
+                  <div class="SupportSm col-6" style="padding: 0;">
+                    <h4>Support</h4>
+                    <ul style="margin: 0;padding: 0;">
+                      <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Help</a></li>
+                      <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Contact Us</a></li>
+                      <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Feedback</a></li>
+                      <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Customer Service</a></li>
+                      <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Store Locations</a></li>
+                    </ul>
+                  </div>
+                  <!-- *SUPPORT SM END  -->
+                  <!-- *OPENING TIME START HERE -->
+                  <div class="openingTimeSm col-6" style="padding: 0;">
+                    <h4>Opening Time</h4>
+                    <div class="timeCnt">
+                      <div class="row">
+                        <div class="day col-5">Mon - Tue:</div>
+                        <div class="date col-7">8AM - 10PM</div>
+                      </div>
+                      <div class="row">
+                        <div class="day col-5">Wed:</div>
+                        <div class="date col-7">8AM - 7PM</div>
+                      </div>
+                      <div class="row">
+                        <div class="day col-5">Fri:</div>
+                        <div class="date col-7">7AM - 12PM</div>
+                      </div>
+                      <div class="row">
+                        <div class="day col-5">Sat:</div>
+                        <div class="date col-7">9AM - 8PM</div>
+                      </div>
+                      <div class="row">
+                        <div class="day col-5">Sun:</div>
+                        <div class="date col-7">Closed</div>
+                      </div>                    
+                    </div>
+                  </div>
+                  <!-- *OPENING TIME START END  -->
+                  <!-- *CONTACT US START HERE  -->
+                  <div class="contactUsSm col-6" style="padding: 0;">
+                    <h4>Contact Us</h4>
+                    <div class="contactInfo">
+                      <div class="row">
+                        <div class="icon col-1">
+                          <span><i class="fa-solid fa-location-dot"></i></span>
+                        </div>
+                        <div class="iconCnt col-11" style="width: 88.666667%;"> 
+                          <p>830 Broad way, New York,10003,<br>United States</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="icon col-1">
+                          <span><i class="fa-solid fa-phone"></i></span>
+                        </div>
+                        <div class="iconCnt col-11" style="width: 88.666667%;">
+                          <p>+18008660286 <br>
+                            +18008660286</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="icon col-1">
+                          <span><i class="fa-solid fa-envelope"></i></span>
+                        </div>
+                        <div class="iconCnt col-11" style="width: 88.666667%;">
+                          <p>aetor.info@gmail.com<br>
+                            info@aetor.com
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- *CONTACT US END  HERE  -->
+                  <!-- *NEWS LATTER START HERE  -->
+                  <div class="newsLatterSm col-10" style="padding: 0;">
+                    <h4>News Letter</h4>
+                    <div class="newsCnt">
+                      <p>Authoritatively morph 24/7 potentialities with error-free partnerships.</p>
+                      <div class="boxCnt row">
+                        <input class="col-8" type="email" placeholder="Enter your email....">
+                        <button class="subscribeBtn col-4">Subscribe</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- *NEWS LATTER END  -->                                    
+                </div>           
+              </div>
+
+            </div>
+        </footer>
+        <!-- *COPYRIGHT SECTION START  -->
+        <section id="copyright">
+          <div class="container">
+            <p>
+              © 2023 All Rights Reserved 
+              <a href="#">Aytor </a> by
+              <a href="#"> Tahmid Hossain</a>
+            </p>
+          </div>
+        </section>
+        
+
 
 
 
@@ -1295,6 +2002,8 @@
 
     <!-- *JS LINK START  -->
     <script src="./assets/vendor/js/jquery-3.7.1.min.js"></script>
+    <!-- *FONT AWOSOME -->
+    <script src="./assets/vendor/js/all.min.js"></script>
     <!-- *COUNTDOWN JS  -->
     <script src="./assets/vendor/js/countdown.js"></script>
     <!-- *POPER JS  -->

@@ -89,6 +89,7 @@ $(function (){
       $('.countDown .sec').html(e.strftime('%S'))
     });
     // *COUNTDOWN JS END
+
     // *DEALS SLIDER BANNER
     $('.dealsBanner').slick({
       infinite: true,
@@ -118,6 +119,8 @@ $(function (){
       ]
     });
     // *DEALS SLIDER BANNER END 
+
+
     // *RESPONSIVE DEAL SLIDER 
     $('.dealSm').slick({
       infinite: true,
@@ -130,7 +133,51 @@ $(function (){
       autoplaySpeed: 1000,
     });
 
+    // *RESPONSIVE DEAL SLIDER END 
 
+    // *NEWS BLOG START HERE
+    $('.newsPost').slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 2,
+      dots: true,
+      arrows: false,
+      dotsClass : "newsDots" ,
+      autoplay: true,
+      autoplaySpeed: 1000, 
+      
+      responsive: [
+        {
+          breakpoint: 2100,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 2,
+          }
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        }
+      ]
+    });
+// *NEWS BLOG END  HERE
 
 
 
