@@ -1,7 +1,14 @@
 // *NAVBAR START HERE
+#navbar.fixed{
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
 #navbar{
     background-color: #fff;
     padding-top: 10px;
+
        .myMenu a{
             color: $primaryColor ;
             font-family: $primaryFont;
@@ -18,19 +25,21 @@
                     font-weight: 1500;
                 }
         }   
-            .dropdown-menu.show {
-                display: block;
-                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-                border: none;
-                width: 160px;
+            .dropdown-menu.show{
+                display: none !important;
+        
+            }
+            .dropdown{
 
+                &:hover .dropdown-menu{
+                display: block !important;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    border: none;
+                    outline: none;
+                    width: 160px;
+                }
             }
-            .dropdown-menu.customDrop.show li a{
-                margin: 0;
-                  &:hover{
-                    background-color: rgba(245, 222, 179, 0.774);
-                  }
-            }
+
 
         .userOption ul {
             padding: 0;
@@ -156,17 +165,17 @@
         // *SEARCH ICON RESPONSIVE HERE 
         .searchIcon{
             position: relative;
-            @media (min-width : 769px) and (max-width : 2000px){
+            @media (min-width : 992px) and (max-width : 2000px){
                 visibility: hidden;
                 opacity: 0;
             }
-            @media (min-width : 0px) and (max-width : 768px){
+            @media (min-width : 0px) and (max-width : 576px){
                 ul {
     
                       li a{
                         position: absolute;
                         top: -8px;
-                        right: -40px;
+                        right: -44px;
                         font-size: 23px;
                         color: $primaryColor;
                           &:hover{
@@ -174,7 +183,22 @@
                           }
                       }
                  }
-            }        
+            } 
+            @media (min-width : 576px) and (max-width : 991px){
+                ul {
+    
+                      li a{
+                        position: absolute;
+                        top: -8px;
+                        right: -202px;
+                        font-size: 23px;
+                        color: $primaryColor;
+                          &:hover{
+                            color: $secondaryColor;
+                          }
+                      }
+                 }
+            }             
         }
         // *SEARCH ICON RESPONSIVE END 
     
@@ -217,60 +241,6 @@
             }
         }
     }
-    .slide{
-        @media(min-width: 0px) and (max-width: 991px){
-            opacity: 0;
-            visibility: hidden ;
-            display: none;
-        }
-
-    }
-    .sliderSm{
-        @media(min-width: 0px) and (max-width: 576px){
-            opacity: 1;
-            visibility: visible ;
-
-        }
-        @media(min-width: 577px) and (max-width: 2100px){
-            opacity: 0;
-            visibility: hidden;
-            display: none;
-
-        }
-    }
-    .sliderMd{
-        @media(min-width: 577px) and (max-width: 768px){
-            opacity: 1;
-            visibility: visible ;
-        }
-        @media(min-width: 0px) and (max-width: 576px){
-            opacity: 0;
-            visibility: hidden ;
-            display: none;
-        }
-        @media(min-width: 769px) and (max-width: 2100px){
-            opacity: 0;
-            visibility: hidden ;
-            display: none;
-        }
-        
-    }
-    .sliderLg{
-        @media(min-width: 0px) and (max-width: 768px){
-            opacity: 0;
-            visibility: hidden ;
-            display: none;
-        }
-        @media(min-width: 769px) and (max-width: 991px){
-            opacity: 1;
-            visibility: visible ;
-        }
-        @media(min-width: 992px) and (max-width: 2100px){
-            opacity: 0;
-            visibility: hidden ;
-            display: none;
-        }
-    }
 
     .sliderDots{
         position: absolute;
@@ -310,58 +280,136 @@
         margin-bottom: 40px;
    }
 
-       .imgCnt_1{
-           width: 100%;
-           height: 100%;
-           display: inline-block;
-           overflow: hidden;
-           position: relative;
-               &:hover .overlay{
-                opacity: 1;
-                transform: scale(1);
-               }
-
-            .overlay{
-                position: absolute;
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: #11161e6e;
-                inset: 24px;
-                pointer-events: none;
-                opacity: 0;
-                transform: scale(0);
-                transition: 450ms;               
-
-                   h4{
-                      margin: 0;
-                      color: #fff ;
-                      font-size: 30px;
-                      font-weight: 700;
-                      line-height: 40px;
-                      @media (min-width:0px) and (max-width:991px){
-                         font-size: 20px;
+    .productBannerLg{
+        .imgCnt_1{
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            overflow: hidden;
+            position: relative;
+                &:hover .overlay{
+                 opacity: 1;
+                 transform: scale(1);
+                }
+ 
+             .overlay{
+                 position: absolute;
+                 text-align: center;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 background-color: #11161e6e;
+                 inset: 24px;
+                 pointer-events: none;
+                 opacity: 0;
+                 transform: scale(0);
+                 transition: 450ms;              
+ 
+                    h4{
+                       margin: 0;
+                       color: #fff ;
+                       font-size: 30px;
+                       font-weight: 700;
+                       line-height: 40px;
+                       @media (min-width:0px) and (max-width:991px){
+                          font-size: 20px;
+                     }
+ 
                     }
+                    p{
+                       margin-top: 12px;
+                       color: #fff ;
+                       font-size: 16px;
+                       font-weight: 600;
+                       line-height: 28px;
+                    }
+                  
+              }   
+     
+        }
+    }
+    // *PRODUCT BANNER MD START 
+    .productBannerMd{
 
-                   }
+        .imgCnt_1{
+            display: inline-block;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            justify-content: center;
+ 
+             .overlay{
+                 position: absolute;
+                 text-align: center;
+                 background-color: #11161e6e;
+                 inset: 88px;
+                 pointer-events: none;
+                 opacity: 1;
+                 transform: scale(1);
+                 width:523px ;  
+                 display: flex;
+                 justify-content: center; 
+
+                    h4{
+                       margin: 0;
+                       color: #fff ;
+                       font-size: 30px;
+                       font-weight: 700;
+                       line-height: 40px;
+                }
                    p{
-                      margin-top: 12px;
-                      color: #fff ;
-                      font-size: 16px;
-                      font-weight: 600;
-                      line-height: 28px;
-                   }
-                 
-             }
-           img{
-            @media (min-width:0px) and (max-width:991px){
-                width: 400px;
-                height: 230px !important ;
-            }
-           }       
-    
-       }
+                       margin-top: 12px;
+                       color: #fff ;
+                       font-size: 16px;
+                       font-weight: 600;
+                       line-height: 28px;
+                    }
+                  
+              }
+       }       
+   }
+    //    *PRODUCT BANNER MD END 
+    // *product Banner SM START 
+    .productBannerSm{
+
+        .imgCnt_1{
+            display: inline-block;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 65%;
+ 
+             .overlay{
+                 position: absolute;
+                 text-align: center;
+                 background-color: #11161e6e;
+                 inset: 24px;
+                 pointer-events: none;
+                 opacity: 1;
+                 transform: scale(1);
+
+                    h4{
+                       margin: 0;
+                       color: #fff ;
+                       font-size: 30px;
+                       font-weight: 700;
+                       line-height: 40px;
+                }
+                   p{
+                       margin-top: 12px;
+                       color: #fff ;
+                       font-size: 16px;
+                       font-weight: 600;
+                       line-height: 28px;
+                    }
+                  
+              }
+       }       
+
+    }
+    // *product Banner SM END 
 
 }
 // **PRODUCT BANNER END
@@ -370,7 +418,7 @@
 #latestProducts{
     margin-bottom: 80px;
     @media(min-width: 0px) and (max-width: 768px){
-        margin-bottom: 40px;
+        margin-bottom: 25px;
     }
     .productSlide{
         border: 1px solid #F1F3F4;
@@ -577,43 +625,6 @@
                
             }
           }
-    }
-    .smShortBanner{
-        width: 100%;
-        overflow: hidden;
-        @media(min-width: 576px) and (max-width: 2100px){
-            opacity: 0;
-            visibility: hidden;
-            display: none;
-        }
-    }
-    .mdShortBanner{
-        width: 100%;
-        overflow: hidden;
-        @media(min-width: 0px) and (max-width: 575px){
-            opacity: 0;
-            visibility: hidden;
-            display: none;
-        }
-        @media(min-width: 769px) and (max-width: 2100px){
-            opacity: 0;
-            visibility: hidden;
-            display: none;
-        }   
-    }
-    .lgShortBanner{
-        width: 100%;
-        overflow: hidden;
-        @media(min-width: 0px) and (max-width: 768px){
-            opacity: 0;
-            visibility: hidden;
-            display: none;
-        }
-        @media(min-width: 992px) and (max-width: 2100px){
-            opacity: 0;
-            visibility: hidden;
-            display: none;
-        }
     }
 }
 // *SHORT BANNER END
@@ -961,7 +972,6 @@
             height: 366px;
             padding: 20px;
             border-radius: 5px;
-            margin: 20px 10px;
             background-color: #fff;
                 img{
                     width: 100%;
@@ -1699,7 +1709,6 @@
 // *FOOTER END HERE 
 // *COPYRIGHT SECTION START
 #copyright{
-    margin-bottom: 800px;
     background-color: #32363E;
     height: 70px;
     display:flex ;

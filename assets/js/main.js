@@ -1,4 +1,14 @@
 $(function (){
+  // *NAVBAR FIXED START 
+  $(window).scroll(function () { 
+    let scroll = $(window).scrollTop()
+    if (scroll > 699) {
+      $("#navbar").addClass("fixed")
+    }else{
+      $("#navbar").removeClass("fixed")
+    }
+  });
+  // *NAVBAR FIXED END 
   // *BANNER SLIDER 
     $('.slide').slick({
         dots: true,
@@ -157,8 +167,8 @@ $(function (){
         {
           breakpoint: 991,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
+            slidesToShow: 2,
+            slidesToScroll: 2,
           }
         },
         {
@@ -190,3 +200,16 @@ const tooltipTriggerList = document.querySelectorAll(
 const tooltipList = [...tooltipTriggerList].map(
   (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
 );
+
+// *TOP 
+e(".scrollToTop").each((function() {
+  e(this).on("click", (function(t) {
+      return t.preventDefault(),
+      e("html, body").animate({
+          scrollTop: 0
+      }, s / 3),
+      !1
+  }
+  ))
+}
+))
