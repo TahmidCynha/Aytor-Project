@@ -7,7 +7,6 @@
 }
 #navbar{
     background-color: #fff;
-    padding-top: 10px;
 
        .myMenu a{
             color: $primaryColor ;
@@ -73,6 +72,10 @@
         .userOption ul {
             padding: 0;
             display: flex;
+            width: 100%;
+            margin: 0;
+            align-items: center;
+
                 li{
                     font-size: 19px;
                     font-weight: 700;              
@@ -86,6 +89,8 @@
                         }
                 }
                     .shoppingCart{
+                        display: flex;
+                        align-items: center;
                         position: relative;
                             a::after{
                                 content: "";
@@ -212,8 +217,7 @@
         .searchIcon{
             position: relative;
             @media (min-width : 992px) and (max-width : 2000px){
-                visibility: hidden;
-                opacity: 0;
+                display: none;
             }
             @media (min-width : 0px) and (max-width : 576px){
                 ul {
@@ -535,6 +539,10 @@
                 top: 40%;
                 right: 17px;
                 transform: translateY(-40%);
+
+                @media (min-width:0px) and (max-width:768px) {
+                    top: 45%;
+                 }
 
                 }
 
