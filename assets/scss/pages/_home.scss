@@ -16,7 +16,7 @@
             font-weight: 400;
             line-height: 26px;
             margin: 0px 22.5px;
-            transition: 350ms;
+            transition: 450ms;
                 &:hover{
                     color: $secondaryColor;
                 }
@@ -24,29 +24,58 @@
                     font-size: 12px;
                     font-weight: 1500;
                 }
-        }   
-            .dropdown-menu.show{
-                display: none !important;
+        }  
+        // *NAVBAR HOVER  
+        .customDrop{
+            background-color: #fff;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            width: 160px;
+            overflow: hidden;
+        }
+        .dropdown:hover .dropdown-menu{
+            display: block;
+        }
         
-            }
-            .dropdown{
-
-                &:hover .dropdown-menu{
-                display: block !important;
-                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-                    border: none;
-                    outline: none;
-                    width: 160px;
-                }
-            }
+        .dropdown-menu{
+            border:none;
+        }
+        
+        .dropdown-item{
+            // padding: 12px 40px 12px 20px;
+            font-size: 15px;
+            color:$secondaryColor;
+            font-weight: 700;
+            background-color: #fff;
+            transform-origin: center;
+            animation :rotate 1s ease 1;
+        } 
+        @keyframes rotate{
+            0%{transform: perspective(600px) rotatey(90deg); transform-origin:center;}
+            100%{transform: perspective(600px) rotatey(0deg); transform-origin:center;}
+        }
+        
+        .dropdown-item:nth-of-type(1){
+            animation-delay: 0s;
+        }
+        .dropdown-item:nth-of-type(2){
+            animation-delay: 0.1s;
+        }
+        .dropdown-item:nth-of-type(3){
+            animation-delay: 0.2s;
+        }
+        // .dropdown-item:hover{
+        //     background-color: #0652dd;
+        //     color:white;
+        // }
+        // *NAVBAR HOVER END 
 
 
         .userOption ul {
             padding: 0;
             display: flex;
                 li{
-                    font-size: 18px;
-                    font-weight: 1500;               
+                    font-size: 19px;
+                    font-weight: 700;              
                   }
                     a{
                         color: $primaryColor;
@@ -62,7 +91,7 @@
                                 content: "";
                                 background-color: $secondaryColor;
                                 position: absolute;
-                                width: 15px;
+                                width: 17px;
                                 height: 15px;
                                 top: 1px;
                                 border-radius: 50%;
@@ -142,6 +171,23 @@
                .userOption ul li{
                 font-size: 30px;
                }
+            //    *CUSTOM NAVBAR START
+            .dropdown-menu.customDrop{
+                position: static !important;
+                transform: translate3d(42.5px, 6px, 0px) !important;
+            }
+            
+            .dropdown-menu.customDrop.show{
+                display: block;
+            }
+            .dropdown-menu.customDrop{
+                display: none;
+            }
+            .customDrop li{
+                outline: none;
+                border: none;
+            }
+            //    *CUSTOM NAVBAR END
                
         }
         .crossBtn{
@@ -150,7 +196,7 @@
             box-shadow: none;
             background: transparent;
             border-radius: 50%;
-            font-size: 20px;
+            font-size: 25px;
             top: 20px;
             margin-right: 8px;
                 &:hover{
@@ -174,8 +220,8 @@
     
                       li a{
                         position: absolute;
-                        top: -8px;
-                        right: -44px;
+                        top: -3px;
+                        right: -30px;
                         font-size: 23px;
                         color: $primaryColor;
                           &:hover{
@@ -216,7 +262,7 @@
         height: 800px;
         .bannerCnt {
             transform: translateX(-100%);
-            transition: 1s;
+            transition: 1000ms;
             opacity: 0;
             h4{
                 color: #1D1D1D;
@@ -303,7 +349,7 @@
                  pointer-events: none;
                  opacity: 0;
                  transform: scale(0);
-                 transition: 450ms;              
+                 transition: 600ms;              
  
                     h4{
                        margin: 0;
@@ -1707,7 +1753,7 @@
 
 }
 // *FOOTER END HERE 
-// *COPYRIGHT SECTION START
+// *COPYRIGHT SECTION START 
 #copyright{
     background-color: #32363E;
     height: 70px;
@@ -1730,9 +1776,32 @@
         }
     }
 }
-// *COPYRIGHT SECTION END 
-
- 
+// *COPYRIGHT SECTION END
+// *PROGRESS BAR START
+#progress {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+#progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #001a2e;
+  }
+// *PROGRESS BAR END 
 
 
 
