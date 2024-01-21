@@ -123,6 +123,11 @@ body {
   right: 17px;
   transform: translateY(-40%);
 }
+@media (min-width: 0px) and (max-width: 576px) {
+  .productSlide .productImage .overlay {
+    top: 45%;
+  }
+}
 .productSlide .productImage ul li a {
   background-color: #fff;
   border-radius: 50%;
@@ -138,6 +143,15 @@ body {
   opacity: 0;
   transition: 350ms;
   display: block;
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  .productSlide .productImage ul li a {
+    width: 30px;
+    height: 30px;
+    line-height: 36px;
+    margin-bottom: 6px;
+    font-size: 13px;
+  }
 }
 .productSlide .productImage ul li a:hover {
   background-color: #FF6F61;
@@ -647,7 +661,7 @@ body {
   right: 17px;
   transform: translateY(-40%);
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 576px) {
   #latestProducts .productSlide .productImage .overlay {
     top: 45%;
   }
@@ -667,6 +681,15 @@ body {
   opacity: 0;
   transition: 450ms;
   display: block;
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  #latestProducts .productSlide .productImage ul li a {
+    width: 30px;
+    height: 30px;
+    line-height: 36px;
+    margin-bottom: 6px;
+    font-size: 13px;
+  }
 }
 #latestProducts .productSlide .productImage ul li a:hover {
   background-color: #FF6F61;
@@ -1610,7 +1633,7 @@ body {
 #footerPart .mainFooterSM .openingTimeSm .timeCnt .date {
   color: #fff;
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 28px; /* 175% */
   transition: 350ms;
@@ -1635,13 +1658,13 @@ body {
 }
 #footerPart .mainFooterSM .contactUsSm .contactInfo .icon {
   color: #FF6F61;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 60px; /* 175% */
 }
 #footerPart .mainFooterSM .contactUsSm .contactInfo .iconCnt p {
   color: #fff;
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 28px; /* 175% */
   transition: 350ms;

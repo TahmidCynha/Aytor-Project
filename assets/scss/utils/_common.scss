@@ -129,6 +129,9 @@ body{
             top: 40%;
             right: 17px;
             transform: translateY(-40%);
+            @media (min-width:0px) and (max-width:576px) {
+                top: 45%;
+             }
 
             }
 
@@ -148,6 +151,13 @@ body{
                 opacity: 0;
                 transition: 350ms;
                 display: block;
+                @media (min-width:0px) and (max-width:576px) {
+                    width: 30px;
+                    height: 30px;
+                    line-height: 36px;
+                    margin-bottom: 6px;
+                    font-size: 13px;
+                 }
                     &:hover {
                         background-color: $secondaryColor;
                         color: #fff;
