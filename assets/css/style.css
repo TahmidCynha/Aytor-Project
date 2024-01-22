@@ -32,6 +32,13 @@ body {
   margin: 29px 0;
   transition: 0.35s;
 }
+@media (min-width: 320px) and (max-width: 576px) {
+  .commonBtn {
+    font-size: 15px;
+    padding: 13px 20px;
+    margin: 20px;
+  }
+}
 .commonBtn:hover {
   background-color: transparent;
   border: 2px solid #FF6F61;
@@ -52,7 +59,7 @@ body {
 }
 @media (min-width: 320px) and (max-width: 768px) {
   .heading h1 {
-    font-size: 22px;
+    font-size: 28px;
     margin-bottom: 36px;
   }
 }
@@ -70,6 +77,11 @@ body {
   text-align: center;
   margin-top: 24px;
   margin-bottom: 0px;
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  .productSlide .productCnt p {
+    margin-top: 12px;
+  }
 }
 .productSlide .productCnt h6 {
   margin-bottom: 0px;
@@ -98,8 +110,19 @@ body {
   display: inline-block;
   width: 100%;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .productSlide .productCnt span {
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+}
 .productSlide .productImage {
   position: relative;
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  .productSlide .productImage a img {
+    height: 200px !important;
+  }
 }
 .productSlide .productImage .label {
   position: absolute;
@@ -603,6 +626,11 @@ body {
   background-color: #fff;
   margin: 0px 10px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  #latestProducts .productSlide {
+    margin: 0px 5px;
+  }
+}
 #latestProducts .productSlide .productCnt p {
   color: #444;
   font-size: 16px;
@@ -611,6 +639,11 @@ body {
   text-align: center;
   margin-top: 24px;
   margin-bottom: 0px;
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  #latestProducts .productSlide .productCnt p {
+    margin-top: 12px;
+  }
 }
 #latestProducts .productSlide .productCnt h6 {
   margin-bottom: 0px;
@@ -639,8 +672,19 @@ body {
   display: inline-block;
   width: 100%;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  #latestProducts .productSlide .productCnt span {
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+}
 #latestProducts .productSlide .productImage {
   position: relative;
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  #latestProducts .productSlide .productImage a img {
+    height: 200px !important;
+  }
 }
 #latestProducts .productSlide .productImage .label {
   position: absolute;
@@ -704,7 +748,7 @@ body {
   transform: translateX(0);
 }
 #latestProducts .productImage img {
-  transform: scale(0.95);
+  transform: scale(0.96);
   transition: 0.3s ease-in-out;
 }
 #latestProducts .container.proArrrow {
@@ -795,9 +839,6 @@ body {
 #bestSellerProduct {
   margin-bottom: 50px;
 }
-#bestSellerProduct .products_wrapper {
-  margin-top: 40px;
-}
 
 #dealsDay {
   margin-bottom: 85px;
@@ -805,6 +846,11 @@ body {
 @media (min-width: 0px) and (max-width: 768px) {
   #dealsDay {
     margin-bottom: 40px;
+  }
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  #dealsDay .heading h1 {
+    margin-bottom: 45px;
   }
 }
 #dealsDay .counterDots {
@@ -1095,7 +1141,12 @@ body {
 }
 @media (min-width: 0px) and (max-width: 768px) {
   #latestNews {
-    margin-bottom: 50px;
+    margin-bottom: 58px;
+  }
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  #latestNews .heading h1 {
+    margin-bottom: 8px;
   }
 }
 #latestNews .newsPost {
@@ -1169,10 +1220,15 @@ body {
   background-color: #11161E;
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  #footerPart {
+    overflow: hidden;
+    margin-top: -58px;
+  }
 }
 #footerPart .footerService {
-  overflow: hidden;
+  overflow-x: hidden;
   transform: translateY(-50%);
   width: 100%;
   background: #fff;

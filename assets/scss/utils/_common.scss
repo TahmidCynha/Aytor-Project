@@ -29,6 +29,11 @@ body{
         background-color: $secondaryColor;
         margin: 29px 0;
         transition: 0.35s;
+        @media (min-width:320px) and (max-width:576px) {
+            font-size: 15px;
+            padding: 13px 20px;
+            margin: 20px;
+          }
             &:hover{
                background-color: transparent;
                border: 2px solid $secondaryColor;
@@ -38,6 +43,7 @@ body{
                 height: 18px;
                 width: 18px;
             }
+
    }
 // *COMMON BTN END 
 // *HEADING 
@@ -49,7 +55,7 @@ body{
     line-height: 46px;
     margin-bottom: 36px; 
       @media (min-width:320px) and (max-width:768px) {
-        font-size: 22px;
+        font-size: 28px;
         margin-bottom: 36px; 
       }
 }
@@ -71,7 +77,10 @@ body{
                 line-height: 26px;
                 text-align: center;
                 margin-top: 24px;
-                margin-bottom: 0px;                
+                margin-bottom: 0px; 
+                @media(min-width: 0px) and (max-width: 576px){
+                    margin-top: 12px;
+                }               
             }
             h6{
                 margin-bottom: 0px;
@@ -98,11 +107,22 @@ body{
                 margin-bottom: 26px;
                 display: inline-block;
                 width: 100%;
+                @media(min-width: 0px) and (max-width: 768px){
+                    margin-bottom: 20px;
+                    margin-top: 5px;
+                }
             }
 
         } 
     .productImage {
         position: relative;
+        a{
+            img{
+                @media(min-width: 0px) and (max-width: 576px){
+                    height: 200px !important;
+                }
+            }
+        }
         
         .label{
             position: absolute;
