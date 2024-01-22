@@ -19,6 +19,9 @@ ul li {
 body{
     font-family: $primaryFont;
 }
+.navOverFlow{
+    overflow-x: hidden;
+}
 // *COMMON BTN 
 .commonBtn{
         display: inline-block;
@@ -66,7 +69,12 @@ body{
 .productSlide{
     border: 1px solid #F1F3F4;
     background-color: #fff;
-    margin: 0px 0px 24px 0px;
+    margin: 10px;
+    @media (min-width:0px) and (max-width: 576px){
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
 
         .productCnt{
 
