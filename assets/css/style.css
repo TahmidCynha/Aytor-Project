@@ -554,6 +554,9 @@ body {
   font-weight: 600;
   line-height: 28px;
 }
+#productBanner .productBannerSm {
+  width: 100%;
+}
 #productBanner .productBannerSm .imgCnt_1 {
   display: inline-block;
   overflow: hidden;
@@ -745,6 +748,7 @@ body {
 }
 
 #shortBanner {
+  width: 100%;
   margin-bottom: 100px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -1041,6 +1045,7 @@ body {
 }
 
 #videoCard {
+  width: 100%;
   margin-bottom: 115px;
   background: #F1F3F4;
 }
@@ -1086,6 +1091,7 @@ body {
 
 #latestNews {
   margin-bottom: 100px;
+  width: 100%;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   #latestNews {
@@ -1162,6 +1168,8 @@ body {
 #footerPart {
   background-color: #11161E;
   height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 #footerPart .footerService {
   overflow: hidden;
@@ -1577,6 +1585,7 @@ body {
   font-size: 14px;
 }
 #footerPart .mainFooterSM {
+  width: 100%;
   margin-top: 40px;
   padding-left: 30px;
 }
@@ -1719,6 +1728,7 @@ body {
   height: 70px;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 #copyright p {
   color: #FFF;

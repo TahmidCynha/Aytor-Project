@@ -421,6 +421,7 @@
     //    *PRODUCT BANNER MD END 
     // *product Banner SM START 
     .productBannerSm{
+        width: 100%;
 
         .imgCnt_1{
             display: inline-block;
@@ -644,6 +645,7 @@
     // *PRODUCT LIST END 
     // *SHORT BANNER START 
 #shortBanner{
+    width: 100%;
     margin-bottom: 100px;
     @media (min-width:0px) and (max-width:768px) {
         margin-bottom: 50px;
@@ -940,10 +942,12 @@
 }
 // *Beauty Inspired START
 #videoCard{
+
+    width: 100%;
     margin-bottom: 115px;
     background: #F1F3F4;
     @media (min-width:0px) and (max-width: 768px){
-        margin-bottom: 40px;
+        margin-bottom: 40px ;
     }
     
 
@@ -988,6 +992,7 @@
 // *NEWS BLOG START HERE
 #latestNews{
     margin-bottom: 100px;
+    width: 100%;
     @media (min-width:0px) and (max-width: 768px){
         margin-bottom: 50px;
     }
@@ -1089,7 +1094,8 @@
 #footerPart{
     background-color: $primaryColor;
     height: 100%;
-
+    width: 100%;
+    overflow-x: hidden;
     .footerService{
         overflow: hidden;
         transform: translateY(-50%);
@@ -1600,6 +1606,7 @@
 
     // *MAIN FOOTER SM START 
     .mainFooterSM{
+        width: 100%;
         margin-top: 40px;
         padding-left: 30px;
 
@@ -1774,6 +1781,7 @@
     height: 70px;
     display:flex ;
     align-items: center;
+    width: 100%;
     p{
         color:  #FFF;
         text-align: center;
