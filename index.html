@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./assets/icon/bootstrap-icons-1.11.2\font\bootstrap-icons.min.css">
     <!-- *FONT AWOSOME  -->
     <link rel="stylesheet" href="./assets/vendor/css/all.min.css">
+    <!-- *VENOBOX CSS  -->
+    <link rel="stylesheet" href="./assets/vendor/css/venobox.min.css">
     <!-- *CUSTOM CSS  -->
     <link rel="stylesheet" href="./assets/css/style.min.css">
     <!-- <style>.dropdown-toggle::after {display: none;}</style> -->
@@ -45,7 +47,7 @@
                       <!-- *MENU START HERE  -->
     
                       <li class="nav-item myMenu">
-                        <a class="nav-link active" aria-current="page" href="#">Home
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home
                         </a>
                       </li>
                       <li class="nav-item myMenu">
@@ -57,9 +59,9 @@
                           <span><i class="bi bi-chevron-down"></i></span>
                         </a>
                         <ul class="dropdown-menu customDrop">
-                          <li><a style="background-color: transparent;width: 100%;" class="dropdown-item" href="#">About Us</a></li>
-                          <li><a style="background-color: transparent;width: 100%;" class="dropdown-item" href="#">Shop - Grid</a></li>
-                          <li><a style="background-color: transparent;width: 100%;" class="dropdown-item" href="#">Shop - Details</a></li>
+                          <li><a style="padding: 10px 0px 8px 30px;margin: 0;" class="dropdown-item" href="./about.html">About Us</a></li>
+                          <li><a style="padding: 0px 0px 8px 30px;margin: 0;" class="dropdown-item" href="#">Shop - Grid</a></li>
+                          <li><a style="padding: 0px 0px 8px 30px;margin: 0;" class="dropdown-item" href="#">Shop - Details</a></li>
                         </ul>
                       </li>
                       <li class="nav-item myMenu">
@@ -115,7 +117,7 @@
                   <!-- *MANU START HERE  -->
                   <div class="sidebar">
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                      <li class="nav-item myMenu"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                      <li class="nav-item myMenu"><a class="nav-link active" aria-current="page" href="./index.html">Home</a></li>
                       <li class="nav-item myMenu"><a class="nav-link active" aria-current="page" href="#">Shop</a></li>
                       <li class="nav-item dropdown myMenu ">
                         <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -123,9 +125,9 @@
                           <span><i class="bi bi-chevron-down"></i></span>
                         </a>
                         <ul class="dropdown-menu customDrop">
-                          <li><a class="dropdown-item" href="#">About Us</a></li>
-                          <li><a class="dropdown-item" href="#">Shop - Grid</a></li>
-                          <li><a class="dropdown-item" href="#">Shop - Details</a></li>
+                          <li><a  class="dropdown-item" style="padding: 0px 0px 0px 30px;margin: 0; "  href="./about.html">About Us</a></li>
+                          <li><a class="dropdown-item"  style="padding: 0px 0px 0px 30px;margin: 0; " href="#">Shop - Grid</a></li>
+                          <li><a class="dropdown-item"  style="padding: 0px 0px 0px 30px;margin: 0; " href="#">Shop - Details</a></li>
                         </ul>
                       </li>
                       <li class="nav-item myMenu">
@@ -1274,67 +1276,34 @@
         </section>
          
         <!-- *Beauty Inspired START  -->
-        <section id="videoCard" style="overflow: hidden;">
-          <div class="row">
-            <div class="col-lg-6 d-none d-lg-block">
-              <div class="beautyCnt h-100">
-                <div class="row col-lg-6">
-                  <h6>SPECIAL OFFER</h6>
-                  <h3>Beauty Inspired by Real Shine In Life</h3>
-                  <p>Completely grow maintainable niches via tactical services. Progressively synthesize market positioning paradigms for functional architectures. Professionally aggregate.</p>
-                  <a style="width: 200px;" class="commonBtn" href="#">
-                    Explore More
-                    <span><i class="bi bi-arrow-right"></i></span>
-                  </a>
+        <section id="beautyInspired">
+          <div class="storyCnt col-lg-12">
+            <div class="row" style="height: 100%;">
+              <div class="col-lg-6 col-md-12" style="display: flex;justify-content: center;"> 
+                <div class="aboutstory col-lg-7 col-md-10">
+                  <div class="row">
+                    <h6>SPECIAL OFFER</h6>
+                    <h3>Beauty Inspired by Real Shine In Life</h3>
+                    <p>Completely grow maintainable niches via tactical services. Progressively synthesize market positioning paradigms for functional architectures. Professionally aggregate.</p>
+                    <a style="width: 200px;" class="commonBtn" href="#">
+                      Explore More
+                      <span><i class="bi bi-arrow-right"></i></span>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-6 d-none d-lg-block">
-              <div class="videoCnt w-100" style="overflow: hidden;">
-                <iframe width="900" height="500" src="https://www.youtube.com/embed/ZPGBnEmocYo?si=b13vOKCzUuvyuZUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- *responsive sm -->
-          <div class="beautyCnt_sm d-lg-none d-md-none">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="beautyImg w-100" style="overflow: hidden; padding-top: 20px;">
-                  <a href="#"><img src="./assets/image/home/ex-xm.png" alt=""></a>
-                </div>
-              </div>
-              <div col-lg-10>
-                <div class="row">
-                  <div class="beautyVideo" style="display: flex; align-items: center; justify-content: center;margin: 20px 0px;">
-                    <iframe width="400" height="250" src="https://www.youtube.com/embed/ZPGBnEmocYo?si=b13vOKCzUuvyuZUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <div class="col-lg-6 col-md-12" >
+                <div class="aboutVideo">
+                  <div class="push">
+                    <a class="myBeautyVideo" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/embed/ZPGBnEmocYo?si=b13vOKCzUuvyuZUQ">
+                      <img src="./assets/image/home/video_img.png" alt="">
+                      <span><i class="fa-solid fa-play"></i></span>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- *responsive sm END  -->
-
-          <!-- *responsive MD -->
-          <div class="beautyCnt_md d-none d-md-block d-lg-none">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="beautyImg" style="overflow: hidden;padding-top: 20px;">
-                  <a href="#"><img src="./assets/image/home/ex-md.png" alt=""></a>
-                </div>
-              </div>
-              <div col-md-12>
-                <div class="row">
-                  <div class="beautyVideo" style="display: flex; align-items: center; justify-content: center;margin: 20px 0px;">
-                    <iframe width="600" height="300" src="https://www.youtube.com/embed/ZPGBnEmocYo?si=b13vOKCzUuvyuZUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- *responsive MD END  -->
-
         </section>
         <!-- *Beauty Inspired END  -->
 
@@ -2010,7 +1979,6 @@
         </div>
         <!-- *PROGRESS BAR END  -->
 
-        
 
 
 
@@ -2037,6 +2005,8 @@
 
     <!-- *JS LINK START  -->
     <script src="./assets/vendor/js/jquery-3.7.1.min.js"></script>
+    <!-- *VENOBOX JS  -->
+    <script src="./assets/vendor/js/venobox.min.js"></script>
     <!-- *FONT AWOSOME -->
     <script src="./assets/vendor/js/all.min.js"></script>
     <!-- *COUNTDOWN JS  -->

@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aytor</title>
+    <!-- *BOOTSTRAP CSS  -->
+    <link rel="stylesheet" href="./assets/vendor/css/bootstrap.min.css">
+    <!-- *SLICK CSS -->
+    <link rel="stylesheet" href="./assets/vendor/css/slick.css">
+    <!-- *BOOTSTRAP ICON CSS  -->
+    <link rel="stylesheet" href="./assets/icon/bootstrap-icons-1.11.2\font\bootstrap-icons.min.css">
+    <!-- *FONT AWOSOME  -->
+    <link rel="stylesheet" href="./assets/vendor/css/all.min.css">
+    <!-- *VENOBOX CSS  -->
+    <link rel="stylesheet" href="./assets/vendor/css/venobox.min.css">
+    <!-- *CUSTOM CSS  -->
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+<body>
+    <!-- *NAVBAR START HERE  -->
+    <section id="navbar">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container" style="padding: 0;">
+    
+                    <!-- *LOGO START  -->
+                  <a class="navbar-brand" style="margin: 0;padding-left: 10px;" href="#"><img src="./assets/image/home/Logo.png" alt="Home page logo"></a>                 
+                  <!-- *LOGO END HERE  -->
+
+                  <!-- *SEARCH ICON RESPONSIVE -->
+                  <div class="searchIcon" >
+                      <ul style="padding: 0;">
+                          <li><a href="#">
+                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                          </a></li>
+                      </ul>
+                  </div>
+                  <!-- *SEARCH ICON RESPONSIVE END -->
+    
+                  <button style="background-color: #FF6F61;width: 51px;height: 40px;line-height: 30px;border-radius: 0;margin-right: 40px;;" class="navbar-toggler menuToggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                    <span style="color: #fff;"><iconify-icon icon="pepicons-pop:menu"></iconify-icon></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="myCustomNav">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+    
+                      <!-- *MENU START HERE  -->
+                      <li class="nav-item myMenu">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home
+                        </a>
+                      </li>
+                      <li class="nav-item myMenu">
+                        <a class="nav-link active" aria-current="page" href="#">Shop</a>
+                      </li>
+                      <li class="nav-item dropdown myMenu ">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Pages
+                          <span><i class="bi bi-chevron-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu customDrop">
+                          <li><a style="padding: 10px 0px 8px 30px;margin: 0;" class="dropdown-item" href="./about.html">About Us</a></li>
+                          <li><a style="padding: 0px 0px 8px 30px;margin: 0;" class="dropdown-item" href="#">Shop - Grid</a></li>
+                          <li><a style="padding: 0px 0px 8px 30px;margin: 0;" class="dropdown-item" href="#">Shop - Details</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item myMenu">
+                        <a class="nav-link active" aria-current="page" href="#">Features</a>
+                      </li>
+                      <li class="nav-item myMenu">
+                        <a class="nav-link active" aria-current="page" href="#">Blogs</a>
+                      </li>
+                      <li class="nav-item myMenu">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                      </li>
+                    </ul>
+                    <!-- *MENU END HERE  -->
+    
+                    <!-- *USER START HERE  -->
+                    <div class="userOption">
+                      <ul>
+                        <li><a href="#">
+                          <span><i class="bi bi-search"></i></span>
+                        </a></li>
+                        <li><a href="#">
+                          <span><i class="bi bi-person-fill"></i></span>
+                        </a></li>
+                        <li><a href="#">
+                          <span><i class="bi bi-heart"></i></span>
+                        </a></li>
+                        <li class="shoppingCart"><a href="#">
+                          <span><i class="bi bi-bag-heart-fill"></i></span>
+                          <h4>0</h4>
+                        </a></li>
+                      </ul>
+                    </div>
+                    <!-- *USER END HERE  -->
+    
+                  </div>
+                </div>
+              </nav>
+
+              <!-- *RESPONSIVE NAVBAR  -->
+              <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title heading" id="offcanvasWithBothOptionsLabel">
+                    <img src="./assets/image/home/Logo.png" alt="">
+                  </h5>
+                  <button class="crossBtn" type="button" data-bs-dismiss="offcanvas" aria-label="Close" ><i class="bi bi-x-circle-fill"></i></button>
+                </div>
+                <div class="offcanvas-body navOverFlow">
+
+                  <!-- *MANU START HERE  -->
+                  <div class="sidebar">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                      <li class="nav-item myMenu"><a class="nav-link active" aria-current="page" href="./index.html">Home</a></li>
+                      <li class="nav-item myMenu"><a class="nav-link active" aria-current="page" href="#">Shop</a></li>
+                      <li class="nav-item dropdown myMenu ">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Pages
+                          <span><i class="bi bi-chevron-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu customDrop">
+                          <li><a  class="dropdown-item" style="padding: 0px 0px 0px 30px;margin: 0; "  href="./about.html">About Us</a></li>
+                          <li><a class="dropdown-item"  style="padding: 0px 0px 0px 30px;margin: 0; " href="#">Shop - Grid</a></li>
+                          <li><a class="dropdown-item"  style="padding: 0px 0px 0px 30px;margin: 0; " href="#">Shop - Details</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item myMenu">
+                        <a class="nav-link active" aria-current="page" href="#">Features</a>
+                      </li>
+                      <li class="nav-item myMenu">
+                        <a class="nav-link active" aria-current="page" href="#">Blogs</a>
+                      </li>
+                      <li class="nav-item myMenu">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                      </li> 
+                    </ul>
+
+                    <div class="userOption">
+                      <ul>
+                        <li class="shoppingCart"><a href="#">
+                          <span><i class="bi bi-bag-heart-fill"></i></span>
+                          <h4>0</h4>
+                        </a></li>
+                        <li class="userProfile"><a href="#">
+                          <span><i class="bi bi-person-circle"></i></span>
+                        </a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                <!-- *MENU END HERE  -->
+                
+              </div>
+              <!-- *RESPONSIVE NAVBAR END  -->
+    
+    </section>
+    <!-- *NAVBAR END HERE  -->
+
+    <!-- *ABOUT BANNER START HERE  -->
+    <section id="aboutUs">
+        <div class="row">
+            <h2>About Us</h2>
+            <p>Home  /  About Us</p>
+        </div>
+    </section>
+    <!-- *ABOUT BANNER END  -->
+    <!-- *LEARN ABOUT START HERE  -->
+    <section id="learnAbout">
+      <div class="container">
+
+        <div class="learnDetails" style="background-image: url(./assets/image/about/learnAbout_bg.png);background-repeat: no-repeat;background-size: cover;">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-12" style="padding: 0;">
+              <div class="learnAboutImg">
+                <img style="width: 100%;" src="./assets/image/about/learn_about.png" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12" style="padding: 0px;">
+              <div class="learnAboutCnt">
+                <h3>Learn About Aetor Shop</h3>
+                <p>Interactively underwhelm effective relationships whereas team driven paradigms. Uniquely impact impactful meta-services vis -a-vis fully tested best practices. Appropriately e-enable fully.
+                </p>
+                <div class="checkCircle">
+                  <ul style="margin: 0;padding: 0;">
+                    <li><span><i class="fa-solid fa-circle-check"></i></span><p>Assertively customize robust potentialities and economical</p></li>
+                    <li><span><i class="fa-solid fa-circle-check"></i></span><p>Seamlessly disintermediate distributed intellectual capital.</p></li>
+                    <li><span><i class="fa-solid fa-circle-check"></i></span><p>Credibly enable B2C potentialities after strategic.</p></li>
+                  </ul>
+                </div>
+                <a class="commonBtn" href="#">
+                  Discover More
+                  <span><i class="bi bi-arrow-right"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- *LEARN ABOUT END HERE -->
+    <!-- *COUNTER BOX START  -->
+    <section id="counterBox">
+      <div class="container">
+        <div class="counterBoxCnt col-lg-12">
+          <div class="row">
+            <div class="boxCnt col-lg-3 col-md-6 col-12">
+              <span><i class="fa-solid fa-hand-holding-heart"></i></span>
+              <h3 class="counterCount1">22.3k</h3>
+              <p>Products for sale</p>
+            </div>
+            <div class="boxCnt col-lg-3 col-md-6 col-12">
+              <span><i class="bi bi-shop"></i></span>
+              <h3 class="counterCount2">14.6k</h3>
+              <p>Sellers active on shop</p>
+            </div>
+            <div class="boxCnt col-lg-3 col-md-6 col-12">
+              <span style="line-height: 124px;"><iconify-icon icon="lucide:shopping-bag"></iconify-icon></span>
+              <h3 class="counterCount3">75.9k</h3>
+              <p>Customer active on store</p>
+            </div>
+            <div class="boxCnt col-lg-3 col-md-6 col-12">
+              <span><i class="fa-solid fa-sack-dollar"></i></span>
+              <h3 class="counterCount4">35.5k</h3>
+              <p>Annual gross sales</p>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </section>
+    <!-- *COUNTER BOX END  -->
+    <!-- *OUR STORY START HERE  -->
+    <section id="ourStory">
+      <div class="storyCnt col-lg-12">
+          <div class="row" style="height: 100%;">
+            <div class="col-lg-6 col-md-12" style="display: flex;justify-content: center;"> 
+              <div class="aboutstory col-lg-7 col-md-10">
+                <div class="row">
+                  <h3>Our Story</h3>
+                  <p>
+                    Synergistically pontificate focused services whereas intuitive leadership. Competently predominate ubiquitous services rather than client-centric scenarios. Distinctively mesh B2C benefits for superior customer service. Interactively e-enable inexpensive total linkage without quality materials. Phosfluorescently negotiate.
+                  </p>
+                  <p class="lastChild">
+                    Professionally exploit user-centric technology for seamless solutions. Objectively morph unique strategic theme areas without cross functional mindshare. Synergistically aggregate adaptive functionalities rather than enterprise-wide experiences. Completely maintain.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12" >
+              <div class="aboutVideo">
+                <div class="push">
+                  <a class="myCustomVideo" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/embed/ZPGBnEmocYo?si=b13vOKCzUuvyuZUQ">
+                    <img src="./assets/image/about/video.img.about.png" alt="">
+                    <span><i class="fa-solid fa-play"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- *OUR STORY END HERE  -->
+    <!-- *PRIVACY POLICY START HERE  -->
+    <section id="aboutPolicy">
+      <div class="container">
+        <div class="policyService">
+          <div class="row">
+
+            <!-- *FREE SHIPING START  -->
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="shopCnt"  >
+                <div class="row">
+                  <div class="shipping" style="display: flex;padding: 0;">
+                    <img style="padding: 12px;" src="./assets/image/home/shipping.png" alt="">
+                    <div class="shippingCnt" style="padding: 5px;">
+                      <div class="row">
+                        <h5>FREE SHIPING</h5>
+                        <p>all orders over<span style="padding-left: 3px;">150$</span></p>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- *FREE SHIPING END  -->
+
+            <!-- *QUICK PAYMENT START  -->
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="shopCnt"  >
+                <div class="row" >
+                  <div class="shipping" style="display: flex;padding: 0;">
+                    <img style="padding: 12px;" src="./assets/image/home/payment.png" alt="">
+                    <div class="shippingCnt" style="padding: 5px;">
+                      <div class="row">
+                        <h5>QUICK PAYMENT</h5>
+                        <p>100% secure payment</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- *QUICK PAYMENT END  --> 
+
+            <!-- *FREE RETURNS START  -->
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="shopCnt"  >
+                <div class="row" >
+                  <div class="shipping" style="display: flex;padding: 0;">
+                    <img style="padding: 12px;" src="./assets/image/home/returns.png" alt="">
+                    <div class="shippingCnt" style="padding: 5px;">
+                      <div class="row">
+                        <h5>FREE RETURNS</h5>
+                        <p>Return money within 30 days</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- *FREE RETURNS END  -->
+
+            <!-- *24/7 SUPPORT START  -->
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="shopCnt"  >
+                <div class="row" >
+                  <div class="shipping" style="padding: 0;">
+                    <img style="padding: 12px;" src="./assets/image/home/support.png" alt="">
+                    <div class="shippingCnt" style="padding: 5px;">
+                      <div class="row">
+                        <h5>24/7 SUPPORT</h5>
+                        <p>Quick Support</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- *24/7 SUPPORT END  --> 
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- *PRIVACY POLICY END HERE  -->
+    <!-- *Leadership Expart Team START HERE -->
+    <section id="leadership">
+      <div class="container leaderArrow">
+        <div class="heading">
+          <h1>Leadership Expart Team</h1>
+        </div>
+        <div class="leadershipCnt">
+          
+          <div class="headshotSlider">
+
+            <!-- *START  -->
+            <div class="col-lg-3" style="margin: 20px 8px;padding: 0;">
+              <div class="leaderSlider">
+                <div class="leaderImg">
+                  <img src="./assets/image/about/leadership 1.png" alt="">
+                </div>
+                <div class="leaderDetails">
+                  <h5>Michel Richard</h5>
+                  <p>Founder</p>
+                  <div class="socialIcon">
+                    <a href="#">
+                      <span><i class="fa-brands fa-facebook-f"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-twitter"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-instagram"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-pinterest-p"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- *END  -->
+            <!-- *START  -->
+            <div class="col-lg-3" style="margin: 20px 8px;padding: 0;">
+              <div class="leaderSlider">
+                <div class="leaderImg">
+                  <img src="./assets/image/about/leadership 2.png" alt="">
+                </div>
+                <div class="leaderDetails">
+                  <h5>Henry Josep</h5>
+                  <p>Director</p>
+                  <div class="socialIcon">
+                    <a href="#">
+                      <span><i class="fa-brands fa-facebook-f"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-twitter"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-instagram"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-pinterest-p"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- *END  -->
+            <!-- *START  -->
+            <div class="col-lg-3" style="margin: 20px 8px;padding: 0;">
+              <div class="leaderSlider">
+                <div class="leaderImg">
+                  <img src="./assets/image/about/leadership 3.png" alt="">
+                </div>
+                <div class="leaderDetails">
+                  <h5>Sudjida Lufz</h5>
+                  <p>Developer</p>
+                  <div class="socialIcon">
+                    <a href="#">
+                      <span><i class="fa-brands fa-facebook-f"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-twitter"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-instagram"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-pinterest-p"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- *END  -->
+            <!-- *START  -->
+            <div class="col-lg-3" style="margin: 20px 8px;padding: 0;">
+              <div class="leaderSlider">
+                <div class="leaderImg">
+                  <img src="./assets/image/about/leadership 4.png" alt="">
+                </div>
+                <div class="leaderDetails">
+                  <h5>Imon Hossain</h5>
+                  <p>Marketer</p>
+                  <div class="socialIcon">
+                    <a href="#">
+                      <span><i class="fa-brands fa-facebook-f"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-twitter"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-instagram"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-pinterest-p"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- *END  -->
+            <!-- *START  -->
+            <div class="col-lg-3" style="margin: 20px 8px;padding: 0;">
+              <div class="leaderSlider">
+                <div class="leaderImg">
+                  <img src="./assets/image/about/leadership 5.png" alt="">
+                </div>
+                <div class="leaderDetails">
+                  <h5>Michel Richard</h5>
+                  <p>Support</p>
+                  <div class="socialIcon">
+                    <a href="#">
+                      <span><i class="fa-brands fa-facebook-f"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-twitter"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-instagram"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-pinterest-p"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- *END  -->
+            <!-- *START  -->
+            <div class="col-lg-3" style="margin: 20px 8px;padding: 0;">
+              <div class="leaderSlider">
+                <div class="leaderImg">
+                  <img src="./assets/image/about/leadership 6.png" alt="">
+                </div>
+                <div class="leaderDetails">
+                  <h5>Tahmid Hossain</h5>
+                  <p>CEO</p>
+                  <div class="socialIcon">
+                    <a href="#">
+                      <span><i class="fa-brands fa-facebook-f"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-twitter"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-instagram"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-pinterest-p"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- *END  -->
+            <!-- *START  -->
+            <div class="col-lg-3" style="margin: 20px 8px;padding: 0;">
+              <div class="leaderSlider">
+                <div class="leaderImg">
+                  <img src="./assets/image/about/leadership 1.png" alt="">
+                </div>
+                <div class="leaderDetails">
+                  <h5>Michel Richard</h5>
+                  <p>Founder</p>
+                  <div class="socialIcon">
+                    <a href="#">
+                      <span><i class="fa-brands fa-facebook-f"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-twitter"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-instagram"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-pinterest-p"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- *END  -->
+            <!-- *START  -->
+            <div class="col-lg-3" style="margin: 20px 8px;padding: 0;">
+              <div class="leaderSlider">
+                <div class="leaderImg">
+                  <img src="./assets/image/about/leadership 2.png" alt="">
+                </div>
+                <div class="leaderDetails">
+                  <h5>Michel Richard</h5>
+                  <p>Founder</p>
+                  <div class="socialIcon">
+                    <a href="#">
+                      <span><i class="fa-brands fa-facebook-f"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-twitter"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-instagram"></i></span>
+                    </a>
+                    <a href="#">
+                      <span><i class="fa-brands fa-pinterest-p"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- *END  -->
+          </div>
+          <div class="leaderShip_arrows">
+            <span class="leftArrow"><i class="fa-solid fa-caret-left"></i></span>
+            <span class="rightArrow"><i class="fa-solid fa-caret-right"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- *Leadership Expart Team END HERE -->
+    <!-- *TESTIMONIAL START HERE  -->
+    <section id="testimonial">
+      <div class="container" style="padding: 0;">
+        <div class="reviewCnt col-lg-12">
+          <div class="testimonialDetails col-lg-6">
+            <div class="row" style="margin: 0;">
+              <span><i class="fa-solid fa-quote-left"></i></span>
+              <div class="shape">
+                <img src="./assets/image/about/Shape.png" alt="">
+              </div>
+              <div class="testslider">
+                <div class="sliderCnt">
+                  <img class="customerPhoto col-12" src="./assets/image/about/test2.png" alt="">
+                  <p>Distinctively revolutionize functional sources rather than cutting-edge interfaces. Appropriately productize next-generation infomediaries without interoperable e-business. Progressively empower.</p>
+                  <h4>Alexzender Markos</h4>
+                  <p class="title">Customer</p>
+                </div>
+                <div class="sliderCnt">
+                  <img class="customerPhoto col-12" src="./assets/image/about/test3.png" alt="">
+                  <p>Distinctively revolutionize functional sources rather than cutting-edge interfaces. Appropriately productize next-generation infomediaries without interoperable e-business. Progressively empower.</p>
+                  <h4>Mark Zukarbug</h4>
+                  <p class="title">Customer</p>
+                </div>
+                <div class="sliderCnt">
+                  <img class="customerPhoto col-12" src="./assets/image/about/test4.png" alt="">
+                  <p>Distinctively revolutionize functional sources rather than cutting-edge interfaces. Appropriately productize next-generation infomediaries without interoperable e-business. Progressively empower.</p>
+                  <h4>Tahmid Hossain</h4>
+                  <p class="title">Customer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="animationImg">
+            <span><img src="./assets/image/about/customer_4.png" alt=""></span> 
+            <span><img src="./assets/image/about/customer_5.png" alt=""></span>
+            <span><img src="./assets/image/about/customer_2.png" alt=""></span>
+            <span><img src="./assets/image/about/customer_3.png" alt=""></span> 
+            <span><img src="./assets/image/about/customer_2.png" alt=""></span>
+            <span><img src="./assets/image/about/customer_3.png" alt=""></span> 
+            <span><img src="./assets/image/about/customer_4.png" alt=""></span> 
+            <span><img src="./assets/image/about/customer_5.png" alt=""></span>                    
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+    <!-- *TESTIMONIAL END  HERE  -->
+    <!-- *AYTOR INSTAGRAM START HERE  -->
+    <section id="aytorInsta">
+      <div class="container">
+        <div class="heading">
+            <h1>@Aytor Instagram</h1>
+        </div>
+        <div class="instaslide">
+          <div class="instaSlider">
+            <div class="instaImg_1">
+              <img src="./assets/image/about/insta.1.png" alt="">
+              <div class="overlay">
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="instaSlider">
+            <div class="instaImg_1">
+              <img src="./assets/image/about/insta.2.png" alt="">
+              <div class="overlay">
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="instaSlider">
+            <div class="instaImg_1">
+              <img src="./assets/image/about/insta.3.png" alt="">
+              <div class="overlay">
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="instaSlider">
+            <div class="instaImg_1">
+              <img src="./assets/image/about/insta.4.png" alt="">
+              <div class="overlay">
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="instaSlider">
+            <div class="instaImg_1">
+              <img src="./assets/image/about/insta.5.png" alt="">
+              <div class="overlay">
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="instaSlider">
+            <div class="instaImg_1">
+              <img src="./assets/image/about/insta.6.png" alt="">
+              <div class="overlay">
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="instaSlider">
+            <div class="instaImg_1">
+              <img src="./assets/image/about/insta.7.png" alt="">
+              <div class="overlay">
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="instaSlider">
+            <div class="instaImg_1">
+              <img src="./assets/image/about/insta.8.png" alt="">
+              <div class="overlay">
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="instaSlider">
+            <div class="instaImg_1">
+              <img src="./assets/image/about/insta.9.png" alt="">
+              <div class="overlay">
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+
+    <!-- *JS LINK START  -->
+    <script src="./assets/vendor/js/jquery-3.7.1.min.js"></script>
+    <!-- *VENOBOX JS  -->
+    <script src="./assets/vendor/js/venobox.min.js"></script>
+    <!-- *COUNTER UP 2 -->
+    <script src="./assets/vendor/js/index.js"></script>
+    <!-- *FONT AWOSOME -->
+    <script src="./assets/vendor/js/all.min.js"></script>
+    <!-- *COUNTDOWN JS  -->
+    <script src="./assets/vendor/js/countdown.js"></script>
+    <!-- *POPER JS  -->
+    <script src="./assets/vendor/js/popper.min.js"></script>
+    <!-- *SLICK JS  -->
+    <script src="./assets/vendor/js/slick.min.js"></script>
+    <!-- *BOOTSTRAP JS  -->
+    <script src="./assets/vendor/js/bootstrap.bundle.min.js"></script>
+    <!-- *ICONIFY JS  -->
+    <script src="./assets/icon/iconify/iconify-icon.min.js"></script>
+    <!-- *MAIN JS -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
