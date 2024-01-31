@@ -1,69 +1,19 @@
-// *ABOUT US BANNER  START HERE
-#aboutUs{
-    background-color: $primaryColor;
-    opacity: 0.7;
-    height: 400px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    @media (min-width:0px) and (max-width: 767px){
-        height: 200px;
-        width: 100%;
-    }
-    @media (min-width:768px) and (max-width: 991px){
-        height: 300px;
-        width: 100%;
-    }
-      h2{
-        color: $fontColor;
-        text-align: center;
-        font-size: 48px;
-        font-weight: 700;
-        line-height: 58px;
-        padding: 0;
-        margin: 0;
-        @media (min-width:0px) and (max-width: 767px){
-            font-size: 36px;
-        }
-        @media (min-width:768px) and (max-width: 991px){
-            font-size: 40px;
-        }
-      }
-      p{
-        color: $fontColor;
-        text-align: center;
-        font-family: $secondaryFont ;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 28px; /* 175% */;
-        padding: 0;
-        margin: 0;
-        @media (min-width:0px) and (max-width: 767px){
-            font-size: 15px;
-        }   
-        @media (min-width:768px) and (max-width: 991px){
-            font-size: 16px;
-        }     
-      }
-}
-
-// *ABOUT US BANNER  END HERE 
 // *ABOUT LEARN START HERE 
 #learnAbout{
     margin-top: 100px;
-    height: 546px;
+    height: 100%;
     width: 100%;
     @media (min-width:320px) and (max-width: 991px){
         margin-top: 50px;
         margin-bottom: 50px;
+        
     }
-
        .learnDetails{
             width: 100%;
             height: 100%;
 
             .learnAboutImg{
+                
                 padding: 20px 0px;
                 margin-left: -75px;
                 width: 100%;
@@ -193,13 +143,12 @@
     margin-bottom: 100px;
     margin-top: 165px;
     @media (min-width:320px) and (max-width: 575px){
-        margin-top: 280px;
+        margin-top: 60px;
         margin-bottom: 50px;
         overflow-x: hidden;
-
     } 
     @media (min-width:576px) and (max-width: 991px){
-        margin-top: 520px;
+        margin-top: 100px;
     } 
     .counterBoxCnt{
 
@@ -342,11 +291,9 @@
             width: 100%;
             position: relative;
 
-
             .push{
                 height: 100%;
                 
-
                  a{
                     cursor: default;
                     height: 100%;
@@ -423,6 +370,7 @@
 // *PRIVACY POLICY START HERE 
 #aboutPolicy{
     margin-bottom: 100px;
+    overflow: hidden;
     @media (min-width:320px) and (max-width: 575px){
         margin-bottom: 50px;
         overflow-x: hidden;
@@ -608,7 +556,10 @@
     .headshotSlider{
             .leaderSlider{
                 background: #fff;
-                box-shadow: 0px 5px 30px 0px rgba(17, 22, 30, 0.08);
+                // box-shadow: 0px 5px 30px 0px rgba(17, 22, 30, 0.08);
+                // box-shadow: rgba(100,100,111,0.05) 0px 0px 12px 2px;
+                border: 1px solid #f1f3f4;
+                background-color: #fff;
                 width: 100%;
                 height: 100%;
 
@@ -875,13 +826,27 @@
 // *TESTIMONIAL END HERE 
 // *AYTOR INSTAGRAM START HERE
 #aytorInsta{
-    margin-bottom: 1000px;
-
-
+    margin-bottom: 120px;
+    @media (min-width:320px) and (max-width: 575px){
+        margin-bottom: 60px;
+    } 
+    @media (min-width:576px) and (max-width: 991px){
+        margin-bottom: 80px;
+    }    
         .instaslide{
-
             .instaImg_1{
                 position: relative;
+                margin-bottom: 28px;
+                @media (min-width:320px) and (max-width: 575px){
+                    overflow-x: hidden;
+                    margin-left: 3px;
+                    margin-right: 3px;
+                } 
+                @media (min-width:576px) and (max-width: 991px){
+                    overflow-x: hidden;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                }    
 
                     .overlay a{
                         position: absolute;
@@ -897,18 +862,46 @@
                         opacity: 0;
                         transform: scale(0);
                         transition: 600ms;
+                        @media (min-width:320px) and (max-width: 575px){
+                            width: 100%;
+                            height: 100%;
+                        } 
+                        @media (min-width:576px) and (max-width: 991px){
+                            width: 100%;
+                            height: 100%;
+                        }    
+
 
                     }
                     &:hover .overlay a{
                         transform: scale(1);
                         opacity: 1;
                     }
-                
-             
             }
-
         }
-    // .slick-track{
-    //     width: 200px !important;
-    // }
+    .instaDots{
+        position: absolute;
+        display: flex;
+        bottom: -60px;
+        left: 48%;
+        transform: translateX(-50%);
+            li button{
+                width: 10.909px;
+                height: 6px;
+                background-color: #C4C4C4;
+                border: none;
+                color: transparent;
+                border-radius: 5px;
+                margin-right: 5.45px;
+                transition: 0.35s ease; 
+           }
+            li.slick-active button{
+                background-color: $secondaryColor;
+                width: 29px;
+           }
+    }
+
 } 
+// *AYTOR INSTAGRAM END  HERE
+
+

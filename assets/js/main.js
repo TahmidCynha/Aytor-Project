@@ -379,8 +379,37 @@ $('.testslider').slick({
 // *ABOUT INSTA SLIDER START
 $('.instaslide').slick({
   slidesToShow: 6,
-  slidesToScroll: 1,
+  slidesToScroll: 3,
   dots: true,
+  arrows: false,
+  dotsClass : "instaDots" ,
+  autoplay: true,
+  autoplaySpeed: 1000,
+  infinite:true,
+  responsive: [
+    {
+      breakpoint: 1025,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+      }
+    },
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+      }
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    }
+  ]
+
 });
 
 // *ABOUT INSTA SLIDER END
