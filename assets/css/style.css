@@ -96,7 +96,7 @@ body {
 }
 .productSlide .productCnt h6 {
   margin-bottom: 0px;
-  height: 40px;
+  height: 50px;
 }
 .productSlide .productCnt h6 a {
   color: #11161E;
@@ -3600,8 +3600,8 @@ body {
 }
 @media (min-width: 320px) and (max-width: 575px) {
   #shop .filter .filterOption P {
-    font-size: 14px;
-    margin-left: 15px;
+    font-size: 13px;
+    margin-left: 7px;
     padding-bottom: 6px;
   }
 }
@@ -3632,7 +3632,7 @@ body {
 @media (min-width: 320px) and (max-width: 575px) {
   #shop .filter .filterSort .selectSort {
     font-size: 14px;
-    padding: 0px 10px 0px 0px !important;
+    padding: 0px 0px 0px 0px !important;
   }
 }
 @media (min-width: 576px) and (max-width: 991px) {
