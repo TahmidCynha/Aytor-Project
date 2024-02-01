@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
 <body>
-   <!-- *TOP HEADING START HERE  -->
-   <section id="topHeading" class="d-none d-lg-block">
+  <!-- *TOP HEADING START HERE  -->
+  <section id="topHeading" class="d-none d-lg-block">
     <div class="navbar navbar-expand-lg" style="padding: 0;">
       <div class="container" style="padding: 0;">
         <a class="navbar-brand freeShipping" href="#">
@@ -70,10 +70,10 @@
         </div>
       </div>
     </div>
-   </section>
-   <!-- *TOP HEADIND END  -->
-   <!-- *NAVBAR START HERE  -->
-   <section id="navbar">
+  </section>
+  <!-- *TOP HEADIND END  -->
+  <!-- *NAVBAR START HERE  -->
+  <section id="navbar">
         <nav class="navbar navbar-expand-lg">
             <div class="container" style="padding: 0;">
               <!-- *LOGO START  -->
@@ -202,43 +202,588 @@
             </div>
         </div>
           <!-- *RESPONSIVE NAVBAR END  -->
-   </section>
-   <!-- *NAVBAR END HERE  --> 
-   <!-- *ABOUT BANNER START HERE  -->
-   <section id="pageHeading">
+  </section>
+  <!-- *NAVBAR END HERE  --> 
+  <!-- *ABOUT BANNER START HERE  -->
+  <section id="pageHeading">
+    <div class="row">
+      <h2>Shop - Grid</h2>
+      <p>Home  /  Shop</p>
+    </div>
+  </section>
+  <!-- *ABOUT BANNER END  -->  
+  <!-- *SHOP START HERE   -->
+  <section id="shop">
+    <div class="container">
+      <div class="filter">
         <div class="row">
-            <h2>Shop - Grid</h2>
-            <p>Home  /  Shop</p>
+          <div class="filterOption col-lg-6 col-md-6 col-8">
+            <button class="filterIcon">
+              <span><i class="fa-solid fa-list-ul"></i></span>
+            </button>
+            <button class="filterIcon">
+              <span><i class="bi bi-grid-3x3"></i></span>
+            </button>
+            <p>Showing 12 of 16 Post</p>
+          </div>
+          <div class="filterSort col-lg-6 col-md-6 col-4">
+            <select class="selectSort" id="">
+              <option class="sortList" value="">Default sorting</option>
+              <option class="sortList" value="">Sort by Low-High</option>
+              <option class="sortList" value="">Sort by High-Low</option>
+            </select>
+          </div>
         </div>
-    </section>
-    <!-- *ABOUT BANNER END  -->  
-    <!-- *SHOP START HERE   -->
-    <section id="shop">
-        <div class="container">
-            <div class="filter">
-                <div class="row">
-                    <div class="filterOption col-lg-6">
-                        <button class="filterIcon">
-                            <span><i class="fa-solid fa-list-ul"></i></span>
-                        </button>
-                        <button class="filterIcon">
-                            <span><i class="bi bi-grid-3x3"></i></span>
-                        </button>
-                        <p>Showing 12 of 16 Post</p>
-                    </div>
-                    <div class="filterSort col-lg-6">
-                        <select class="selectSort" id="">
-                            <option class="sortList" value="">Default sorting</option>
-                            <option class="sortList" value="">Sort by Low-High</option>
-                            <option class="sortList" value="">Sort by High-Low</option>
-                        </select>
-                    </div>
-                    
+      </div>
+      <!-- *PRODUCT START HERE  -->
+      <div class="productItemsGrid">
+        <div class="row">
+          <!-- *PRODUCT START  -->
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="productItem">                 
+              <div class="productSlide">
+                <div class="productImage">
+                  <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_1.png" alt=""></a>
+                  <div class="label">
+                    <p>New</p>
+                  </div>
+                  <div class="overlay">
+                    <ul>
+                      <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                        <i class="bi bi-cart-plus"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                        <i class="bi bi-heart-fill"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                        <i class="bi bi-eye-fill"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                        <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                      </a></li>
+                    </ul>
+                  </div>
                 </div>
+                <div class="productCnt">
+                  <div class="row">
+                    <h6 class="col-lg-8"><a href="#">Spaghetti Hoodie</a></h6>
+                    <span class="col-lg-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <p>(5)</p>
+                    </span>
+                  </div>
+                  <p class="col-lg-12">$125.65</p>
+                </div>
+              </div>
             </div>
+          </div>
+          <!-- *PRODUCT END  -->
+          <!-- *PRODUCT START  -->
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="productItem">                 
+              <div class="productSlide">
+                <div class="productImage">
+                  <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_2.png" alt=""></a>
+                  <div class="label">
+                    <!-- <p>New</p> -->
+                  </div>
+                  <div class="overlay">
+                    <ul>
+                      <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                        <i class="bi bi-cart-plus"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                        <i class="bi bi-heart-fill"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                        <i class="bi bi-eye-fill"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                        <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                      </a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="productCnt">
+                  <div class="row">
+                    <h6 class="col-lg-8"><a href="#">Crew Neck Cotton</a></h6>
+                    <span class="col-lg-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <p>(5)</p>
+                    </span>
+                  </div>
+                  <p class="col-lg-12">$150.65</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- *PRODUCT END  -->
+          <!-- *PRODUCT START  -->
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="productItem">                 
+              <div class="productSlide">
+                <div class="productImage">
+                  <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_3.png" alt=""></a>
+                  <div class="label">
+                    <p>-45%</p>
+                  </div>
+                  <div class="overlay">
+                    <ul>
+                      <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                        <i class="bi bi-cart-plus"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                        <i class="bi bi-heart-fill"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                        <i class="bi bi-eye-fill"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                        <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                      </a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="productCnt">
+                  <div class="row">
+                    <h6 class="col-lg-8"><a href="#">Spaghetti Strap Dress</a></h6>
+                    <span class="col-lg-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <p>(5)</p>
+                    </span>
+                  </div>
+                  <p class="col-lg-12">$125.65</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- *PRODUCT END  --> 
+          <!-- *PRODUCT START  -->
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="productItem">                 
+              <div class="productSlide">
+                <div class="productImage">
+                  <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_4.png" alt=""></a>
+                  <div class="label">
+                    <p>New</p>
+                  </div>
+                  <div class="overlay">
+                    <ul>
+                      <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                        <i class="bi bi-cart-plus"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                        <i class="bi bi-heart-fill"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                        <i class="bi bi-eye-fill"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                        <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                      </a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="productCnt">
+                  <div class="row">
+                    <h6 class="col-lg-8"><a href="#">Pink Neck Frog</a></h6>
+                    <span class="col-lg-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <p>(5)</p>
+                    </span>
+                  </div>
+                  <p class="col-lg-12">$350.65</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- *PRODUCT END  -->
+          <!-- *PRODUCT START  -->
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="productItem">                 
+              <div class="productSlide">
+                <div class="productImage">
+                  <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_5.png" alt=""></a>
+                  <div class="label">
+                    <!-- <p>New</p> -->
+                  </div>
+                  <div class="overlay">
+                    <ul>
+                      <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                        <i class="bi bi-cart-plus"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                        <i class="bi bi-heart-fill"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                        <i class="bi bi-eye-fill"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                        <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                      </a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="productCnt">
+                  <div class="row">
+                    <h6 class="col-lg-8"><a href="#">T-shirt Blouse Sleeve</a></h6>
+                    <span class="col-lg-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <p>(5)</p>
+                    </span>
+                  </div>
+                  <p class="col-lg-12">$125.65</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- *PRODUCT END  --> 
+          <!-- *PRODUCT START  -->
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="productItem">                 
+              <div class="productSlide">
+                <div class="productImage">
+                  <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_6.png" alt=""></a>
+                  <div class="label">
+                    <p>-90%</p>
+                  </div>
+                  <div class="overlay">
+                    <ul>
+                      <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                        <i class="bi bi-cart-plus"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                        <i class="bi bi-heart-fill"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                        <i class="bi bi-eye-fill"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                        <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                      </a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="productCnt">
+                  <div class="row">
+                    <h6 class="col-lg-8"><a href="#">Crew Neck T-shirt</a></h6>
+                    <span class="col-lg-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <p>(5)</p>
+                    </span>
+                  </div>
+                  <p class="col-lg-12">$400.65</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- *PRODUCT END  -->
+          <!-- *PRODUCT START  -->
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="productItem">                 
+              <div class="productSlide">
+                <div class="productImage">
+                  <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_7.png" alt=""></a>
+                  <div class="label">
+                    <!-- <p>New</p> -->
+                  </div>
+                  <div class="overlay">
+                    <ul>
+                      <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                        <i class="bi bi-cart-plus"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                        <i class="bi bi-heart-fill"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                        <i class="bi bi-eye-fill"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                        <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                      </a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="productCnt">
+                  <div class="row">
+                    <h6 class="col-lg-8"><a href="#">Blouse Jacket</a></h6>
+                    <span class="col-lg-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <p>(5)</p>
+                    </span>
+                  </div>
+                  <p class="col-lg-12">$125.65</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- *PRODUCT END  -->                                                                
+          <!-- *PRODUCT START  -->
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="productItem">                 
+              <div class="productSlide">
+                <div class="productImage">
+                  <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_8.png" alt=""></a>
+                  <div class="label">
+                    <p>New</p>
+                  </div>
+                  <div class="overlay">
+                    <ul>
+                      <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                        <i class="bi bi-cart-plus"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                        <i class="bi bi-heart-fill"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                        <i class="bi bi-eye-fill"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                        <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                      </a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="productCnt">
+                  <div class="row">
+                    <h6 class="col-lg-8"><a href="#">Hoodie Sweater Bluza</a></h6>
+                    <span class="col-lg-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <p>(5)</p>
+                    </span>
+                  </div>
+                  <p class="col-lg-12">$255.65</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- *PRODUCT END  -->            
+          <!-- *PRODUCT START  -->
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="productItem">                 
+              <div class="productSlide">
+                <div class="productImage">
+                  <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_9.png" alt=""></a>
+                  <div class="label">
+                    <p>New</p>
+                  </div>
+                  <div class="overlay">
+                    <ul>
+                      <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                        <i class="bi bi-cart-plus"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                        <i class="bi bi-heart-fill"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                        <i class="bi bi-eye-fill"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                        <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                      </a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="productCnt">
+                  <div class="row">
+                    <h6 class="col-lg-8"><a href="#">Hoodie Coat Outerwear</a></h6>
+                    <span class="col-lg-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <p>(5)</p>
+                    </span>
+                  </div>
+                  <p class="col-lg-12">$250.65</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- *PRODUCT END  -->            
+          <!-- *PRODUCT START  -->
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="productItem">                 
+              <div class="productSlide">
+                <div class="productImage">
+                  <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_10.png" alt=""></a>
+                  <div class="label">
+                    <p>-25%</p>
+                  </div>
+                  <div class="overlay">
+                    <ul>
+                      <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                        <i class="bi bi-cart-plus"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                        <i class="bi bi-heart-fill"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                        <i class="bi bi-eye-fill"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                        <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                      </a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="productCnt">
+                  <div class="row">
+                    <h6 class="col-lg-8"><a href="#">Flight jacket</a></h6>
+                    <span class="col-lg-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <p>(5)</p>
+                    </span>
+                  </div>
+                  <p class="col-lg-12">$125.65</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- *PRODUCT END  -->  
+          <!-- *PRODUCT START  -->
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="productItem">                 
+              <div class="productSlide">
+                <div class="productImage">
+                  <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_11.png" alt=""></a>
+                  <div class="label">
+                    <!-- <p>New</p> -->
+                  </div>
+                  <div class="overlay">
+                    <ul>
+                      <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                        <i class="bi bi-cart-plus"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                        <i class="bi bi-heart-fill"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                        <i class="bi bi-eye-fill"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                        <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                      </a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="productCnt">
+                  <div class="row">
+                    <h6 class="col-lg-8 "><a href="#">Shoulder Dress, Plus-size</a></h6>
+                    <span class="col-lg-4 ">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <p>(5)</p>
+                    </span>
+                  </div>
+                  <p class="col-lg-12">$125.65</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- *PRODUCT END  -->  
+          <!-- *PRODUCT START  -->
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="productItem">                 
+              <div class="productSlide">
+                <div class="productImage">
+                  <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_12.png" alt=""></a>
+                  <div class="label">
+                    <p>New</p>
+                  </div>
+                  <div class="overlay">
+                    <ul>
+                      <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                        <i class="bi bi-cart-plus"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                        <i class="bi bi-heart-fill"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                        <i class="bi bi-eye-fill"></i>
+                      </a></li>
+                      <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                        <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                      </a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="productCnt">
+                  <div class="row">
+                    <h6 class="col-lg-8"><a href="#">Pajamas Nightwear</a></h6>
+                    <span class="col-lg-4">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <p>(5)</p>
+                    </span>
+                  </div>
+                  <p class="col-lg-12">$125.65</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- *PRODUCT END  -->  
+
+
+
+
+
+
+
+        
         </div>
 
-    </section>
+      </div>
+      <div class="productItemsList">
+
+
+      </div>
+
+    </div>
+  </section>
 
     
     
@@ -249,6 +794,8 @@
 
    <!-- *JS LINK START  -->
    <script src="./assets/vendor/js/jquery-3.7.1.min.js"></script>
+   <!-- *ISOTOP JS  -->
+   <script src="./assets/vendor/js/isotope.pkgd.min.js"></script>
    <!-- *VENOBOX JS  -->
    <script src="./assets/vendor/js/venobox.min.js"></script>
    <!-- *COUNTER UP 2 -->
