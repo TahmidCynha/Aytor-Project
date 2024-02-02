@@ -217,14 +217,21 @@
     <div class="container">
       <div class="filter">
         <div class="row">
-          <div class="filterOption col-lg-6 col-md-6 col-8">
-            <button class="filterIcon">
-              <span><i class="fa-solid fa-list-ul"></i></span>
-            </button>
-            <button class="filterIcon">
-              <span><i class="bi bi-grid-3x3"></i></span>
-            </button>
-            <p>Showing 12 of 16 Post</p>
+          <div class="links col-lg-6 col-md-6 col-8">
+            <ul style="padding: 0;">
+              <li class="li-list active" data-view="list-view"  style="display: inline-block;">
+                <span><i class="fa-solid fa-list-ul"></i></span>
+              </li>
+              <li class="li-grid" data-view="grid-view"  style="display: inline-block;">
+                <span><i class="bi bi-grid-3x3"></i></span>
+              </li>
+            </ul>
+            <div class="shopProgress">
+              <p>Showing 12 of 16 Post</p>
+              <div class="progress customProgress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar customProgress_bar" style="width: 75%"><p>Showing 12 of 16 Post</p></div>
+              </div>
+            </div>            
           </div>
           <div class="filterSort col-lg-6 col-md-6 col-4">
             <select class="selectSort" id="">
@@ -236,583 +243,1161 @@
         </div>
       </div>
       <!-- *PRODUCT START HERE  -->
-      <div class="productItemsGrid">
-        <div class="row">
-          <!-- *PRODUCT START  -->
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="productItem">                 
-              <div class="productSlide">
-                <div class="productImage">
-                  <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_1.png" alt=""></a>
-                  <div class="label">
-                    <p>New</p>
+      <div class="view_main">
+        <!-- *GRID START HERE  -->
+        <div class="view_wrap grid-view" style="display: none;">
+          <div class="productItemsGrid">
+            <div class="row">
+              <!-- *PRODUCT START  -->
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="productItem">                 
+                  <div class="productSlide">
+                    <div class="productImage">
+                      <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_1.png" alt=""></a>
+                      <div class="label">
+                        <p>New</p>
+                      </div>
+                      <div class="overlay">
+                        <ul>
+                          <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <i class="bi bi-cart-plus"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                            <i class="bi bi-eye-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                            <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="productCnt">
+                      <div class="row">
+                        <h6 class="col-lg-8"><a href="#">Spaghetti Hoodie</a></h6>
+                        <span class="col-lg-4">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <p>(5)</p>
+                        </span>
+                      </div>
+                      <p class="col-lg-12">$125.65</p>
+                    </div>
                   </div>
-                  <div class="overlay">
-                    <ul>
-                      <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
-                        <i class="bi bi-cart-plus"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
-                        <i class="bi bi-heart-fill"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
-                        <i class="bi bi-eye-fill"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
-                        <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
-                      </a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="productCnt">
-                  <div class="row">
-                    <h6 class="col-lg-8"><a href="#">Spaghetti Hoodie</a></h6>
-                    <span class="col-lg-4">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <p>(5)</p>
-                    </span>
-                  </div>
-                  <p class="col-lg-12">$125.65</p>
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- *PRODUCT END  -->
-          <!-- *PRODUCT START  -->
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="productItem">                 
-              <div class="productSlide">
-                <div class="productImage">
-                  <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_2.png" alt=""></a>
-                  <div class="label">
-                    <!-- <p>New</p> -->
+              <!-- *PRODUCT END  -->
+              <!-- *PRODUCT START  -->
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="productItem">                 
+                  <div class="productSlide">
+                    <div class="productImage">
+                      <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_2.png" alt=""></a>
+                      <div class="label">
+                        <!-- <p>New</p> -->
+                      </div>
+                      <div class="overlay">
+                        <ul>
+                          <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <i class="bi bi-cart-plus"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                            <i class="bi bi-eye-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                            <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="productCnt">
+                      <div class="row">
+                        <h6 class="col-lg-8"><a href="#">Crew Neck Cotton</a></h6>
+                        <span class="col-lg-4">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <p>(5)</p>
+                        </span>
+                      </div>
+                      <p class="col-lg-12">$150.65</p>
+                    </div>
                   </div>
-                  <div class="overlay">
-                    <ul>
-                      <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
-                        <i class="bi bi-cart-plus"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
-                        <i class="bi bi-heart-fill"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
-                        <i class="bi bi-eye-fill"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
-                        <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
-                      </a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="productCnt">
-                  <div class="row">
-                    <h6 class="col-lg-8"><a href="#">Crew Neck Cotton</a></h6>
-                    <span class="col-lg-4">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <p>(5)</p>
-                    </span>
-                  </div>
-                  <p class="col-lg-12">$150.65</p>
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- *PRODUCT END  -->
-          <!-- *PRODUCT START  -->
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="productItem">                 
-              <div class="productSlide">
-                <div class="productImage">
-                  <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_3.png" alt=""></a>
-                  <div class="label">
-                    <p>-45%</p>
+              <!-- *PRODUCT END  -->
+              <!-- *PRODUCT START  -->
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="productItem">                 
+                  <div class="productSlide">
+                    <div class="productImage">
+                      <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_3.png" alt=""></a>
+                      <div class="label">
+                        <p>-45%</p>
+                      </div>
+                      <div class="overlay">
+                        <ul>
+                          <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <i class="bi bi-cart-plus"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                            <i class="bi bi-eye-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                            <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="productCnt">
+                      <div class="row">
+                        <h6 class="col-lg-8"><a href="#">Spaghetti Strap Dress</a></h6>
+                        <span class="col-lg-4">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <p>(5)</p>
+                        </span>
+                      </div>
+                      <p class="col-lg-12">$125.65</p>
+                    </div>
                   </div>
-                  <div class="overlay">
-                    <ul>
-                      <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
-                        <i class="bi bi-cart-plus"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
-                        <i class="bi bi-heart-fill"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
-                        <i class="bi bi-eye-fill"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
-                        <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
-                      </a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="productCnt">
-                  <div class="row">
-                    <h6 class="col-lg-8"><a href="#">Spaghetti Strap Dress</a></h6>
-                    <span class="col-lg-4">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <p>(5)</p>
-                    </span>
-                  </div>
-                  <p class="col-lg-12">$125.65</p>
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- *PRODUCT END  --> 
-          <!-- *PRODUCT START  -->
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="productItem">                 
-              <div class="productSlide">
-                <div class="productImage">
-                  <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_4.png" alt=""></a>
-                  <div class="label">
-                    <p>New</p>
+              <!-- *PRODUCT END  --> 
+              <!-- *PRODUCT START  -->
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="productItem">                 
+                  <div class="productSlide">
+                    <div class="productImage">
+                      <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_4.png" alt=""></a>
+                      <div class="label">
+                        <p>New</p>
+                      </div>
+                      <div class="overlay">
+                        <ul>
+                          <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <i class="bi bi-cart-plus"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                            <i class="bi bi-eye-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                            <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="productCnt">
+                      <div class="row">
+                        <h6 class="col-lg-8"><a href="#">Pink Neck Frog</a></h6>
+                        <span class="col-lg-4">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <p>(5)</p>
+                        </span>
+                      </div>
+                      <p class="col-lg-12">$350.65</p>
+                    </div>
                   </div>
-                  <div class="overlay">
-                    <ul>
-                      <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
-                        <i class="bi bi-cart-plus"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
-                        <i class="bi bi-heart-fill"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
-                        <i class="bi bi-eye-fill"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
-                        <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
-                      </a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="productCnt">
-                  <div class="row">
-                    <h6 class="col-lg-8"><a href="#">Pink Neck Frog</a></h6>
-                    <span class="col-lg-4">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <p>(5)</p>
-                    </span>
-                  </div>
-                  <p class="col-lg-12">$350.65</p>
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- *PRODUCT END  -->
-          <!-- *PRODUCT START  -->
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="productItem">                 
-              <div class="productSlide">
-                <div class="productImage">
-                  <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_5.png" alt=""></a>
-                  <div class="label">
-                    <!-- <p>New</p> -->
+              <!-- *PRODUCT END  -->
+              <!-- *PRODUCT START  -->
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="productItem">                 
+                  <div class="productSlide">
+                    <div class="productImage">
+                      <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_5.png" alt=""></a>
+                      <div class="label">
+                        <!-- <p>New</p> -->
+                      </div>
+                      <div class="overlay">
+                        <ul>
+                          <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <i class="bi bi-cart-plus"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                            <i class="bi bi-eye-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                            <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="productCnt">
+                      <div class="row">
+                        <h6 class="col-lg-8"><a href="#">T-shirt Blouse Sleeve</a></h6>
+                        <span class="col-lg-4">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <p>(5)</p>
+                        </span>
+                      </div>
+                      <p class="col-lg-12">$125.65</p>
+                    </div>
                   </div>
-                  <div class="overlay">
-                    <ul>
-                      <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
-                        <i class="bi bi-cart-plus"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
-                        <i class="bi bi-heart-fill"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
-                        <i class="bi bi-eye-fill"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
-                        <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
-                      </a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="productCnt">
-                  <div class="row">
-                    <h6 class="col-lg-8"><a href="#">T-shirt Blouse Sleeve</a></h6>
-                    <span class="col-lg-4">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <p>(5)</p>
-                    </span>
-                  </div>
-                  <p class="col-lg-12">$125.65</p>
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- *PRODUCT END  --> 
-          <!-- *PRODUCT START  -->
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="productItem">                 
-              <div class="productSlide">
-                <div class="productImage">
-                  <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_6.png" alt=""></a>
-                  <div class="label">
-                    <p>-90%</p>
+              <!-- *PRODUCT END  --> 
+              <!-- *PRODUCT START  -->
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="productItem">                 
+                  <div class="productSlide">
+                    <div class="productImage">
+                      <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_6.png" alt=""></a>
+                      <div class="label">
+                        <p>-90%</p>
+                      </div>
+                      <div class="overlay">
+                        <ul>
+                          <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <i class="bi bi-cart-plus"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                            <i class="bi bi-eye-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                            <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="productCnt">
+                      <div class="row">
+                        <h6 class="col-lg-8"><a href="#">Crew Neck T-shirt</a></h6>
+                        <span class="col-lg-4">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <p>(5)</p>
+                        </span>
+                      </div>
+                      <p class="col-lg-12">$400.65</p>
+                    </div>
                   </div>
-                  <div class="overlay">
-                    <ul>
-                      <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
-                        <i class="bi bi-cart-plus"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
-                        <i class="bi bi-heart-fill"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
-                        <i class="bi bi-eye-fill"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
-                        <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
-                      </a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="productCnt">
-                  <div class="row">
-                    <h6 class="col-lg-8"><a href="#">Crew Neck T-shirt</a></h6>
-                    <span class="col-lg-4">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <p>(5)</p>
-                    </span>
-                  </div>
-                  <p class="col-lg-12">$400.65</p>
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- *PRODUCT END  -->
-          <!-- *PRODUCT START  -->
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="productItem">                 
-              <div class="productSlide">
-                <div class="productImage">
-                  <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_7.png" alt=""></a>
-                  <div class="label">
-                    <!-- <p>New</p> -->
+              <!-- *PRODUCT END  -->
+              <!-- *PRODUCT START  -->
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="productItem">                 
+                  <div class="productSlide">
+                    <div class="productImage">
+                      <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_7.png" alt=""></a>
+                      <div class="label">
+                        <!-- <p>New</p> -->
+                      </div>
+                      <div class="overlay">
+                        <ul>
+                          <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <i class="bi bi-cart-plus"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                            <i class="bi bi-eye-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                            <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="productCnt">
+                      <div class="row">
+                        <h6 class="col-lg-8"><a href="#">Blouse Jacket</a></h6>
+                        <span class="col-lg-4">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <p>(5)</p>
+                        </span>
+                      </div>
+                      <p class="col-lg-12">$125.65</p>
+                    </div>
                   </div>
-                  <div class="overlay">
-                    <ul>
-                      <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
-                        <i class="bi bi-cart-plus"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
-                        <i class="bi bi-heart-fill"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
-                        <i class="bi bi-eye-fill"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
-                        <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
-                      </a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="productCnt">
-                  <div class="row">
-                    <h6 class="col-lg-8"><a href="#">Blouse Jacket</a></h6>
-                    <span class="col-lg-4">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <p>(5)</p>
-                    </span>
-                  </div>
-                  <p class="col-lg-12">$125.65</p>
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- *PRODUCT END  -->                                                                
-          <!-- *PRODUCT START  -->
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="productItem">                 
-              <div class="productSlide">
-                <div class="productImage">
-                  <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_8.png" alt=""></a>
-                  <div class="label">
-                    <p>New</p>
+              <!-- *PRODUCT END  -->                                                                
+              <!-- *PRODUCT START  -->
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="productItem">                 
+                  <div class="productSlide">
+                    <div class="productImage">
+                      <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_8.png" alt=""></a>
+                      <div class="label">
+                        <p>New</p>
+                      </div>
+                      <div class="overlay">
+                        <ul>
+                          <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <i class="bi bi-cart-plus"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                            <i class="bi bi-eye-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                            <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="productCnt">
+                      <div class="row">
+                        <h6 class="col-lg-8"><a href="#">Hoodie Sweater Bluza</a></h6>
+                        <span class="col-lg-4">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <p>(5)</p>
+                        </span>
+                      </div>
+                      <p class="col-lg-12">$255.65</p>
+                    </div>
                   </div>
-                  <div class="overlay">
-                    <ul>
-                      <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
-                        <i class="bi bi-cart-plus"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
-                        <i class="bi bi-heart-fill"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
-                        <i class="bi bi-eye-fill"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
-                        <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
-                      </a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="productCnt">
-                  <div class="row">
-                    <h6 class="col-lg-8"><a href="#">Hoodie Sweater Bluza</a></h6>
-                    <span class="col-lg-4">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <p>(5)</p>
-                    </span>
-                  </div>
-                  <p class="col-lg-12">$255.65</p>
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- *PRODUCT END  -->            
-          <!-- *PRODUCT START  -->
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="productItem">                 
-              <div class="productSlide">
-                <div class="productImage">
-                  <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_9.png" alt=""></a>
-                  <div class="label">
-                    <p>New</p>
+              <!-- *PRODUCT END  -->            
+              <!-- *PRODUCT START  -->
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="productItem">                 
+                  <div class="productSlide">
+                    <div class="productImage">
+                      <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_9.png" alt=""></a>
+                      <div class="label">
+                        <p>New</p>
+                      </div>
+                      <div class="overlay">
+                        <ul>
+                          <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <i class="bi bi-cart-plus"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                            <i class="bi bi-eye-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                            <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="productCnt">
+                      <div class="row">
+                        <h6 class="col-lg-8"><a href="#">Hoodie Coat Outerwear</a></h6>
+                        <span class="col-lg-4">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <p>(5)</p>
+                        </span>
+                      </div>
+                      <p class="col-lg-12">$250.65</p>
+                    </div>
                   </div>
-                  <div class="overlay">
-                    <ul>
-                      <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
-                        <i class="bi bi-cart-plus"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
-                        <i class="bi bi-heart-fill"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
-                        <i class="bi bi-eye-fill"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
-                        <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
-                      </a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="productCnt">
-                  <div class="row">
-                    <h6 class="col-lg-8"><a href="#">Hoodie Coat Outerwear</a></h6>
-                    <span class="col-lg-4">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <p>(5)</p>
-                    </span>
-                  </div>
-                  <p class="col-lg-12">$250.65</p>
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- *PRODUCT END  -->            
-          <!-- *PRODUCT START  -->
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="productItem">                 
-              <div class="productSlide">
-                <div class="productImage">
-                  <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_10.png" alt=""></a>
-                  <div class="label">
-                    <p>-25%</p>
+              <!-- *PRODUCT END  -->            
+              <!-- *PRODUCT START  -->
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="productItem">                 
+                  <div class="productSlide">
+                    <div class="productImage">
+                      <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_10.png" alt=""></a>
+                      <div class="label">
+                        <p>-25%</p>
+                      </div>
+                      <div class="overlay">
+                        <ul>
+                          <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <i class="bi bi-cart-plus"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                            <i class="bi bi-eye-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                            <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="productCnt">
+                      <div class="row">
+                        <h6 class="col-lg-8"><a href="#">Flight jacket</a></h6>
+                        <span class="col-lg-4">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <p>(5)</p>
+                        </span>
+                      </div>
+                      <p class="col-lg-12">$125.65</p>
+                    </div>
                   </div>
-                  <div class="overlay">
-                    <ul>
-                      <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
-                        <i class="bi bi-cart-plus"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
-                        <i class="bi bi-heart-fill"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
-                        <i class="bi bi-eye-fill"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
-                        <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
-                      </a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="productCnt">
-                  <div class="row">
-                    <h6 class="col-lg-8"><a href="#">Flight jacket</a></h6>
-                    <span class="col-lg-4">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <p>(5)</p>
-                    </span>
-                  </div>
-                  <p class="col-lg-12">$125.65</p>
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- *PRODUCT END  -->  
-          <!-- *PRODUCT START  -->
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="productItem">                 
-              <div class="productSlide">
-                <div class="productImage">
-                  <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_11.png" alt=""></a>
-                  <div class="label">
-                    <!-- <p>New</p> -->
+              <!-- *PRODUCT END  -->  
+              <!-- *PRODUCT START  -->
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="productItem">                 
+                  <div class="productSlide">
+                    <div class="productImage">
+                      <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_11.png" alt=""></a>
+                      <div class="label">
+                        <!-- <p>New</p> -->
+                      </div>
+                      <div class="overlay">
+                        <ul>
+                          <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <i class="bi bi-cart-plus"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                            <i class="bi bi-eye-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                            <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="productCnt">
+                      <div class="row">
+                        <h6 class="col-lg-8 "><a href="#">Shoulder Dress, Plus-size</a></h6>
+                        <span class="col-lg-4 ">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <p>(5)</p>
+                        </span>
+                      </div>
+                      <p class="col-lg-12">$125.65</p>
+                    </div>
                   </div>
-                  <div class="overlay">
-                    <ul>
-                      <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
-                        <i class="bi bi-cart-plus"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
-                        <i class="bi bi-heart-fill"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
-                        <i class="bi bi-eye-fill"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
-                        <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
-                      </a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="productCnt">
-                  <div class="row">
-                    <h6 class="col-lg-8 "><a href="#">Shoulder Dress, Plus-size</a></h6>
-                    <span class="col-lg-4 ">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <p>(5)</p>
-                    </span>
-                  </div>
-                  <p class="col-lg-12">$125.65</p>
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- *PRODUCT END  -->  
-          <!-- *PRODUCT START  -->
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="productItem">                 
-              <div class="productSlide">
-                <div class="productImage">
-                  <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_12.png" alt=""></a>
-                  <div class="label">
-                    <p>New</p>
+              <!-- *PRODUCT END  -->  
+              <!-- *PRODUCT START  -->
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="productItem">                 
+                  <div class="productSlide">
+                    <div class="productImage">
+                      <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_12.png" alt=""></a>
+                      <div class="label">
+                        <p>New</p>
+                      </div>
+                      <div class="overlay">
+                        <ul>
+                          <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
+                            <i class="bi bi-cart-plus"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
+                            <i class="bi bi-heart-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
+                            <i class="bi bi-eye-fill"></i>
+                          </a></li>
+                          <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
+                            <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
+                          </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="productCnt">
+                      <div class="row">
+                        <h6 class="col-lg-8"><a href="#">Pajamas Nightwear</a></h6>
+                        <span class="col-lg-4">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <p>(5)</p>
+                        </span>
+                      </div>
+                      <p class="col-lg-12">$125.65</p>
+                    </div>
                   </div>
-                  <div class="overlay">
-                    <ul>
-                      <li><a href="#" style="transition-delay: 0.1s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart">
-                        <i class="bi bi-cart-plus"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.2s;"  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist">
-                        <i class="bi bi-heart-fill"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.3s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View">
-                        <i class="bi bi-eye-fill"></i>
-                      </a></li>
-                      <li><a href="#" style="transition-delay: 0.4s;" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Compare">
-                        <iconify-icon icon="bi:bar-chart-fill"></iconify-icon>
-                      </a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="productCnt">
-                  <div class="row">
-                    <h6 class="col-lg-8"><a href="#">Pajamas Nightwear</a></h6>
-                    <span class="col-lg-4">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <p>(5)</p>
-                    </span>
-                  </div>
-                  <p class="col-lg-12">$125.65</p>
                 </div>
               </div>
+              <!-- *PRODUCT END  -->       
             </div>
           </div>
-          <!-- *PRODUCT END  -->  
-
-
-
-
-
-
-
-        
         </div>
+        <!-- *GRID END HERE -->
+         <!-- *LIST START HERE  -->
+        <div class="view_wrap list-view" style="display: block;">
+          <div class="productItemsList">
+            <!-- *PRODUCT START  -->
+            <div class="col-lg-12 col-md-12 col-12">
+              <div class="productList">
+                <div class="row">
+                  <div class="productImageList col-lg-3 col-md-5 col-12">
+                    <a href="#"><img style="width: 100%;height: 100%;" src="./assets/image/shop/img_1.png" alt=""></a>
+                    <div class="label">
+                      <p>New</p>
+                    </div>
+                  </div>
+                  <div class="productCnt col-lg-9 col-md-7 col-12">
+                    <h3><a href="#">Spaghetti Hoodie</a></h3>
+                    <h6>$125.65</h6>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <p>(5)</p>   
+                    </span>
+                    <p>Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche.</p>
+                    <div class="actions">
+                      <a href="#"><i class="bi bi-cart-plus"></i></a>
+                      <a href="#"><iconify-icon icon="bi:bar-chart-fill"></iconify-icon></a>
+                      <a href="#"><i class="bi bi-heart-fill"></i></a>
+                      <a href="#"><i class="fa-solid fa-eye"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <!-- *PRODUCT END  -->
+            <!-- *PRODUCT START  -->
+            <div class="col-lg-12 col-md-12 col-12">
+              <div class="productList">
+                <div class="row">
+                  <div class="productImageList col-lg-3 col-md-5 col-12">
+                    <a href="#"><img style="width: 100%;height: 100%;" src="./assets/image/shop/img_2.png" alt=""></a>
+                    <div class="label">
+                      <p>New</p>
+                    </div>
+                  </div>
+                  <div class="productCnt col-lg-9 col-md-7 col-12">
+                    <h3><a href="#">Crew Neck Cotton</a></h3>
+                    <h6>$150.65</h6>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <p>(5)</p>   
+                    </span>
+                    <p>Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche.</p>
+                    <div class="actions">
+                      <a href="#"><i class="bi bi-cart-plus"></i></a>
+                      <a href="#"><iconify-icon icon="bi:bar-chart-fill"></iconify-icon></a>
+                      <a href="#"><i class="bi bi-heart-fill"></i></a>
+                      <a href="#"><i class="fa-solid fa-eye"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <!-- *PRODUCT END  -->
+            <!-- *PRODUCT START  -->
+            <div class="col-lg-12 col-md-12 col-12">
+              <div class="productList">
+                <div class="row">
+                  <div class="productImageList col-lg-3 col-md-5 col-12">
+                    <a href="#"><img style="width: 100%;height: 100%;" src="./assets/image/shop/img_3.png" alt=""></a>
+                    <div class="label">
+                      <p>New</p>
+                    </div>
+                  </div>
+                  <div class="productCnt col-lg-9 col-md-7 col-12">
+                    <h3><a href="#">Spaghetti Strap Dress</a></h3>
+                    <h6>$125.65</h6>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <p>(5)</p>   
+                    </span>
+                    <p>Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche.</p>
+                    <div class="actions">
+                      <a href="#"><i class="bi bi-cart-plus"></i></a>
+                      <a href="#"><iconify-icon icon="bi:bar-chart-fill"></iconify-icon></a>
+                      <a href="#"><i class="bi bi-heart-fill"></i></a>
+                      <a href="#"><i class="fa-solid fa-eye"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <!-- *PRODUCT END  -->
+            <!-- *PRODUCT START  -->
+            <div class="col-lg-12 col-md-12 col-12">
+              <div class="productList">
+                <div class="row">
+                  <div class="productImageList col-lg-3 col-md-5 col-12">
+                    <a href="#"><img style="width: 100%;height: 100%;" src="./assets/image/shop/img_4.png" alt=""></a>
+                    <div class="label">
+                      <p>New</p>
+                    </div>
+                  </div>
+                  <div class="productCnt col-lg-9 col-md-7 col-12">
+                    <h3><a href="#">Pink Neck Frog</a></h3>
+                    <h6>$350.65</h6>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <p>(5)</p>   
+                    </span>
+                    <p>Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche.</p>
+                    <div class="actions">
+                      <a href="#"><i class="bi bi-cart-plus"></i></a>
+                      <a href="#"><iconify-icon icon="bi:bar-chart-fill"></iconify-icon></a>
+                      <a href="#"><i class="bi bi-heart-fill"></i></a>
+                      <a href="#"><i class="fa-solid fa-eye"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <!-- *PRODUCT END  -->
+            <!-- *PRODUCT START  -->
+            <div class="col-lg-12 col-md-12 col-12">
+              <div class="productList">
+                <div class="row">
+                  <div class="productImageList col-lg-3 col-md-5 col-12">
+                    <a href="#"><img style="width: 100%;height: 100%;" src="./assets/image/shop/img_5.png" alt=""></a>
+                    <div class="label">
+                      <p>New</p>
+                    </div>
+                  </div>
+                  <div class="productCnt col-lg-9 col-md-7 col-12">
+                    <h3><a href="#">T-shirt Blouse Sleeve</a></h3>
+                    <h6>$125.65</h6>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <p>(5)</p>   
+                    </span>
+                    <p>Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche.</p>
+                    <div class="actions">
+                      <a href="#"><i class="bi bi-cart-plus"></i></a>
+                      <a href="#"><iconify-icon icon="bi:bar-chart-fill"></iconify-icon></a>
+                      <a href="#"><i class="bi bi-heart-fill"></i></a>
+                      <a href="#"><i class="fa-solid fa-eye"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <!-- *PRODUCT END  -->
+            <!-- *PRODUCT START  -->
+            <div class="col-lg-12 col-md-12 col-12">
+              <div class="productList">
+                <div class="row">
+                  <div class="productImageList col-lg-3 col-md-5 col-12">
+                    <a href="#"><img style="width: 100%;height: 100%;" src="./assets/image/shop/img_6.png" alt=""></a>
+                    <div class="label">
+                      <p>New</p>
+                    </div>
+                  </div>
+                  <div class="productCnt col-lg-9 col-md-7 col-12">
+                    <h3><a href="#">Crew Neck T-shirt</a></h3>
+                    <h6>$150.65</h6>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <p>(5)</p>   
+                    </span>
+                    <p>Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche.</p>
+                    <div class="actions">
+                      <a href="#"><i class="bi bi-cart-plus"></i></a>
+                      <a href="#"><iconify-icon icon="bi:bar-chart-fill"></iconify-icon></a>
+                      <a href="#"><i class="bi bi-heart-fill"></i></a>
+                      <a href="#"><i class="fa-solid fa-eye"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <!-- *PRODUCT END  -->
+            <!-- *PRODUCT START  -->
+            <div class="col-lg-12 col-md-12 col-12">
+              <div class="productList">
+                <div class="row">
+                  <div class="productImageList col-lg-3 col-md-5 col-12">
+                    <a href="#"><img style="width: 100%;height: 100%;" src="./assets/image/shop/img_7.png" alt=""></a>
+                    <div class="label">
+                      <p>New</p>
+                    </div>
+                  </div>
+                  <div class="productCnt col-lg-9 col-md-7 col-12">
+                    <h3><a href="#">Blouse Jacket</a></h3>
+                    <h6>$125.65</h6>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <p>(5)</p>   
+                    </span>
+                    <p>Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche.</p>
+                    <div class="actions">
+                      <a href="#"><i class="bi bi-cart-plus"></i></a>
+                      <a href="#"><iconify-icon icon="bi:bar-chart-fill"></iconify-icon></a>
+                      <a href="#"><i class="bi bi-heart-fill"></i></a>
+                      <a href="#"><i class="fa-solid fa-eye"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <!-- *PRODUCT END  -->
+            <!-- *PRODUCT START  -->
+            <div class="col-lg-12 col-md-12 col-12">
+              <div class="productList">
+                <div class="row">
+                  <div class="productImageList col-lg-3 col-md-5 col-12">
+                    <a href="#"><img style="width: 100%;height: 100%;" src="./assets/image/shop/img_8.png" alt=""></a>
+                    <div class="label">
+                      <p>New</p>
+                    </div>
+                  </div>
+                  <div class="productCnt col-lg-9 col-md-7 col-12">
+                    <h3><a href="#">Hoodie Sweater Bluza</a></h3>
+                    <h6>$125.65</h6>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <p>(5)</p>   
+                    </span>
+                    <p>Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche.</p>
+                    <div class="actions">
+                      <a href="#"><i class="bi bi-cart-plus"></i></a>
+                      <a href="#"><iconify-icon icon="bi:bar-chart-fill"></iconify-icon></a>
+                      <a href="#"><i class="bi bi-heart-fill"></i></a>
+                      <a href="#"><i class="fa-solid fa-eye"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <!-- *PRODUCT END  -->
+            <!-- *PRODUCT START  -->
+            <div class="col-lg-12 col-md-12 col-12">
+              <div class="productList">
+                <div class="row">
+                  <div class="productImageList col-lg-3 col-md-5 col-12">
+                    <a href="#"><img style="width: 100%;height: 100%;" src="./assets/image/shop/img_9.png" alt=""></a>
+                    <div class="label">
+                      <p>New</p>
+                    </div>
+                  </div>
+                  <div class="productCnt col-lg-9 col-md-7 col-12">
+                    <h3><a href="#">Hoodie Coat Outerwear</a></h3>
+                    <h6>$125.65</h6>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <p>(5)</p>   
+                    </span>
+                    <p>Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche.</p>
+                    <div class="actions">
+                      <a href="#"><i class="bi bi-cart-plus"></i></a>
+                      <a href="#"><iconify-icon icon="bi:bar-chart-fill"></iconify-icon></a>
+                      <a href="#"><i class="bi bi-heart-fill"></i></a>
+                      <a href="#"><i class="fa-solid fa-eye"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <!-- *PRODUCT END  -->
+            <!-- *PRODUCT START  -->
+            <div class="col-lg-12 col-md-12 col-12">
+              <div class="productList">
+                <div class="row">
+                  <div class="productImageList col-lg-3 col-md-5 col-12">
+                    <a href="#"><img style="width: 100%;height: 100%;" src="./assets/image/shop/img_10.png" alt=""></a>
+                    <div class="label">
+                      <p>New</p>
+                    </div>
+                  </div>
+                  <div class="productCnt col-lg-9 col-md-7 col-12">
+                    <h3><a href="#">Flight jacket</a></h3>
+                    <h6>$150.65</h6>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <p>(5)</p>   
+                    </span>
+                    <p>Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche.</p>
+                    <div class="actions">
+                      <a href="#"><i class="bi bi-cart-plus"></i></a>
+                      <a href="#"><iconify-icon icon="bi:bar-chart-fill"></iconify-icon></a>
+                      <a href="#"><i class="bi bi-heart-fill"></i></a>
+                      <a href="#"><i class="fa-solid fa-eye"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <!-- *PRODUCT END  -->
+            <!-- *PRODUCT START  -->
+            <div class="col-lg-12 col-md-12 col-12">
+              <div class="productList">
+                <div class="row">
+                  <div class="productImageList col-lg-3 col-md-5 col-12">
+                    <a href="#"><img style="width: 100%;height: 100%;" src="./assets/image/shop/img_11.png" alt=""></a>
+                    <div class="label">
+                      <p>New</p>
+                    </div>
+                  </div>
+                  <div class="productCnt col-lg-9 col-md-7 col-12">
+                    <h3><a href="#">Shoulder Dress, Plus-size</a></h3>
+                    <h6>$125.65</h6>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <p>(5)</p>   
+                    </span>
+                    <p>Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche.</p>
+                    <div class="actions">
+                      <a href="#"><i class="bi bi-cart-plus"></i></a>
+                      <a href="#"><iconify-icon icon="bi:bar-chart-fill"></iconify-icon></a>
+                      <a href="#"><i class="bi bi-heart-fill"></i></a>
+                      <a href="#"><i class="fa-solid fa-eye"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <!-- *PRODUCT END  -->
+            <!-- *PRODUCT START  -->
+            <div class="col-lg-12 col-md-12 col-12">
+              <div class="productList">
+                <div class="row">
+                  <div class="productImageList col-lg-3 col-md-5 col-12">
+                    <a href="#"><img style="width: 100%;height: 100%;" src="./assets/image/shop/img_12.png" alt=""></a>
+                    <div class="label">
+                      <p>New</p>
+                    </div>
+                  </div>
+                  <div class="productCnt col-lg-9 col-md-7 col-12">
+                    <h3><a href="#">Pajamas Nightwear</a></h3>
+                    <h6>$350.65</h6>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <p>(5)</p>   
+                    </span>
+                    <p>Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche.</p>
+                    <div class="actions">
+                      <a href="#"><i class="bi bi-cart-plus"></i></a>
+                      <a href="#"><iconify-icon icon="bi:bar-chart-fill"></iconify-icon></a>
+                      <a href="#"><i class="bi bi-heart-fill"></i></a>
+                      <a href="#"><i class="fa-solid fa-eye"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <!-- *PRODUCT END  -->
 
+
+
+          </div>        
+        </div>
+        <!-- *LIST END HERE -->
+        <!-- *BUTTON START HERE -->
+        <div class="pageSlideBtn">
+          <ul style="padding: 0;margin: 0;">
+            <li class="ShopArrow">
+              <a href="#">
+                <span><i class="fa-solid fa-arrow-left"></i></span>
+                <p>Pre</p>
+              </a>
+            </li>
+            <li class="NumberBtn active"><a href="#">1</a></li>
+            <li class="NumberBtn"><a href="#">2</a></li>
+            <li class="ShopArrow">
+              <a href="#">
+                <p>Next</p>
+                <span><i class="fa-solid fa-arrow-right"></i></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- *BUTTON END HERE -->
       </div>
-      <div class="productItemsList">
-
-
-      </div>
-
     </div>
   </section>
+  <!-- *SHOP END HERE  -->
+  <!-- *ABOUT FOOTER START HERE  -->
+  <footer id="MainFooter">
+      <div class="container">
 
-    
-    
+         <!-- *SUBSCRIBE BTN START  -->
+        <div class="footerSubs col-lg-12">
+          <div class="row">
+            <div class="subsHead col-lg-6">
+              <div class="col-lg-10">
+                <h3>Subscribe to Our Newsletter!</h3>
+                <p>Authoritatively morph 24/7 potentialities with error-free partnerships. Objectively engineer multimedia.</p>
+              </div>
+            </div>
+            <div class="subsBtn col-lg-6">
+              <div class="col-lg-12">
+                <div class="boxCnt row ">
+                  <input class="col-8" type="email" placeholder="Enter your email....">
+                  <button class="subscribeBtn col-4">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- *SUBSCRIBE BTN END  -->
+
+        <!-- *MAIN FOOTER START HERE  -->
+        <div class="mainFooterCnt">
+          <div class="row">
+            <!-- *AYTOR LOGO & ICON -->
+            <div class="col-lg-3" style="padding: 0;">
+              <div class="aytorSocialCnt">
+                <div class="footerLogo">
+                  <img src="./assets/image/home/Logo.png" alt="">
+                </div>
+                <p>Progressively optimize effective ideas before turnkey process improvements. Proactively disseminate</p>
+                <div class="socialIcon col-12">
+                  <a href="#">
+                    <span><i class="fa-brands fa-facebook-f"></i></span>
+                  </a>
+                  <a href="#">
+                    <span><i class="fa-brands fa-twitter"></i></span>
+                  </a>
+                  <a href="#">
+                    <span><i class="fa-brands fa-instagram"></i></span>
+                  </a>
+                  <a href="#">
+                    <span><i class="fa-brands fa-pinterest-p"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- *AYTOR LOGO & ICON END  -->
+
+            <!-- *MY ACCOUNT START HERE  -->
+            <div class="col-lg-2 col-md-6 col-6" style="padding: 0;">
+              <div class="accountCnt col-12" style="padding: 0;">
+                <h4>My Account</h4>
+                <ul style="margin: 0;padding: 0;">
+                  <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>My Account</a></li>
+                  <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>View Cart</a></li>
+                  <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Wishlist</a></li>
+                  <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Compare</a></li>
+                  <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>New Products</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- *MY ACCOUNT END  HERE  -->
+            <!-- *SUPPORT START HERE  -->
+            <div class="col-lg-2 col-md-6 col-6" style="padding: 0;">
+              <div class="Support col-12" style="padding: 0;">
+                <h4>Support</h4>
+                <ul style="margin: 0;padding: 0;">
+                  <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Help</a></li>
+                  <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Contact Us</a></li>
+                  <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Feedback</a></li>
+                  <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Customer Service</a></li>
+                  <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Store Locations</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- *SUPPORT END HERE  -->
+            
+            <!-- *SHOP START HERE  -->
+            <div class="col-lg-2 col-md-6 col-6" style="padding: 0;">
+              <div class="ShopFooter col-12" style="padding: 0;">
+                <h4>Shop</h4>
+                <ul style="margin: 0;padding: 0;">
+                  <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Men’s Shopping</a></li>
+                  <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Women’s Shopping</a></li>
+                  <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Kids’ Shopping</a></li>
+                  <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Discounts</a></li>
+                  <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>New Arrivels</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- *SHOP END HERE  -->
+            <!-- *CONTACT US START HERE  -->
+            <div  class="col-lg-3 col-md-6 col-12 " style="padding: 0;">
+              <div class="contactUs col-lg-12" style="padding: 0;">
+                <h4>Contact Us</h4>
+                <div class="contactInfo">
+                  <div class="row">
+                    <div class="icon col-lg-2 col-md-1 col-1" style="padding: 0;" >
+                      <span><i class="fa-solid fa-location-dot"></i></span>
+                    </div>
+                    <div class="iconCnt col-lg-10 col-md-11 col-11" style="padding: 0;"> 
+                      <address>830 Broad way, New York,10003,<br>United States</address>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="icon col-lg-2 col-md-1 col-1" style="padding: 0;">
+                      <span><i class="fa-solid fa-phone"></i></span>
+                    </div>
+                    <div class="iconCnt col-lg-10 col-md-11 col-11" style="padding: 0;" >
+                      <a href="tel:+18008660286">+18008660286</a>
+                      <a href="tel:+18008660286">+18008660286</a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="icon col-lg-2 col-md-1 col-1" style="padding: 0;">
+                      <span><i class="fa-solid fa-envelope"></i></span>
+                    </div>
+                    <div class="iconCnt col-lg-10 col-md-11 col-11 " style="padding: 0;">
+                      <a href="mailto:aetor.info@gmail.com">aetor.info@gmail.com</a>
+                      <a href="mailto:info@aetor.com">info@aetor.com</a>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+            </div>
+            <!-- *CONTACT US END  HERE  -->              
+          </div>
+        </div>
+        <!-- *MAIN FOOTER END HERE  -->
+      </div>
+  </footer>
+  <!-- *ABOUT FOOTER END  HERE  -->
+  <!-- *COPYRIGHT FOOTER START HERE  -->
+  <section id="copyRight">
+      <div class="container">
+        <div class="row col-lg-12">
+          <div class="copyrightCnt col-lg-6 col-md-8">
+            <p>
+              © 2023 All Rights Reserved 
+              <a href="#">Aytor </a> by
+              <a href="#"> Tahmid Hossain</a>
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-4">
+            <div class="bankImg ">
+              <img src="./assets/image/home/bank card.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- *COPYRIGHT END HERE  -->
+  <!-- *PROGRESS BAR START -->
+  <div id="progress">
+    <span id="progress-value"><i class="fa-solid fa-arrow-up"></i></span>
+  </div>
+  <!-- *PROGRESS BAR END  -->
+
+
+  
 
 
 
-
-
-   <!-- *JS LINK START  -->
-   <script src="./assets/vendor/js/jquery-3.7.1.min.js"></script>
-   <!-- *ISOTOP JS  -->
-   <script src="./assets/vendor/js/isotope.pkgd.min.js"></script>
-   <!-- *VENOBOX JS  -->
-   <script src="./assets/vendor/js/venobox.min.js"></script>
-   <!-- *COUNTER UP 2 -->
-   <script src="./assets/vendor/js/index.js"></script>
-   <!-- *FONT AWOSOME -->
-   <script src="./assets/vendor/js/all.min.js"></script>
-   <!-- *COUNTDOWN JS  -->
-   <script src="./assets/vendor/js/countdown.js"></script>
-   <!-- *POPER JS  -->
-   <script src="./assets/vendor/js/popper.min.js"></script>
-   <!-- *SLICK JS  -->
-   <script src="./assets/vendor/js/slick.min.js"></script>
-   <!-- *BOOTSTRAP JS  -->
-   <script src="./assets/vendor/js/bootstrap.bundle.min.js"></script>
-   <!-- *ICONIFY JS  -->
-   <script src="./assets/icon/iconify/iconify-icon.min.js"></script>
-   <!-- *MAIN JS -->
-   <script src="./assets/js/main.js"></script>
+  <!-- *JS LINK START  -->
+  <script src="./assets/vendor/js/jquery-3.7.1.min.js"></script>
+  <!-- *ISOTOP JS  -->
+  <script src="./assets/vendor/js/isotope.pkgd.min.js"></script>
+  <!-- *VENOBOX JS  -->
+  <script src="./assets/vendor/js/venobox.min.js"></script>
+  <!-- *COUNTER UP 2 -->
+  <script src="./assets/vendor/js/index.js"></script>
+  <!-- *FONT AWOSOME -->
+  <script src="./assets/vendor/js/all.min.js"></script>
+  <!-- *COUNTDOWN JS  -->
+  <script src="./assets/vendor/js/countdown.js"></script>
+  <!-- *POPER JS  -->
+  <script src="./assets/vendor/js/popper.min.js"></script>
+  <!-- *SLICK JS  -->
+  <script src="./assets/vendor/js/slick.min.js"></script>
+  <!-- *BOOTSTRAP JS  -->
+  <script src="./assets/vendor/js/bootstrap.bundle.min.js"></script>
+  <!-- *ICONIFY JS  -->
+  <script src="./assets/icon/iconify/iconify-icon.min.js"></script>
+  <!-- *MAIN JS -->
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>
