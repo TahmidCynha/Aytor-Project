@@ -37,16 +37,14 @@ body{
             padding: 13px 20px;
             margin: 20px;
           }
-            &:hover{
-               background-color: transparent;
-               border: 2px solid $secondaryColor;
-               color: $primaryColor;
-            }
-            span{
-                height: 18px;
-                width: 18px;
-            }
-
+        &:hover{
+           background-color: transparent;
+           border: 1px solid $secondaryColor;
+           color: $primaryColor;
+        }
+        span{
+            font-size: 18px;
+        }
    }
 // *COMMON BTN END 
 // *HEADING 

@@ -112,6 +112,17 @@
                 }     
 
                 .productImage{
+                    // *EDIT 
+                        &:hover a img {
+                            transform: scale(0.9);
+                               
+                        }
+                        position: relative;
+                        a img{
+                            transform: scale(0.8);
+                            transition:0.35s ease-in-out;  
+                        }
+                        // *EDIT 
 
                     .label{
                         position: absolute;
@@ -210,7 +221,7 @@
         
                     .productImageList{
                         &:hover a img {
-                            transform: scale(1);
+                            transform: scale(0.9);
                                
                         }
                         position: relative;
