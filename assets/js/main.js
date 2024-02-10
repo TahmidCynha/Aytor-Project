@@ -591,7 +591,16 @@ $(function (){
   })
   // *RELETED PRODUCT SLIDER END HERE
   // *ZOOM IMG START HERE 
-
+  $(function(){
+    new VenoBox({
+      selector: '.cartImgZoom',
+      numeration: true,
+      infinigall: true,
+      share: true,
+      spinner: 'rotating-plane'
+    });
+  })
+  // *ZOOM IMG END HERE  
   
 
 
