@@ -1,3 +1,10 @@
+// *PRELOADER START HERE 
+$(function(){
+  $(window).on('load', function(){
+    $(".preLoader").fadeOut(3000);
+  })
+})
+// *PRELOADER END HERE 
 // *NAVBAR FIXED START 
 $(function (){
   $(window).scroll(function () { 
@@ -252,30 +259,6 @@ $(function (){
   })
   // *PRODUCT GRID & LIST END 
 
-  // *CART SLIDER STAR HERE 
-  $(function(){
-    $('.cartImgSlide').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      fade: true,
-      dots: false,
-      asNavFor: '.navSlider'
-    });
-    $('.navSlider').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      asNavFor: '.cartImgSlide',
-      dots: false,
-      centerMode: true,
-      focusOnSelect: true,
-      prevArrow: `.leftArrow`,
-      nextArrow: `.rightArrow`,
-      
-    });
-  })
-  // *CART SLIDER END HERE 
-
   // *RESPONSIVE DEAL SLIDER 
   $(function(){
     $('.dealSm').slick({
@@ -459,6 +442,7 @@ $(function (){
   })
       
   // *VENOBOX JS END
+
   // *LEADER SHIP SLIDER START
   $(function(){
     $('.headshotSlider').slick({
@@ -554,6 +538,28 @@ $(function (){
     });
   })
   // *ABOUT INSTA SLIDER END
+  // *CART SLIDER STAR HERE 
+  $(function(){
+    $('.cartImgSlide').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      dots: false,
+      asNavFor: '.navSlider'
+    });
+    $('.navSlider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.cartImgSlide',
+      dots: false,
+      centerMode: true,
+      focusOnSelect: true,
+      prevArrow: `.leftArrow2`,
+      nextArrow: `.rightArrow2`,
+    });
+  })
+  // *CART SLIDER END HERE 
   // *RELETED PRODUCT SLIDER START HERE
   $(function(){
     $('.reProduct').slick({
@@ -584,6 +590,8 @@ $(function (){
     });
   })
   // *RELETED PRODUCT SLIDER END HERE
+  // *ZOOM IMG START HERE 
+
   
 
 

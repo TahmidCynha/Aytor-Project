@@ -1,4 +1,4 @@
-// *ABOUT BANNER START HERE 
+// *ABOUT BANNER START HERE
 #pageHeading{
     h2{
         @media (min-width:320px) and (max-width: 575px){
@@ -11,12 +11,13 @@
 // *ABOUT BANNER END HERE 
 // *CART START HERE 
 #cartOption{
-    overflow: hidden;
+    // overflow: hidden;
     margin-top: 100px;
     margin-bottom: 100px;
     @media (min-width:320px) and (max-width: 575px){
         margin-top: 50px;
         margin-bottom: 50px;
+        width: 100%;
 
     } 
     @media (min-width:576px) and (max-width: 991px){
@@ -36,7 +37,6 @@
             .navArrow{
                 position: relative;
                 .navSlider{
-                    overflow: hidden;
                     .slider{
                         margin: 0px 10px;
                         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -48,9 +48,9 @@
                     }
                 }
                 
-                .arrows{
+                .arrows2{
                     
-                    .leftArrow{
+                    .leftArrow2{
                         width: 30px;
                         height: 50px;
                         display: block;
@@ -65,7 +65,7 @@
                         top: 50%;
                         transform: translateY(-50%);
                     }
-                    .rightArrow{
+                    .rightArrow2{
                         width: 30px;
                         height: 50px;
                         display: block;
@@ -362,8 +362,8 @@
                         font-size: 25px;
                         background-color: $fontColor;
                         @media (min-width:320px) and (max-width: 575px){
-                            width: 35px;
-                            height: 40px;
+                            width: 50px;
+                            height: 50px;
                         }     
                     }
                     .quantityShow{
@@ -371,8 +371,7 @@
                         text-align: center;
                         line-height: 50px;
                         @media (min-width:320px) and (max-width: 575px){
-                            line-height: 40px;
-        
+                            line-height: 50px;
                         } 
                     }
                 }
@@ -382,13 +381,17 @@
                         padding: 11px 32px;
                         @media (min-width:320px) and (max-width: 575px){
                             font-size: 13px;
-                            padding: 7px 22px;
-        
+                            padding: 12px 30px;
                         }         
                     }
                 }
                 .CartIcon{
                     display: inline-block;
+                    @media (min-width:320px) and (max-width: 575px){
+                        margin-top: 15px;
+                        display: flex;
+                        justify-content: center;
+                    } 
 
                     .wishIcon,
                     .viewIcon{
@@ -430,7 +433,7 @@
             // *PRODUCT CATAGORY START HERE 
             .ProductCategory{
                 margin-top: 20px;
-                margin-left: 10px;
+                padding-left: 10px;
                 .ProCate,
                 .ProTag,
                 .ProSKU{
@@ -492,9 +495,10 @@
 // *ACCORDION START HERE  
 #accordionCus{
     margin-bottom: 40px;
-    overflow: hidden;
+    // overflow: hidden;
     @media (min-width:320px) and (max-width: 575px){
         margin-bottom: 20px ;
+        width: 100%;
     } 
     @media (min-width:576px) and (max-width: 991px){
         margin-bottom: 30px;
@@ -566,11 +570,13 @@
         // *PRODUCT DESCRIPTION END HERE
         // *CUSTOMER REVIEW START HERE 
         .customerReview{
+            
             margin-top: 30px;
             border: transparent;
             box-shadow: none;
             @media (min-width:320px) and (max-width: 575px){
                 margin-top: 15px;
+                overflow-x: hidden;
             } 
             @media (min-width:576px) and (max-width: 991px){
                 margin-top: 20px;
@@ -788,6 +794,7 @@
     margin-bottom: 100px;
     @media (min-width:320px) and (max-width: 575px){
         margin-bottom: 50px;
+        width: 100%;
 
     } 
     @media (min-width:576px) and (max-width: 991px){

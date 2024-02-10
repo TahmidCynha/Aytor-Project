@@ -307,7 +307,7 @@
                         position: absolute;
                         top: 50%;
                         transform: translate(50%, -50%);
-                        left: 44%;
+                        left: 41%;
                         width: 80px;
                         height: 80px;
                         font-size: 26px;
@@ -319,10 +319,11 @@
                         z-index: 9;
                         transition: 1ms;
                         @media (min-width:576px) and (max-width: 991px){
+                            left: 40%;
                 
                         } 
                         @media (min-width:320px) and (max-width: 575px){
-                            left: 34%;
+                            left: 32%;
                         } 
                         &:hover{
                             width: 85px;

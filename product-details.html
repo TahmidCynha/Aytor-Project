@@ -14,10 +14,24 @@
     <link rel="stylesheet" href="./assets/vendor/css/all.min.css">
     <!-- *VENOBOX CSS  -->
     <link rel="stylesheet" href="./assets/vendor/css/venobox.min.css">
+    <!-- *AOS CSS  -->
+    <link rel="stylesheet" href="./assets/vendor/css/aos.css">
     <!-- *CUSTOM CSS  -->
     <link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
 <body>
+  <!-- *PRELOADER START HERE -->
+  <div class="preLoader">
+    <div class="container">
+      <div class="loader">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <span class="loading" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="100"><img src="./assets/image/home/Logo.png" alt=""></span>
+      </div>
+    </div>
+  </div>
+  <!-- *PRELOADER END HERE  -->
   <!-- *TOP HEADING START HERE  -->
   <section id="topHeading" class="d-none d-lg-block">
     <div class="navbar navbar-expand-lg" style="padding: 0;">
@@ -206,10 +220,10 @@
   <!-- *NAVBAR END HERE  --> 
   <!-- *ABOUT BANNER START HERE  -->
   <section id="pageHeading">
-  <div class="row">
-    <h2>Shop - Details Style One</h2>
-    <p>Home  /  Shop</p>
-  </div>
+    <div class="row" style="margin: 0;">
+      <h2>Shop - Details Style One</h2>
+      <p>Home  /  Shop</p>
+    </div>
   </section>
   <!-- *ABOUT BANNER END  -->
   <!-- *CART START HERE    -->
@@ -217,7 +231,7 @@
     <div class="container">
       <div class="cartProduct">
         <div class="row">
-          <div class="cartSliderOption col-12 col-md-12 col-lg-5">
+          <div class="cartSliderOption col-12 col-md-12 col-lg-5" data-aos="slide-down" data-aos-duration="1100" data-aos-delay="100">
             <div class="cartImgSlide">
               <div class="slider">
                 <img style="width: 100%;" src="./assets/image/cart/cart_img_1.png" alt="">
@@ -238,7 +252,7 @@
                   <img style="width: 100%;" src="./assets/image/cart/cart_img_10.png" alt="">
               </div>
             </div>
-            <div class="navArrow">
+            <div class="navArrow" data-aos="flip-left" data-aos-duration="1200" data-aos-delay="90">
               <div class="navSlider">
                 <div class="slider">
                   <img style="width: 100%;" src="./assets/image/cart/cart_img_1.png" alt="">
@@ -259,13 +273,13 @@
                     <img style="width: 100%;" src="./assets/image/cart/cart_img_10.png" alt="">
                 </div>
               </div>
-              <div class="arrows d-none d-lg-block">
-                <span class="leftArrow"><i class="fa-solid fa-chevron-left"></i></span>
-                <span class="rightArrow"><i class="fa-solid fa-chevron-right"></i></span>
+              <div class="arrows2 d-none d-lg-block">
+                <span class="leftArrow2"><i class="fa-solid fa-chevron-left"></i></span>
+                <span class="rightArrow2"><i class="fa-solid fa-chevron-right"></i></span>
               </div>
             </div>
           </div>
-          <div class="CartCnt col-lg-7 col-md-12">
+          <div class="CartCnt col-lg-7 col-md-12" data-aos="slide-up" data-aos-duration="1100" data-aos-delay="100">
             <h3>Leather Jackets</h3>
             <div class="review">
               <p>5.00</p>
@@ -348,20 +362,20 @@
               <h3 class="col-lg-12 col-md-12 col-12">Quantity:</h3>
               <div class="quantityDetails col-lg-12 col-md-12 col-12">
                 <div class="row" style="margin: 0;">
-                  <div class="inc_dec col-lg-4 col-md-4 col-4" style="padding: 0;">
+                  <div class="inc_dec col-lg-4 col-md-4 col-6" style="padding: 0;">
                     <div class="row" style="margin: 0;">
                       <button class="quantityDec col-lg-4 col-md-4 col-4" style="padding: 0;"  type="button">-</button>
                       <span class="quantityShow col-lg-4 col-md-4 col-4" style="padding: 0;">01</span>
                       <button class="quantityInc col-lg-4 col-md-4 col-4" style="padding: 0;"  type="button">+</button>
                     </div>
                   </div>
-                  <div class="cartBtn col-lg-5 col-md-5 col-5" style="padding: 0;">
+                  <div class="cartBtn col-lg-5 col-md-5 col-6" style="padding: 0;">
                     <a class="commonBtn" href="#">
                       <span><i class="fa-solid fa-cart-plus"></i></span>
                       Add To Cart
                     </a>
                   </div>
-                  <div class="CartIcon col-lg-3 col-md-3 col-3" style="padding: 0;">
+                  <div class="CartIcon col-lg-3 col-md-3 col-12" style="padding: 0;">
                     <div class="row">
                       <a class="wishIcon col-lg-6 col-md-6 col-3" href="#"><span><i class="fa-solid fa-heart"></i></span></a>
                       <a class="viewIcon col-lg-6 col-md-6 col-3" href="#"><span><i class="fa-solid fa-eye"></i></span></a>
@@ -370,52 +384,47 @@
                 </div>
 
               </div>
-
             </div>
             <!-- *QUANTITY END HERE  -->
             <!-- *PRODUCT CATEGORY START HERE  -->
-            <div class="ProductCategory col-12">
+            <div class="ProductCategory col-12 col-lg-12 col-md-12">
               <div class="row">
-                <div class="proMeta col-8">
-                  <div class="ProSKU col-12">
+                <div class="proMeta col-10 col-lg-8 col-md-8">
+                  <div class="ProSKU col-12 col-lg-12 col-md-12">
                     <div class="row">
-                      <h5 class="col-5">SKU:</h5>
-                      <p class="col-7">W0243</p>
+                      <h5 class="col-5 col-lg-5 col-md-5">SKU:</h5>
+                      <p class="col-7 col-lg-7 col-md-7">W0243</p>
                     </div>
                   </div>
-                  <div class="ProTag col-12">
+                  <div class="ProTag col-12 col-lg-12 col-md-12">
                     <div class="row">
-                      <h5 class="col-5">Tags:</h5>
-                      <p class="col-7">Hot, Women</p>
+                      <h5 class="col-5 col-lg-5 col-md-5">Tags:</h5>
+                      <p class="col-7 col-lg-7 col-md-7">Hot, Women</p>
                     </div>
                   </div>
-                  <div class="ProCate col-12">
+                  <div class="ProCate col-12 col-lg-12 col-md-12">
                     <div class="row">
-                      <h5 class="col-5">Category:</h5>
-                      <p class="col-7">Dress, T-Shirt, Mini Scut</p>
+                      <h5 class="col-5 col-lg-5 col-md-5">Category:</h5>
+                      <p class="col-7 col-lg-7 col-md-7">Dress, T-Shirt, Mini Scut</p>
                     </div>
                   </div>
                 </div>
-                <div class="socialIcon col-4">
+                <div class="socialIcon d-none d-md-block d-lg-block col-lg-4 col-md-4">
                   <a href="#"><span><i class="fa-brands fa-facebook-f"></i></span></a>
                   <a href="#"><span><i class="fa-brands fa-twitter"></i></span></a>
                   <a href="#"><span><i class="fa-brands fa-instagram"></i></span></a>
                   <a href="#"><span><i class="fa-brands fa-pinterest-p"></i></span></a>
                 </div>
               </div>
-
-            </div>
-
-            
+            </div>          
           </div>
         </div>
       </div>
     </div>
-
   </section>
   <!-- *CART END HERE  -->
   <!-- *ACCORDION START HERE  -->
-  <section id="accordionCus">
+  <section id="accordionCus" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100">
     <div class="container">
       <div class="accordion" id="accordionAnswer">
         <div class="col-lg-12">
@@ -581,24 +590,18 @@
           </div>
         </div>
         <!-- *ADDITIONAL INFO END HERE  -->
-
-
-
-
-
       </div>
       </div>
     </div>
-
   </section>
   <!-- *ACCORDION END HERE -->
   <!-- *RELETED PRODUCT START HERE  -->
   <section id="reletedProduct">
     <div class="container">
       <div class="heading">
-        <h1>Releted Products</h1>
+        <h1 data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="100">Releted Products</h1>
       </div>
-      <div class="arrowDiv">
+      <div class="arrowDiv" data-aos="slide-up" data-aos-duration="1100" data-aos-delay="100">
         <div class="reProduct">
           <!-- *PRODUCT START  -->
           <div class="col-lg-3 col-md-4 col-6">
@@ -890,9 +893,7 @@
         </div>
 
       </div>
-
     </div>
-
   </section>
   <!-- *RELETED PRODUCT END HERE -->
   <!-- *ABOUT FOOTER START HERE  -->
@@ -901,13 +902,13 @@
       <!-- *SUBSCRIBE BTN START  -->
       <div class="footerSubs col-lg-12">
         <div class="row">
-          <div class="subsHead col-lg-6">
+          <div class="subsHead col-lg-6" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100">
             <div class="col-lg-10">
               <h3>Subscribe to Our Newsletter!</h3>
               <p>Authoritatively morph 24/7 potentialities with error-free partnerships. Objectively engineer multimedia.</p>
             </div>
           </div>
-          <div class="subsBtn col-lg-6">
+          <div class="subsBtn col-lg-6" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="100">
             <div class="col-lg-12">
               <div class="boxCnt row ">
                 <input class="col-8" type="email" placeholder="Enter your email....">
@@ -923,7 +924,7 @@
         <div class="row">
           <!-- *AYTOR LOGO & ICON -->
           <div class="col-lg-3" style="padding: 0;">
-            <div class="aytorSocialCnt">
+            <div class="aytorSocialCnt" data-aos="slide-down" data-aos-duration="1100" data-aos-delay="100">
               <div class="footerLogo">
                 <img src="./assets/image/home/Logo.png" alt="">
               </div>
@@ -947,7 +948,7 @@
           <!-- *AYTOR LOGO & ICON END  -->
           <!-- *MY ACCOUNT START HERE  -->
           <div class="col-lg-2 col-md-6 col-6" style="padding: 0;">
-            <div class="accountCnt col-12" style="padding: 0;">
+            <div class="accountCnt col-12" style="padding: 0;" data-aos="slide-up" data-aos-duration="1100" data-aos-delay="100">
               <h4>My Account</h4>
               <ul style="margin: 0;padding: 0;">
                 <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>My Account</a></li>
@@ -961,7 +962,7 @@
           <!-- *MY ACCOUNT END  HERE  -->
           <!-- *SUPPORT START HERE  -->
           <div class="col-lg-2 col-md-6 col-6" style="padding: 0;">
-            <div class="Support col-12" style="padding: 0;">
+            <div class="Support col-12" style="padding: 0;" data-aos="slide-down" data-aos-duration="1000" data-aos-delay="100">
               <h4>Support</h4>
               <ul style="margin: 0;padding: 0;">
                 <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Help</a></li>
@@ -976,7 +977,7 @@
           
           <!-- *SHOP START HERE  -->
           <div class="col-lg-2 col-md-6 col-6" style="padding: 0;">
-            <div class="ShopFooter col-12" style="padding: 0;">
+            <div class="ShopFooter col-12" style="padding: 0;" data-aos="slide-up" data-aos-duration="1100" data-aos-delay="100">
               <h4>Shop</h4>
               <ul style="margin: 0;padding: 0;">
                 <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Men’s Shopping</a></li>
@@ -990,7 +991,7 @@
           <!-- *SHOP END HERE  -->
           <!-- *CONTACT US START HERE  -->
           <div  class="col-lg-3 col-md-6 col-12 " style="padding: 0;">
-            <div class="contactUs col-lg-12" style="padding: 0;">
+            <div class="contactUs col-lg-12" style="padding: 0;" data-aos="slide-down" data-aos-duration="1100" data-aos-delay="100">
               <h4>Contact Us</h4>
               <div class="contactInfo">
                 <div class="row">
@@ -1058,6 +1059,11 @@
 
   <!-- *JS LINK START  -->
   <script src="./assets/vendor/js/jquery-3.7.1.min.js"></script>
+  <!-- *AOS JS  -->
+  <script src="./assets/vendor/js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <!-- *VENOBOX JS  -->
   <script src="./assets/vendor/js/venobox.min.js"></script>
   <!-- *COUNTER UP 2 -->

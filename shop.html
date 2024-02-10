@@ -14,10 +14,24 @@
     <link rel="stylesheet" href="./assets/vendor/css/all.min.css">
     <!-- *VENOBOX CSS  -->
     <link rel="stylesheet" href="./assets/vendor/css/venobox.min.css">
+    <!-- *AOS CSS  -->
+    <link rel="stylesheet" href="./assets/vendor/css/aos.css">    
     <!-- *CUSTOM CSS  -->
     <link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
 <body>
+  <!-- *PRELOADER START HERE -->
+  <div class="preLoader">
+    <div class="container">
+      <div class="loader">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <span class="loading" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="100"><img src="./assets/image/home/Logo.png" alt=""></span>
+      </div>
+    </div>
+  </div>
+  <!-- *PRELOADER END HERE  -->
   <!-- *TOP HEADING START HERE  -->
   <section id="topHeading" class="d-none d-lg-block">
     <div class="navbar navbar-expand-lg" style="padding: 0;">
@@ -213,11 +227,11 @@
   </section>
   <!-- *ABOUT BANNER END  -->  
   <!-- *SHOP START HERE   -->
-  <section id="shop">
+  <section id="shop" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
     <div class="container">
       <div class="filter">
         <div class="row">
-          <div class="links col-lg-6 col-md-6 col-8">
+          <div class="links col-lg-6 col-md-6 col-12">
             <ul style="padding: 0;">
               <li class="li-list active" data-view="list-view"  style="display: inline-block;">
                 <span><i class="fa-solid fa-list-ul"></i></span>
@@ -233,7 +247,7 @@
               </div>
             </div>            
           </div>
-          <div class="filterSort col-lg-6 col-md-6 col-4">
+          <div class="filterSort col-lg-6 col-md-6 col-12">
             <select class="selectSort" id="">
               <option class="sortList" value="">Default sorting</option>
               <option class="sortList" value="">Sort by Low-High</option>
@@ -245,12 +259,12 @@
       <!-- *PRODUCT START HERE  -->
       <div class="view_main">
         <!-- *GRID START HERE  -->
-        <div class="view_wrap grid-view" style="display: none;">
+        <div class="view_wrap grid-view" style="display: none;" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
           <div class="productItemsGrid">
             <div class="row">
               <!-- *PRODUCT START  -->
               <div class="col-lg-3 col-md-4 col-6">
-                <div class="productItem">                 
+                <div class="productItem" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">                 
                   <div class="productSlide">
                     <div class="productImage">
                       <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_1.png" alt=""></a>
@@ -293,8 +307,8 @@
               </div>
               <!-- *PRODUCT END  -->
               <!-- *PRODUCT START  -->
-              <div class="col-lg-3 col-md-4 col-6">
-                <div class="productItem">                 
+              <div class="col-lg-3 col-md-4 col-6" >
+                <div class="productItem" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">                 
                   <div class="productSlide">
                     <div class="productImage">
                       <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_2.png" alt=""></a>
@@ -338,7 +352,7 @@
               <!-- *PRODUCT END  -->
               <!-- *PRODUCT START  -->
               <div class="col-lg-3 col-md-4 col-6">
-                <div class="productItem">                 
+                <div class="productItem" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">                 
                   <div class="productSlide">
                     <div class="productImage">
                       <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_3.png" alt=""></a>
@@ -382,7 +396,7 @@
               <!-- *PRODUCT END  --> 
               <!-- *PRODUCT START  -->
               <div class="col-lg-3 col-md-4 col-6">
-                <div class="productItem">                 
+                <div class="productItem" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">                 
                   <div class="productSlide">
                     <div class="productImage">
                       <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_4.png" alt=""></a>
@@ -426,7 +440,7 @@
               <!-- *PRODUCT END  -->
               <!-- *PRODUCT START  -->
               <div class="col-lg-3 col-md-4 col-6">
-                <div class="productItem">                 
+                <div class="productItem" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">                 
                   <div class="productSlide">
                     <div class="productImage">
                       <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_5.png" alt=""></a>
@@ -470,7 +484,7 @@
               <!-- *PRODUCT END  --> 
               <!-- *PRODUCT START  -->
               <div class="col-lg-3 col-md-4 col-6">
-                <div class="productItem">                 
+                <div class="productItem" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">                 
                   <div class="productSlide">
                     <div class="productImage">
                       <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_6.png" alt=""></a>
@@ -513,7 +527,7 @@
               </div>
               <!-- *PRODUCT END  -->
               <!-- *PRODUCT START  -->
-              <div class="col-lg-3 col-md-4 col-6">
+              <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
                 <div class="productItem">                 
                   <div class="productSlide">
                     <div class="productImage">
@@ -557,8 +571,8 @@
               </div>
               <!-- *PRODUCT END  -->                                                                
               <!-- *PRODUCT START  -->
-              <div class="col-lg-3 col-md-4 col-6">
-                <div class="productItem">                 
+              <div class="col-lg-3 col-md-4 col-6" >
+                <div class="productItem" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">                 
                   <div class="productSlide">
                     <div class="productImage">
                       <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_8.png" alt=""></a>
@@ -602,7 +616,7 @@
               <!-- *PRODUCT END  -->            
               <!-- *PRODUCT START  -->
               <div class="col-lg-3 col-md-4 col-6">
-                <div class="productItem">                 
+                <div class="productItem" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">                 
                   <div class="productSlide">
                     <div class="productImage">
                       <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_9.png" alt=""></a>
@@ -646,7 +660,7 @@
               <!-- *PRODUCT END  -->            
               <!-- *PRODUCT START  -->
               <div class="col-lg-3 col-md-4 col-6">
-                <div class="productItem">                 
+                <div class="productItem" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">                 
                   <div class="productSlide">
                     <div class="productImage">
                       <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_10.png" alt=""></a>
@@ -690,7 +704,7 @@
               <!-- *PRODUCT END  -->  
               <!-- *PRODUCT START  -->
               <div class="col-lg-3 col-md-4 col-6">
-                <div class="productItem">                 
+                <div class="productItem" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">                 
                   <div class="productSlide">
                     <div class="productImage">
                       <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_11.png" alt=""></a>
@@ -734,7 +748,7 @@
               <!-- *PRODUCT END  -->  
               <!-- *PRODUCT START  -->
               <div class="col-lg-3 col-md-4 col-6">
-                <div class="productItem">                 
+                <div class="productItem" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">                 
                   <div class="productSlide">
                     <div class="productImage">
                       <a href="#"><img style="width: 100%;height: 100%;"  src="./assets/image/shop/img_12.png" alt=""></a>
@@ -781,11 +795,11 @@
         </div>
         <!-- *GRID END HERE -->
          <!-- *LIST START HERE  -->
-        <div class="view_wrap list-view" style="display: block;">
+        <div class="view_wrap list-view" style="display: block;" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
           <div class="productItemsList">
             <!-- *PRODUCT START  -->
             <div class="col-lg-12 col-md-12 col-12">
-              <div class="productList">
+              <div class="productList" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
                 <div class="row">
                   <div class="productImageList col-lg-3 col-md-5 col-12">
                     <a href="#"><img style="width: 100%;height: 100%;" src="./assets/image/shop/img_1.png" alt=""></a>
@@ -818,7 +832,7 @@
             <!-- *PRODUCT END  -->
             <!-- *PRODUCT START  -->
             <div class="col-lg-12 col-md-12 col-12">
-              <div class="productList">
+              <div class="productList" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
                 <div class="row">
                   <div class="productImageList col-lg-3 col-md-5 col-12">
                     <a href="#"><img style="width: 100%;height: 100%;" src="./assets/image/shop/img_2.png" alt=""></a>
@@ -851,7 +865,7 @@
             <!-- *PRODUCT END  -->
             <!-- *PRODUCT START  -->
             <div class="col-lg-12 col-md-12 col-12">
-              <div class="productList">
+              <div class="productList" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
                 <div class="row">
                   <div class="productImageList col-lg-3 col-md-5 col-12">
                     <a href="#"><img style="width: 100%;height: 100%;" src="./assets/image/shop/img_3.png" alt=""></a>
@@ -884,7 +898,7 @@
             <!-- *PRODUCT END  -->
             <!-- *PRODUCT START  -->
             <div class="col-lg-12 col-md-12 col-12">
-              <div class="productList">
+              <div class="productList" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
                 <div class="row">
                   <div class="productImageList col-lg-3 col-md-5 col-12">
                     <a href="#"><img style="width: 100%;height: 100%;" src="./assets/image/shop/img_4.png" alt=""></a>
@@ -917,7 +931,7 @@
             <!-- *PRODUCT END  -->
             <!-- *PRODUCT START  -->
             <div class="col-lg-12 col-md-12 col-12">
-              <div class="productList">
+              <div class="productList" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
                 <div class="row">
                   <div class="productImageList col-lg-3 col-md-5 col-12">
                     <a href="#"><img style="width: 100%;height: 100%;" src="./assets/image/shop/img_5.png" alt=""></a>
@@ -950,7 +964,7 @@
             <!-- *PRODUCT END  -->
             <!-- *PRODUCT START  -->
             <div class="col-lg-12 col-md-12 col-12">
-              <div class="productList">
+              <div class="productList" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
                 <div class="row">
                   <div class="productImageList col-lg-3 col-md-5 col-12">
                     <a href="#"><img style="width: 100%;height: 100%;" src="./assets/image/shop/img_6.png" alt=""></a>
@@ -983,7 +997,7 @@
             <!-- *PRODUCT END  -->
             <!-- *PRODUCT START  -->
             <div class="col-lg-12 col-md-12 col-12">
-              <div class="productList">
+              <div class="productList" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
                 <div class="row">
                   <div class="productImageList col-lg-3 col-md-5 col-12">
                     <a href="#"><img style="width: 100%;height: 100%;" src="./assets/image/shop/img_7.png" alt=""></a>
@@ -1016,7 +1030,7 @@
             <!-- *PRODUCT END  -->
             <!-- *PRODUCT START  -->
             <div class="col-lg-12 col-md-12 col-12">
-              <div class="productList">
+              <div class="productList" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
                 <div class="row">
                   <div class="productImageList col-lg-3 col-md-5 col-12">
                     <a href="#"><img style="width: 100%;height: 100%;" src="./assets/image/shop/img_8.png" alt=""></a>
@@ -1049,7 +1063,7 @@
             <!-- *PRODUCT END  -->
             <!-- *PRODUCT START  -->
             <div class="col-lg-12 col-md-12 col-12">
-              <div class="productList">
+              <div class="productList" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
                 <div class="row">
                   <div class="productImageList col-lg-3 col-md-5 col-12">
                     <a href="#"><img style="width: 100%;height: 100%;" src="./assets/image/shop/img_9.png" alt=""></a>
@@ -1082,7 +1096,7 @@
             <!-- *PRODUCT END  -->
             <!-- *PRODUCT START  -->
             <div class="col-lg-12 col-md-12 col-12">
-              <div class="productList">
+              <div class="productList" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
                 <div class="row">
                   <div class="productImageList col-lg-3 col-md-5 col-12">
                     <a href="#"><img style="width: 100%;height: 100%;" src="./assets/image/shop/img_10.png" alt=""></a>
@@ -1115,7 +1129,7 @@
             <!-- *PRODUCT END  -->
             <!-- *PRODUCT START  -->
             <div class="col-lg-12 col-md-12 col-12">
-              <div class="productList">
+              <div class="productList" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
                 <div class="row">
                   <div class="productImageList col-lg-3 col-md-5 col-12">
                     <a href="#"><img style="width: 100%;height: 100%;" src="./assets/image/shop/img_11.png" alt=""></a>
@@ -1148,7 +1162,7 @@
             <!-- *PRODUCT END  -->
             <!-- *PRODUCT START  -->
             <div class="col-lg-12 col-md-12 col-12">
-              <div class="productList">
+              <div class="productList" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
                 <div class="row">
                   <div class="productImageList col-lg-3 col-md-5 col-12">
                     <a href="#"><img style="width: 100%;height: 100%;" src="./assets/image/shop/img_12.png" alt=""></a>
@@ -1215,13 +1229,13 @@
       <!-- *SUBSCRIBE BTN START  -->
       <div class="footerSubs col-lg-12">
         <div class="row">
-          <div class="subsHead col-lg-6">
+          <div class="subsHead col-lg-6" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100">
             <div class="col-lg-10">
               <h3>Subscribe to Our Newsletter!</h3>
               <p>Authoritatively morph 24/7 potentialities with error-free partnerships. Objectively engineer multimedia.</p>
             </div>
           </div>
-          <div class="subsBtn col-lg-6">
+          <div class="subsBtn col-lg-6" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="100">
             <div class="col-lg-12">
               <div class="boxCnt row ">
                 <input class="col-8" type="email" placeholder="Enter your email....">
@@ -1237,7 +1251,7 @@
         <div class="row">
           <!-- *AYTOR LOGO & ICON -->
           <div class="col-lg-3" style="padding: 0;">
-            <div class="aytorSocialCnt">
+            <div class="aytorSocialCnt" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="100">
               <div class="footerLogo">
                 <img src="./assets/image/home/Logo.png" alt="">
               </div>
@@ -1261,7 +1275,7 @@
           <!-- *AYTOR LOGO & ICON END  -->
           <!-- *MY ACCOUNT START HERE  -->
           <div class="col-lg-2 col-md-6 col-6" style="padding: 0;">
-            <div class="accountCnt col-12" style="padding: 0;">
+            <div class="accountCnt col-12" style="padding: 0;" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="100">
               <h4>My Account</h4>
               <ul style="margin: 0;padding: 0;">
                 <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>My Account</a></li>
@@ -1275,7 +1289,7 @@
           <!-- *MY ACCOUNT END  HERE  -->
           <!-- *SUPPORT START HERE  -->
           <div class="col-lg-2 col-md-6 col-6" style="padding: 0;">
-            <div class="Support col-12" style="padding: 0;">
+            <div class="Support col-12" style="padding: 0;" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
               <h4>Support</h4>
               <ul style="margin: 0;padding: 0;">
                 <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Help</a></li>
@@ -1290,7 +1304,7 @@
           
           <!-- *SHOP START HERE  -->
           <div class="col-lg-2 col-md-6 col-6" style="padding: 0;">
-            <div class="ShopFooter col-12" style="padding: 0;">
+            <div class="ShopFooter col-12" style="padding: 0;" data-aos="fade-left" data-aos-duration="1100" data-aos-delay="100">
               <h4>Shop</h4>
               <ul style="margin: 0;padding: 0;">
                 <li><a href="#"><span><i class="fa-solid fa-angle-right"></i></span>Men’s Shopping</a></li>
@@ -1304,7 +1318,7 @@
           <!-- *SHOP END HERE  -->
           <!-- *CONTACT US START HERE  -->
           <div  class="col-lg-3 col-md-6 col-12 " style="padding: 0;">
-            <div class="contactUs col-lg-12" style="padding: 0;">
+            <div class="contactUs col-lg-12" style="padding: 0;" data-aos="fade-left" data-aos-duration="1100" data-aos-delay="100">
               <h4>Contact Us</h4>
               <div class="contactInfo">
                 <div class="row">
@@ -1376,6 +1390,11 @@
 
   <!-- *JS LINK START  -->
   <script src="./assets/vendor/js/jquery-3.7.1.min.js"></script>
+  <!-- *AOS JS  -->
+  <script src="./assets/vendor/js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <!-- *ISOTOP JS  -->
   <script src="./assets/vendor/js/isotope.pkgd.min.js"></script>
   <!-- *VENOBOX JS  -->
