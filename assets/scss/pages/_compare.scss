@@ -1,0 +1,473 @@
+// *COMPARE START HERE 
+#compare{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    @media (min-width:320px) and (max-width: 575px){
+        margin-top: 50px;
+        margin-bottom: 50px;
+    } 
+    @media (min-width:576px) and (max-width: 991px){
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }  
+    
+    .datatable{
+        @media (min-width:320px) and (max-width: 991px){
+            overflow-x: scroll;
+        } 
+
+        // *SEARCH OPTION START HERE
+        .serachTop{
+            background-color: #F1F3F4;
+            height: 50px;
+            border: 1px solid #e0e0e0;
+            border-bottom: none;
+
+            input{
+                border: none !important;
+                outline: none;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 50px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #828282;
+                background-color: #F1F3F4;
+                display: flex;
+                align-items: center;
+                padding-left: 20px;
+
+            }
+            .serachIcon{
+                border: none;
+                line-height: 50px;
+                padding-left: 20px;
+                color: #828282;
+                transition: 350ms;
+                
+                &:hover{
+                    color: $secondaryColor;
+                }
+
+            }
+            button{
+                position: relative;
+                &::before{
+                    content: '';
+                    width: 1px !important;
+                    height: 40px;
+                    position: absolute;
+                    left: 0px;
+                    background-color: #828282;
+                    top: 5px;
+                }
+                &:hover::before{
+                    background-color: $secondaryColor;
+                }
+            }
+        }
+        // *SEARCH OPTION END HERE
+
+        // *TABLE START HERE
+
+        // *REMOVE START HERE 
+        .dataTable_1{
+
+            .tableHeading{
+                width: 12%;
+                
+                h6{
+                    color: $primaryColor;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 28px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    margin: 0;
+                    @media (min-width:320px) and (max-width: 575px){
+                        font-size: 14px;
+                    } 
+                    @media (min-width:576px) and (max-width: 991px){
+                        font-size: 15px;
+                    }  
+                }
+            }
+            .deleteIcon{
+                width: 22%;
+                padding: 35px 0px;
+                text-align: center;
+                    
+                
+                span{
+                    color: $secondaryColor;
+                    font-size: 20px;
+                    display: inline-block;
+                    &:hover{
+                        color: $primaryColor;
+                    }
+                }
+            }
+        }
+        // *REMOVE END HERE 
+
+        // *PRODUCT START HERE 
+        .dataTable_2{
+            .tableHeading2{
+                width: 12%;
+                h6{
+                    color: $primaryColor;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 28px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    margin: 0;
+                    @media (min-width:320px) and (max-width: 575px){
+                        font-size: 14px;
+                    } 
+                    @media (min-width:576px) and (max-width: 991px){
+                        font-size: 15px;
+                    }  
+                }
+            }
+            .productImg{
+                text-align: center;
+                width: 22%;
+                padding: 20px 0px;
+                h6{
+                    padding-top: 10px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    text-align: center;
+                    color: $primaryColor;
+                    transition: 350ms;
+                    margin: 0;
+                    &:hover{
+                        color: $secondaryColor;
+                    }
+                    @media (min-width:320px) and (max-width: 575px){
+                        font-size: 14px;
+                    } 
+                    @media (min-width:576px) and (max-width: 991px){
+                        font-size: 15px;
+                    }  
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        // *PRODUCT END HERE 
+        // *PRODUCT DESCRIPTION START HERE
+        .dataTable_3{
+            .tableHeading3{
+                width: 12%;
+                h6{
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 28px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color: $primaryColor;
+                    margin: 0;
+                    @media (min-width:320px) and (max-width: 575px){
+                        font-size: 12px;
+                    } 
+                    @media (min-width:576px) and (max-width: 991px){
+                        font-size: 15px;
+                    }  
+                }
+            }
+            .productDrs{
+                width: 22%;
+                padding: 16px;
+                p{
+                    font-family: $secondaryFont;
+                    color: #444444;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    margin: 0;
+                    @media (min-width:320px) and (max-width: 575px){
+                        font-size: 13px;
+                    } 
+                    @media (min-width:576px) and (max-width: 991px){
+                        font-size: 14px;
+                    }  
+                }
+                @media (min-width:320px) and (max-width: 575px){
+                    padding: 19px;
+                } 
+
+            }
+
+        }
+        // *PRODUCT DESCRIPTION END HERE
+        //  *PRODUCT PRICE START HERE
+        .dataTable_4{
+            background-color: #F1F3F4;
+            .tableHeading4{
+                width: 12px;
+                h6{
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 28px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color: $primaryColor;
+                    margin: 0;
+                    @media (min-width:320px) and (max-width: 575px){
+                        font-size: 14px;
+                    } 
+                    @media (min-width:576px) and (max-width: 991px){
+                        font-size: 15px;
+                    }  
+                }
+            }
+            .productPrice{
+                width: 22%;
+                padding: 12px 0px;
+                p{
+                    font-family: $secondaryFont;
+                    color: #444444;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    margin: 0;
+                    @media (min-width:320px) and (max-width: 575px){
+                        font-size: 13px;
+                    } 
+                    @media (min-width:576px) and (max-width: 991px){
+                        font-size: 14px;
+                    }  
+                }
+            }
+        }
+        // *PRODUCT PRICE END HERE 
+        // *PRODUCT COLOUR START HERE 
+        .dataTable_5{
+            .tableHeading5{
+                width: 12%;
+                h6{
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 28px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color: $primaryColor;
+                    margin: 0;
+                    @media (min-width:320px) and (max-width: 575px){
+                        font-size: 14px;
+                    } 
+                    @media (min-width:576px) and (max-width: 991px){
+                        font-size: 15px;
+                    }  
+                }
+            }
+            .productColour{
+                width: 22%;
+                padding: 12px 0px;
+                p{
+                    color: #444444;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    margin: 0;
+                    @media (min-width:320px) and (max-width: 575px){
+                        font-size: 13px;
+                    } 
+                    @media (min-width:576px) and (max-width: 991px){
+                        font-size: 14px;
+                    }  
+                }
+            }
+
+        }
+        // *PRODUCT COLOUR END HERE
+        // *RATTING START HERE
+        .dataTable_6{
+            background-color: #F1F3F4;
+
+            .tableHeading6{
+                width: 12%;
+                h6{
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 28px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color: $primaryColor;
+                    margin: 0;
+                    @media (min-width:320px) and (max-width: 575px){
+                        font-size: 14px;
+                    } 
+                    @media (min-width:576px) and (max-width: 991px){
+                        font-size: 15px;
+                    }  
+                }
+            }
+            .productRatting{
+                width: 22%;
+                padding: 12px 0px;
+                text-align: center;
+                span{
+                    display: inline-block;
+                    color: $secondaryColor;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    letter-spacing: 0em;
+                    margin: 0;
+                    @media (min-width:320px) and (max-width: 575px){
+                        font-size: 10px;
+                    } 
+                }
+                p{
+                    color: #444444;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    letter-spacing: 0em;
+                    margin: 0;
+                    display: inline-block;
+                    @media (min-width:320px) and (max-width: 575px){
+                        font-size: 12px;
+                    } 
+                    @media (min-width:576px) and (max-width: 991px){
+                        font-size: 14px;
+                    }  
+
+                }
+            }
+        }
+        // *RATTING END HERE
+        // *STOCK START HERE
+        .dataTable_7{
+
+            .tableHeading7{
+                width: 12%;
+                h6{
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 28px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color: $primaryColor;
+                    margin: 0;
+                    @media (min-width:320px) and (max-width: 575px){
+                        font-size: 14px;
+                    } 
+                    @media (min-width:576px) and (max-width: 991px){
+                        font-size: 15px;
+                    }  
+                }
+            }
+            .productStock{
+                width: 22%;
+                padding: 12px 0px;
+                text-align: center;
+                span{
+                    display: inline-block;
+                    color: #29CC00;
+                    font-size:16px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    letter-spacing: 0em;
+                    margin: 0;
+                    @media (min-width:320px) and (max-width: 575px){
+                        font-size: 13px;
+                    } 
+                    @media (min-width:576px) and (max-width: 991px){
+                        font-size: 14px;
+                    }  
+                }
+                p{
+                    color: #444444;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    letter-spacing: 0em;
+                    margin: 0;
+                    display: inline-block;
+                    @media (min-width:320px) and (max-width: 575px){
+                        font-size: 13px;
+                    } 
+                    @media (min-width:576px) and (max-width: 991px){
+                        font-size: 14px;
+                    }  
+
+                }
+            }
+        }
+        // *STOCK END HERE
+        // *CART BTN START HERE 
+        .dataTable_8{
+            background-color: #F1F3F4;
+            .tableHeading8{
+                width: 12%;
+                h6{
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 28px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color: $primaryColor;
+                    margin: 0;
+                    @media (min-width:320px) and (max-width: 575px){
+                        font-size: 14px;
+                    } 
+                    @media (min-width:576px) and (max-width: 991px){
+                        font-size: 15px;
+                    }  
+                }
+            }
+            .addToCart{
+                width: 22%;
+                padding: 12px 0px;
+                text-align: center;
+                a{
+                    color: $fontColor;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 50px;
+                    letter-spacing: 0em;
+                    margin: 0;
+                    display: inline-block;
+                    width: 140px;
+                    height: 50px;
+                    background-color: $secondaryColor;
+                    transition: 350ms;
+                    &:hover{
+                        background-color: black;
+                    }
+                    @media (min-width:320px) and (max-width: 575px){
+                        font-size: 13px;
+                        height: 35px;
+                        line-height: 35px;
+                        width: 100px;
+                    } 
+                    @media (min-width:576px) and (max-width: 991px){
+                        font-size: 14px;
+                        height: 40px;
+                        line-height: 40px;
+                        width: 120px;
+                    }  
+                }
+            }
+        }
+        // *TABLE END HERE 
+
+         
+
+
+    }
+}
+// *COMPARE END HERE 

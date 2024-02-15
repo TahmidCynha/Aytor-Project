@@ -4962,3 +4962,494 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
+
+#compare {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #compare {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  #compare {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  #compare .datatable {
+    overflow-x: scroll;
+  }
+}
+#compare .datatable .serachTop {
+  background-color: #F1F3F4;
+  height: 50px;
+  border: 1px solid #e0e0e0;
+  border-bottom: none;
+}
+#compare .datatable .serachTop input {
+  border: none !important;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #828282;
+  background-color: #F1F3F4;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+#compare .datatable .serachTop .serachIcon {
+  border: none;
+  line-height: 50px;
+  padding-left: 20px;
+  color: #828282;
+  transition: 350ms;
+}
+#compare .datatable .serachTop .serachIcon:hover {
+  color: #FF6F61;
+}
+#compare .datatable .serachTop button {
+  position: relative;
+}
+#compare .datatable .serachTop button::before {
+  content: "";
+  width: 1px !important;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  background-color: #828282;
+  top: 5px;
+}
+#compare .datatable .serachTop button:hover::before {
+  background-color: #FF6F61;
+}
+#compare .datatable .dataTable_1 .tableHeading {
+  width: 12%;
+}
+#compare .datatable .dataTable_1 .tableHeading h6 {
+  color: #11161E;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #compare .datatable .dataTable_1 .tableHeading h6 {
+    font-size: 14px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  #compare .datatable .dataTable_1 .tableHeading h6 {
+    font-size: 15px;
+  }
+}
+#compare .datatable .dataTable_1 .deleteIcon {
+  width: 22%;
+  padding: 35px 0px;
+  text-align: center;
+}
+#compare .datatable .dataTable_1 .deleteIcon span {
+  color: #FF6F61;
+  font-size: 20px;
+  display: inline-block;
+}
+#compare .datatable .dataTable_1 .deleteIcon span:hover {
+  color: #11161E;
+}
+#compare .datatable .dataTable_2 .tableHeading2 {
+  width: 12%;
+}
+#compare .datatable .dataTable_2 .tableHeading2 h6 {
+  color: #11161E;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #compare .datatable .dataTable_2 .tableHeading2 h6 {
+    font-size: 14px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  #compare .datatable .dataTable_2 .tableHeading2 h6 {
+    font-size: 15px;
+  }
+}
+#compare .datatable .dataTable_2 .productImg {
+  text-align: center;
+  width: 22%;
+  padding: 20px 0px;
+}
+#compare .datatable .dataTable_2 .productImg h6 {
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: #11161E;
+  transition: 350ms;
+  margin: 0;
+}
+#compare .datatable .dataTable_2 .productImg h6:hover {
+  color: #FF6F61;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #compare .datatable .dataTable_2 .productImg h6 {
+    font-size: 14px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  #compare .datatable .dataTable_2 .productImg h6 {
+    font-size: 15px;
+  }
+}
+#compare .datatable .dataTable_2 .productImg img {
+  width: 100%;
+  height: 100%;
+}
+#compare .datatable .dataTable_3 .tableHeading3 {
+  width: 12%;
+}
+#compare .datatable .dataTable_3 .tableHeading3 h6 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #11161E;
+  margin: 0;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #compare .datatable .dataTable_3 .tableHeading3 h6 {
+    font-size: 12px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  #compare .datatable .dataTable_3 .tableHeading3 h6 {
+    font-size: 15px;
+  }
+}
+#compare .datatable .dataTable_3 .productDrs {
+  width: 22%;
+  padding: 16px;
+}
+#compare .datatable .dataTable_3 .productDrs p {
+  font-family: "Roboto", sans-serif;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #compare .datatable .dataTable_3 .productDrs p {
+    font-size: 13px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  #compare .datatable .dataTable_3 .productDrs p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #compare .datatable .dataTable_3 .productDrs {
+    padding: 19px;
+  }
+}
+#compare .datatable .dataTable_4 {
+  background-color: #F1F3F4;
+}
+#compare .datatable .dataTable_4 .tableHeading4 {
+  width: 12px;
+}
+#compare .datatable .dataTable_4 .tableHeading4 h6 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #11161E;
+  margin: 0;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #compare .datatable .dataTable_4 .tableHeading4 h6 {
+    font-size: 14px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  #compare .datatable .dataTable_4 .tableHeading4 h6 {
+    font-size: 15px;
+  }
+}
+#compare .datatable .dataTable_4 .productPrice {
+  width: 22%;
+  padding: 12px 0px;
+}
+#compare .datatable .dataTable_4 .productPrice p {
+  font-family: "Roboto", sans-serif;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #compare .datatable .dataTable_4 .productPrice p {
+    font-size: 13px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  #compare .datatable .dataTable_4 .productPrice p {
+    font-size: 14px;
+  }
+}
+#compare .datatable .dataTable_5 .tableHeading5 {
+  width: 12%;
+}
+#compare .datatable .dataTable_5 .tableHeading5 h6 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #11161E;
+  margin: 0;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #compare .datatable .dataTable_5 .tableHeading5 h6 {
+    font-size: 14px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  #compare .datatable .dataTable_5 .tableHeading5 h6 {
+    font-size: 15px;
+  }
+}
+#compare .datatable .dataTable_5 .productColour {
+  width: 22%;
+  padding: 12px 0px;
+}
+#compare .datatable .dataTable_5 .productColour p {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #compare .datatable .dataTable_5 .productColour p {
+    font-size: 13px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  #compare .datatable .dataTable_5 .productColour p {
+    font-size: 14px;
+  }
+}
+#compare .datatable .dataTable_6 {
+  background-color: #F1F3F4;
+}
+#compare .datatable .dataTable_6 .tableHeading6 {
+  width: 12%;
+}
+#compare .datatable .dataTable_6 .tableHeading6 h6 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #11161E;
+  margin: 0;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #compare .datatable .dataTable_6 .tableHeading6 h6 {
+    font-size: 14px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  #compare .datatable .dataTable_6 .tableHeading6 h6 {
+    font-size: 15px;
+  }
+}
+#compare .datatable .dataTable_6 .productRatting {
+  width: 22%;
+  padding: 12px 0px;
+  text-align: center;
+}
+#compare .datatable .dataTable_6 .productRatting span {
+  display: inline-block;
+  color: #FF6F61;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  margin: 0;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #compare .datatable .dataTable_6 .productRatting span {
+    font-size: 10px;
+  }
+}
+#compare .datatable .dataTable_6 .productRatting p {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  margin: 0;
+  display: inline-block;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #compare .datatable .dataTable_6 .productRatting p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  #compare .datatable .dataTable_6 .productRatting p {
+    font-size: 14px;
+  }
+}
+#compare .datatable .dataTable_7 .tableHeading7 {
+  width: 12%;
+}
+#compare .datatable .dataTable_7 .tableHeading7 h6 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #11161E;
+  margin: 0;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #compare .datatable .dataTable_7 .tableHeading7 h6 {
+    font-size: 14px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  #compare .datatable .dataTable_7 .tableHeading7 h6 {
+    font-size: 15px;
+  }
+}
+#compare .datatable .dataTable_7 .productStock {
+  width: 22%;
+  padding: 12px 0px;
+  text-align: center;
+}
+#compare .datatable .dataTable_7 .productStock span {
+  display: inline-block;
+  color: #29CC00;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  margin: 0;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #compare .datatable .dataTable_7 .productStock span {
+    font-size: 13px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  #compare .datatable .dataTable_7 .productStock span {
+    font-size: 14px;
+  }
+}
+#compare .datatable .dataTable_7 .productStock p {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  margin: 0;
+  display: inline-block;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #compare .datatable .dataTable_7 .productStock p {
+    font-size: 13px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  #compare .datatable .dataTable_7 .productStock p {
+    font-size: 14px;
+  }
+}
+#compare .datatable .dataTable_8 {
+  background-color: #F1F3F4;
+}
+#compare .datatable .dataTable_8 .tableHeading8 {
+  width: 12%;
+}
+#compare .datatable .dataTable_8 .tableHeading8 h6 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #11161E;
+  margin: 0;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #compare .datatable .dataTable_8 .tableHeading8 h6 {
+    font-size: 14px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  #compare .datatable .dataTable_8 .tableHeading8 h6 {
+    font-size: 15px;
+  }
+}
+#compare .datatable .dataTable_8 .addToCart {
+  width: 22%;
+  padding: 12px 0px;
+  text-align: center;
+}
+#compare .datatable .dataTable_8 .addToCart a {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0em;
+  margin: 0;
+  display: inline-block;
+  width: 140px;
+  height: 50px;
+  background-color: #FF6F61;
+  transition: 350ms;
+}
+#compare .datatable .dataTable_8 .addToCart a:hover {
+  background-color: black;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  #compare .datatable .dataTable_8 .addToCart a {
+    font-size: 13px;
+    height: 35px;
+    line-height: 35px;
+    width: 100px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  #compare .datatable .dataTable_8 .addToCart a {
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    width: 120px;
+  }
+}
